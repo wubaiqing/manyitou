@@ -1738,33 +1738,33 @@
     },
     {
         "name": "way/generators",
-        "version": "2.6",
-        "version_normalized": "2.6.0.0",
+        "version": "2.6.1",
+        "version_normalized": "2.6.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/JeffreyWay/Laravel-4-Generators.git",
-            "reference": "b3c2974a87891ddf48bae27b1d5176168016ef94"
+            "reference": "484d379c6bc1d38c75e4f52f74efcbcd11f7dd2c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/b3c2974a87891ddf48bae27b1d5176168016ef94",
-            "reference": "b3c2974a87891ddf48bae27b1d5176168016ef94",
+            "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/484d379c6bc1d38c75e4f52f74efcbcd11f7dd2c",
+            "reference": "484d379c6bc1d38c75e4f52f74efcbcd11f7dd2c",
             "shasum": ""
         },
         "require": {
-            "illuminate/support": "~4.1",
+            "illuminate/support": "~4.0",
             "php": ">=5.4.0"
         },
         "require-dev": {
-            "behat/behat": "v2.5.1",
-            "behat/mink": "v1.5.0",
-            "behat/mink-extension": "*",
-            "behat/mink-goutte-driver": "*",
-            "behat/mink-selenium2-driver": "*",
-            "phpspec/phpspec": "2.0.*@dev",
-            "phpunit/phpunit": "3.*"
+            "behat/behat": "~2.5.1",
+            "behat/mink": "~1.5.0",
+            "behat/mink-extension": "~1.2.0",
+            "behat/mink-goutte-driver": "~1.0.9",
+            "behat/mink-selenium2-driver": "~1.1.1",
+            "phpspec/phpspec": "~2.0",
+            "phpunit/phpunit": "~3.7"
         },
-        "time": "2014-03-13 17:48:09",
+        "time": "2014-05-27 14:21:26",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1783,6 +1783,52 @@
                 "homepage": "http://jeffrye-way.com",
                 "role": "Developer"
             }
+        ],
+        "description": "Rapidly generate resources, migrations, models, and much more."
+    },
+    {
+        "name": "shark/simple_html_dom",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/samacs/simple_html_dom.git",
+            "reference": "a7dfed08a6e8d18dc88bc5c73d344f3a6b2316d9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/samacs/simple_html_dom/zipball/a7dfed08a6e8d18dc88bc5c73d344f3a6b2316d9",
+            "reference": "a7dfed08a6e8d18dc88bc5c73d344f3a6b2316d9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "time": "2012-09-23 01:24:27",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "simple_html_dom.php"
+            ],
+            "files": [
+                "simple_html_dom.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "S.C. Chen",
+                "email": "me578022@gmail.com",
+                "homepage": "http://simplehtmldom.sourceforge.net/",
+                "role": "Lead Developer"
+            }
+        ],
+        "description": "Simple HTML DOM package.",
+        "homepage": "http://simplehtmldom.sourceforge.net/",
+        "keywords": [
+            "dom",
+            "php dom"
         ]
     }
 ]

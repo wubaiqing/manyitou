@@ -10,4 +10,5 @@ return array(
     $vendorDir . '/ircmaxell/password-compat/lib/password.php',
     $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
     $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
+    $vendorDir . '/shark/simple_html_dom/simple_html_dom.php',
 );

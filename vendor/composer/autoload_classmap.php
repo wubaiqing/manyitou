@@ -44,6 +44,7 @@ return array(
     'File_ASN1' => $vendorDir . '/phpseclib/phpseclib/phpseclib/File/ASN1.php',
     'File_ASN1_Element' => $vendorDir . '/phpseclib/phpseclib/phpseclib/File/ASN1.php',
     'File_X509' => $vendorDir . '/phpseclib/phpseclib/phpseclib/File/X509.php',
+    'Goods' => $baseDir . '/app/models/Goods.php',
     'HomeController' => $baseDir . '/app/controllers/HomeController.php',
     'IlluminateQueueClosure' => $vendorDir . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
     'Illuminate\\Auth\\AuthManager' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/AuthManager.php',
@@ -1532,4 +1533,8 @@ return array(
     'Whoops\\Provider\\Zend\\ExceptionStrategy' => $vendorDir . '/filp/whoops/src/Whoops/Provider/Zend/ExceptionStrategy.php',
     'Whoops\\Provider\\Zend\\RouteNotFoundStrategy' => $vendorDir . '/filp/whoops/src/Whoops/Provider/Zend/RouteNotFoundStrategy.php',
     'Whoops\\Run' => $vendorDir . '/filp/whoops/src/Whoops/Run.php',
+    'Zhe800Fetch' => $baseDir . '/app/models/Zhe800Fetch.php',
+    'ZheCommand' => $baseDir . '/app/commands/ZheCommand.php',
+    'simple_html_dom' => $vendorDir . '/shark/simple_html_dom/simple_html_dom.php',
+    'simple_html_dom_node' => $vendorDir . '/shark/simple_html_dom/simple_html_dom.php',
 );

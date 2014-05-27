@@ -52,7 +52,7 @@ class Zhe800Fetch
 	public static function getData($cateId, $body)
 	{
 		$data = [];
-		$html = new \simple_html_dom();
+		$html = new simple_html_dom();
 		var_dump($html);
 		exit;
 
