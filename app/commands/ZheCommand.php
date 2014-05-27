@@ -11,7 +11,7 @@ class ZheCommand extends Command {
 	 *
 	 * @var string
 	 */
-	protected $name = 'zhe:start';
+	protected $name = 'zhe800:fetch';
 
 	/**
 	 * The console command description.
@@ -37,7 +37,6 @@ class ZheCommand extends Command {
 	 */
 	public function fire()
 	{
-        echo '123';
 	}
 
 }
