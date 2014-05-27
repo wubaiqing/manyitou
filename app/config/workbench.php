@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'name' => '',
+	'name' => 'wubaiqing',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,6 +26,11 @@ return array(
 	|
 	*/
 
-	'email' => '',
+	'email' => 'wubaiqing@vip.qq.com',
+
+    /**
+     * requests超时时间
+     */
+    'requestsTimeout' => '30',
 
 );
