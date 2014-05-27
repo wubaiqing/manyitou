@@ -4,7 +4,8 @@ use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
-class ZheCommand extends Command {
+class ZheCommand extends Command
+{
 
 	/**
 	 * The console command name.
