@@ -53,10 +53,7 @@ class Zhe800Fetch
 	{
 		$data = [];
 		$html = new simple_html_dom();
-		var_dump($html);
-		exit;
-
-
+		$html->find('h2');
 
 		return $data;
 	}
