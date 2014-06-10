@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-wubaiqing
+
+@include('home.top')
+@include('home.content')
+
+
 @stop

@@ -1,0 +1,588 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma, arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+code, kbd, pre, samp {
+    font-family: courier new, courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+mark {
+    background: #ff0;
+}
+
+#header, #content, #footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-main {
+    float: left;
+    width: 100%;
+    min-height: 1px;
+}
+
+.col-sub, .col-extra {
+    float: left;
+}
+
+.layout:after, .main-wrap:after, .col-sub:after, .col-extra:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.layout, .main-wrap, .col-sub, .col-extra {
+    *zoom: 1;
+}
+
+.ks-hidden {
+    display: none;
+}
+
+.ks-invisible {
+    visibility: hidden;
+}
+
+.ks-clear:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.ks-clear {
+    *zoom: 1;
+}
+
+.ks-inline-block {
+    display: inline-block;
+    *display: inline;
+}
+
+.reg_info {
+    border: 1px solid red;
+    width: auto;
+    float: left;
+    margin-left: 10px;
+    padding-right: 5px;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 5px;
+    background-color: #FFCCFF;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body {
+    background: url(images/body_bg.png);
+}
+
+a {
+    text-decoration: none;
+    color: #505050;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #F50;
+}
+
+.gray {
+    color: gray;
+}
+
+.steelBlue {
+    color: SteelBlue;
+}
+
+.orange {
+    color: #F60;
+}
+
+.red {
+    color: red;
+}
+
+.col-sub {
+    width: 246px;
+    margin-left: -246px;
+}
+
+.col-extra {
+    width: 225px;
+    margin-left: -100%;
+}
+
+.grid-m0s246 .main-wrap {
+    margin-right: 246px;
+}
+
+.grid-e225m0s246 .main-wrap {
+    margin: 0 246px 0 232px;
+}
+
+.hide {
+    display: none;
+}
+
+.clear {
+    clear: both
+}
+
+.site-nav .quick-menu a.cur, .site-nav .quick-menu a.cur span, .site-nav .quick-menu li .num, .site-nav .quick-menu li .num b, .site-nav .quick-menu i {
+    background: url(http://img04.taobaocdn.com/tps/i4/T1mFKXXjJsXXXXXXXX-100-168.png) no-repeat;
+}
+
+.login .bd .option .login-btn, .login-success .inter-mm a, .login-success .inter-mm span, .follow .bd, .follow .bd p, .follow .bd .followme i, .follow .bd .tsina, .follow .bd .tqq {
+    background: url(http://img03.taobaocdn.com/tps/i3/T1zdaXXjhkXXXXXXXX-273-400.png) no-repeat;
+}
+
+.new, .announce .hd .title, .text-link .hd .title, .testimonials .hd .title, .help-center .hd .title, .products .hd .title, .products .bd li .describe-icon, .testimonials .bd .carousel-prev, .testimonials .bd .carousel-next {
+    background: url(http://img02.taobaocdn.com/tps/i2/T1nCaoXcFgXXXXXXXX-300-400.png) no-repeat;
+}
+
+button, input, select, textarea {
+    background-color: #FFF;
+}
+
+#header {
+    height: 47px;
+    background-color: #f27b04;
+    border-bottom: 1px solid #ba6714;
+}
+
+#header .bd {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mm-logo {
+    position: absolute;
+    left: 0;
+}
+
+.mm-logo .header_bg {
+    background: url('images/main_logo.jpg');
+    display: block;
+    width: 202px;
+    height: 43px;
+}
+
+.mm-logo .header_bg .mm-logo-a {
+    display: block;
+    height: 48px;
+    width: 105px;
+    text-indent: -9999px;
+    float: left;
+}
+
+.mm-logo .header_bg .login_register {
+    width: 100%;
+    float: right;
+    height: 48px;
+    line-height: 48px;
+    position: absolute;
+    left: 105px;
+    white-space: nowrap;
+}
+
+.mm-logo .header_bg .login_register a, .mm-logo .header_bg .login_register span {
+    color: #fff;
+    display: block;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    font-weight: normal;
+    margin: 14px -8px 6px 2px;
+    font-size: 12px;
+}
+
+.mm-logo .header_bg .login_register a {
+    cursor: pointer;
+    margin: 14px 0px 6px 10px;
+}
+
+.mm-logo .sub-logo {
+    position: absolute;
+    right: -138px;
+    top: 23px;
+}
+
+.mm-logo .old-version {
+    position: absolute;
+    top: 4px;
+    right: -62px;
+    font-weight: normal;
+    color: #FFF;
+}
+
+.site-nav {
+    float: right;
+}
+
+.site-nav .quick-menu {
+    margin-top: 11px;
+}
+
+.site-nav .quick-menu li {
+    float: left;
+    margin-left: 5px;
+}
+
+.site-nav .quick-menu a {
+    float: left;
+    padding-left: 3px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.site-nav .quick-menu a:hover span {
+    text-decoration: underline;
+}
+
+.site-nav .quick-menu a.cur {
+    background-position: 0 -80px;
+}
+
+.site-nav .quick-menu a.cur span {
+    background-position: right -80px;
+}
+
+.site-nav .quick-menu a.cur:hover {
+    color: #FFF;
+}
+
+.site-nav .quick-menu a.cur:hover span {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.site-nav .quick-menu span {
+    cursor: pointer;
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 8px 0 5px;
+    position: relative;
+}
+
+.site-nav .quick-menu span i {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+}
+
+.site-nav .quick-menu .message .num {
+    background-position: 0 -134px;
+    margin: -8px 0 0 -8px;
+    padding-left: 7px;
+    float: left;
+    position: relative;
+}
+
+.site-nav .quick-menu .message .num b {
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    font-weight: normal;
+    background-position: right -134px;
+    color: #FFF;
+    margin-right: -7px;
+    padding-right: 7px;
+    position: relative;
+}
+
+.site-nav .quick-menu .index span, .site-nav .quick-menu .product span, .site-nav .quick-menu .mymm span {
+    padding-left: 21px;
+}
+
+.site-nav .quick-menu .index span i {
+    background-position: 0 0;
+}
+
+.site-nav .quick-menu .index a.cur i {
+    background-position: -20px 0;
+}
+
+.site-nav .quick-menu .product span i {
+    background-position: 0 -20px;
+}
+
+.site-nav .quick-menu .mymm span i {
+    background-position: 0 -40px;
+}
+
+.site-nav .quick-menu .message span i {
+    background-position: 0 -60px;
+}
+
+#content {
+    background: url(http://img03.taobaocdn.com/tps/i3/T1Pn8.XftFXXXXXXXX-1-280.jpg) 0 0 repeat-x;
+}
+
+#content .content-bd {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #fff;
+    _margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#footer {
+    background: url("http://img01.taobaocdn.com/tps/i1/T19nF.XX8FXXXXXXXX-94-121.jpg") repeat-x scroll 0 0 transparent;
+    clear: both;
+    padding: 1px 0 0;
+    text-align: center;
+    zoom: 1;
+}
+
+#footer a {
+    color: #333;
+}
+
+#footer a:hover {
+    color: #f88011;
+}
+
+#footer .foot-nav, #footer .ali-group {
+    display: block;
+    height: 20px;
+    margin: 15px auto 0;
+}
+
+#footer .foot-nav a {
+    padding: 0 7px;
+}
+
+#footer .ali-group a {
+    padding: 0 3px;
+}
+
+#footer .copyright {
+    clear: both;
+    margin: 15px auto 0;
+    color: #404040;
+}
+
+#footer #ServerNum {
+    color: #fff;
+}
+
+/*脚注*/
+.foot {
+    /*border-top:1px solid #CCCCCC;margin-top: 15px;*/
+    text-align: center;
+    width: 100%;
+    position: relative;
+
+    height: 50px;
+    background-color: #fff;
+    color: #999;
+    margin-top: 15px;
+}
+
+.foot .foot_content {
+    margin: 0 auto;
+    width: 960px;
+    height: 20px;
+    display: block;
+    padding: 15px 20px;
+}
+
+.foot .foot_content .foot_info {
+    width: 370px;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+}
+
+.foot .foot_content .foot_link {
+    float: right;
+    height: 20px;
+}
+
+.foot .foot_content .foot_link a {
+    margin-left: 15px;
+    color: #999;
+}
+
+.footc {
+    border-right: 1px dashed #CCCCCC;
+    width: 30%;
+    height: 200px;
+    margin-top: 20px;
+    float: left;
+}
+
+.my_li {
+    margin-top: 5px;
+}
+
+.pri {
+    color: #666666;
+}
+
+.green_alert_l, .pink_alert_l, .blue_alert_l, .green_alert_m, .pink_alert_m, .blue_alert_m, .green_alert_s, .pink_alert_s, .blue_alert_s, .yellow_alert_l {
+    display: block;
+    vertical-align: middle;
+    padding: 0 10px;
+    margin: 5px 25px 5px 0;
+}
+
+.green_alert_l, .pink_alert_l, .blue_alert_l, .yellow_alert_l {
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.yellow_alert_l {
+    border: 1px solid #f7c35e;
+    background-color: #fff1ae;
+    color: #ba6714;
+    margin-left: 16px;
+}
+
+.chioce_ch {
+    height: 32px; /*border-color:#FFF #EFEFEF #EFEFEF;border-width:1px;border-style:solid;*/
+    line-height: 38px;
+    padding-top: 8px;
+    margin-top: 2px;
+    margin-left: -1px
+}
+
+.chioce_ch .reach {
+    margin: 0 3px
+}
+
+.chioce_ch label {
+    float: left;
+    height: 24px;
+    line-height: 24px
+}
+
+.chioce_ch select {
+    border: #d1d1d1 solid 1px;
+    height: 24px;
+    line-height: 24px;
+    padding: 3px;
+    float: left;
+    border-radius: 3px;
+}
+
+.chioce_ch .input-small {
+    border: #efefef solid 1px;
+    height: 22px;
+    line-height: 22px;
+    background: none;
+    width: 85px;
+    color: #535353;
+    padding-left: 5px;
+    float: left
+}
+
+.chioce_ch span {
+    float: left;
+    height: 24px;
+    line-height: 24px
+}
+
+.chioce_ch .txt1 {
+    border: #d1d1d1 solid 1px;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+}
+
+.input-small {
+    border: #d1d1d1 solid 1px;
+    height: 22px;
+    line-height: 22px;
+    background: none;
+    width: 85px;
+    color: #535353;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+.nocode {
+    width: 100px;
+    display: none;
+    margin-left: 15px;
+}
+
+.nocode a {
+    color: #0289cd;
+    text-decoration: underline;
+    margin-left: 5px;
+}

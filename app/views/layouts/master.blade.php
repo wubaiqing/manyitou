@@ -1,9 +1,15 @@
-<!-- Stored in app/views/layouts/master.blade.php -->
-<html>
-    <body>
-
-        <div class="container">
-            @yield('content')
-        </div>
-    </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>满意投 - 各大U站平台秒上！</title>
+	<link rel="stylesheet" type="text/css" href="static/css/base-min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/index.css">
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+	@yield('content')
+	@include('layouts.cnzz')
+</body>
 </html>
