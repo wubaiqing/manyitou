@@ -5,7 +5,7 @@ class HomeController extends BaseController
 
 	protected $layout = 'layouts.master';
 
-	public function showWelcome()
+	public function showIndex()
 	{
 		$items = Goods::getIndex();
 		$goods = Paginator::make($items['data'], $items['total'], $items['per_page']);
@@ -13,8 +13,4 @@ class HomeController extends BaseController
 			'goods' => $goods
 		]);
 	}
-
-
-
-
 }

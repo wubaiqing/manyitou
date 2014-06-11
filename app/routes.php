@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', ['uses' => 'HomeController@showWelcome']);
+Route::get('/', ['uses' => 'HomeController@showIndex']);

@@ -14,15 +14,6 @@
 								<option value="sell_cnt">销量高->低</option>
 							</select>
 						</div>
-						<form action="/index.php/AdPosition/adPositionlist" method="get" style="float:left;"
-						      target="_top">
-							<div class="seek-input">
-								<input type="text" name="namekey" class="txt" title="输入平台/产品名称查找" value="">
-							</div>
-							<div class="seek-btn">
-								<input type="submit" value="搜索" class="btn">
-							</div>
-						</form>
 					</div>
 				</div>
 				<div class="list">
