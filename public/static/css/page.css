@@ -1,0 +1,12 @@
+.page {
+  text-align: center;
+}
+.page .pagination {
+  clear: both;
+  height: 40px;
+  line-height: 40px;
+}
+.page .pagination li {
+  display: inline-block;
+  width: 30px;
+}

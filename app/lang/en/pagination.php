@@ -1,4 +1,6 @@
 <?php
+echo '123';
+exit;
 
 return array(
 

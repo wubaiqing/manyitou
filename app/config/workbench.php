@@ -33,4 +33,14 @@ return array(
      */
     'requestsTimeout' => '30',
 
+	/**
+	 * 首页显示多少条数据
+	 */
+	'indexPageSize' => 10,
+
+	/**
+	 * 首页缓存时间
+	 */
+	'cacheTime' => 3600,
+
 );
