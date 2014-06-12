@@ -3,7 +3,7 @@
 		<div class="new_line_left">
 			<div class="rollbox_title">
 				<ul class="filter_cat">
-					<li class="current">合作商家</li>
+					<li class="">合作商家</li>
 				</ul>
 			</div>
 			<div class="rollBox recommend_product">
