@@ -10,6 +10,8 @@
 <div id="content">
 	@include('home.banner')
 	@include('home.goods-list', ['goods' => $goods])
+	@include('home.website-list')
+	@include('home.store-list')
 </div>
 
 @include('home.footer')

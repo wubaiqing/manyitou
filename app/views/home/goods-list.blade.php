@@ -19,27 +19,33 @@
 					<div class="list-c clearfix">
 						<div class="pic-item">
 							<a href="{{ URL::to('detail/' . $item['id'] . '.html') }}" target="_blank">
-								<img src="{{ $item['logo'] }}" class="lazy-index-logo" data-original="{{ $item['logo'] }}"">
+								<img src="{{ $item['logo'] }}" class="lazy-index-logo"
+								     data-original="{{ $item['logo'] }}"">
 							</a>
 						</div>
 						<div class="text-item">
 							<h3>{{ $item['platform_name'] }}</h3>
+
 							<div class="intro">
 								<span>
 									{{ $item['playform_sort_desc'] }}
 							</div>
-							<a href="{{ $item['playform_url'] }}" target="_blank" class="link">{{ $item['playform_url'] }}</a>
+							<a href="{{ $item['playform_url'] }}" target="_blank" class="link">{{ $item['playform_url']
+								}}</a>
 						</div>
 						<div class="uvnum">
 							<a href="{{ $item['claim_image'] }}" class="imageBox">
-								<img data-original="{{ $item['claim_image'] }}" src="http://l.com/static/css/images/image_bg.jpg" class="lazy-index-image" width="180" />
+								<img data-original="{{ $item['claim_image'] }}"
+								     src="http://l.com/static/css/images/image_bg.jpg" class="lazy-index-image"
+								     width="180"/>
 							</a>
 						</div>
 						<div class="likenum">
-								{{ $item['rules'] }}
+							{{ $item['rules'] }}
 						</div>
 						<div class="likenum">
 							<span class="product-name">{{ $item['platform_name'] }}今日特惠：</span>
+
 							<div>
 								{{ $item['price_text'] }}
 							</div>
@@ -52,11 +58,10 @@
 					</div>
 					@endforeach
 					<div style="clear:both;_border-bottom:#ebebeb 1px solid;"></div>
-						<div class="page">
-							{{ $goods->links() }}
-						</div>
-						<div class="clearfix"></div>
+					<div class="page">
+						{{ $goods->links() }}
 					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>

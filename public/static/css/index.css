@@ -703,9 +703,7 @@
 
 .new_line_left {
     float: left;
-    border-right: 1px solid #CCCCCC;
-    /*width: 734px;*/
-    width: 728px;
+    width: 930px;
     height: 165px;
     margin: 10px 0px 10px 20px;
     _margin: 0px 0px 10px 10px;
