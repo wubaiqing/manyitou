@@ -5,11 +5,8 @@
 			Copyright 2014，版权所有
 		</div>
 		<div class="foot_link">
-			<a href="/index.php/About/aboutJianshi/id/1" target="_blank">关于我们</a>
-			<a href="/index.php/About/aboutJianshi/id/2" target="_blank">联系我们</a>
-			<a href="/index.php/About/aboutJianshi/id/4" target="_blank">付款方式</a>
-			<a href="/index.php/About/aboutJianshi/id/5" target="_blank">网站入住</a>
-			<a href="/index.php/About/aboutJianshi/id/6" target="_blank">常见问题</a>
+			<a href="javascript:void(0);" target="_blank">关于我们</a>
+			<a href="javascript:void(0);" target="_blank">联系我们</a>
 		</div>
 	</div>
 </div>

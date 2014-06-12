@@ -22,4 +22,17 @@ class Goods extends \Eloquent {
 			return Goods::index()->paginate(Config::get('workbench.indexPageSize'))->toArray();
 		});
 	}
+
+	/**
+	 * 首页商品详情
+	 * @param int $id
+	 * @return mixed
+	 */
+	public static function getDetail($id)
+	{
+		$cacheKey = 'get-detail-'.$id;
+		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () use($id) {
+			return Goods::find($id);
+		});
+	}
 }

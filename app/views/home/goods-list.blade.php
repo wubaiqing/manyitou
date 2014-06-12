@@ -2,9 +2,9 @@
 	<div class="appContent clearfix">
 		<div class="appList">
 			<div class="con_wrap">
-				<div class="mid-nav"><span><a href="/">简世网络</a></span>
+				<div class="mid-nav"><span><a href="/">满意投</a></span>
 					<span class="sep"> > </span>
-					<span><a href="/index.php/AdPosition/adPositionlist">活动中心</a></span>
+					<span><a href="{{ URL::to('lists.html')}}">活动中心</a></span>
 					<div class="search">
 						<div class="select">排序：
 							<select name="order">
@@ -19,21 +19,21 @@
 				<div class="list">
 					<div class="list-t">
 						<div class="main">logo</div>
-						<div class="usenum cur" style="width:210px;">平台</div>
+						<div class="usenum cur">平台</div>
 						<div class="dyuz">图示广告位</div>
-						<div class="usenum cur">活动价格</div>
-						<div class="ljxq">了解详情</div>
+						<div class="usenum cur">活动要求</div>
+						<div class="usenum">活动价格</div>
+						<div class="ljxq cur">了解详情</div>
 					</div>
 					@foreach ($goods as $item)
 					<div class="list-c clearfix">
 						<div class="pic-item">
-							<a href="{{ $item['id'] }}" target="_blank">
+							<a href="{{ URL::to('detail/' . $item['id'] . '.html') }}" target="_blank">
 								<img src="{{ $item['logo'] }}">
 							</a>
 						</div>
 						<div class="text-item">
 							<h3>{{ $item['platform_name'] }}</h3>
-
 							<div class="intro">
 								<span>
 									{{ $item['playform_sort_desc'] }}
@@ -41,16 +41,21 @@
 							<a href="{{ $item['playform_url'] }}" target="_blank" class="link">{{ $item['playform_url'] }}</a>
 						</div>
 						<div class="uvnum">
-							<img src="{{ $item['claim_image'] }}" width="220" height="120" />
+							<a href="{{ $item['claim_image'] }}" class="imageBox">
+								<img src="{{ $item['claim_image'] }}" width="180" />
+							</a>
 						</div>
 						<div class="likenum">
-							<span class="product-name">一折网今日特惠：</span>
+								{{ $item['rules'] }}
+						</div>
+						<div class="likenum">
+							<span class="product-name">{{ $item['platform_name'] }}今日特惠：</span>
 							<div>
 								{{ $item['price_text'] }}
 							</div>
 						</div>
 						<div class="uptime">
-							<a href="{{ $item['id'] }}" target="_blank">
+							<a href="{{ URL::to('/detail/' . $item['id'] . '.html') }}" target="_blank">
 								<img src="/static/css/images/ckxq.png">
 							</a>
 						</div>
