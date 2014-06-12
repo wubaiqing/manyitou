@@ -6,7 +6,7 @@
 			</h4>
 		</li>
 		<li>
-			<a href="{{ URL::to('goods/create') }}">
+			<a href="{{ URL::to('admin/goods/create') }}">
 				添加活动
 			</a>
 		</li>

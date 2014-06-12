@@ -13,7 +13,7 @@ class RolesController extends BaseController
 	{
 		if (Auth::attempt(['username' => Input::get('name'), 'password' => Input::get('password')]))
 		{
-			return Redirect::intended('admin');
+			return Redirect::intended('admin/goods');
 		}
 		return Redirect::to('roles')->with('error', '用户名密码错误');
 	}
