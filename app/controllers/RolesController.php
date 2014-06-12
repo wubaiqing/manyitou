@@ -2,11 +2,10 @@
 
 class RolesController extends BaseController
 {
-	protected $layout = 'layouts.master';
+	protected $layout = 'layouts.roles';
 
 	public function showLogin()
 	{
-		echo '123';
-		exit;
+		$this->layout->content = View::make('roles.login');
 	}
 }

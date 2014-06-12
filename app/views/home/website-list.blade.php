@@ -11,7 +11,7 @@
 					<li>
 						<div class="pic">
 							<a href="/index.php/AdPosition/adPositionInfo/id/31" target="_blank">
-								<img src="http://cdn.hzjianshi.com/Public/upload/images/526e68c4b9e5b.jpg">
+								<img src="http://cdn.hzjianshi.com/Public/upload/images/526e68c4b9e5b.jpg" width="230">
 							</a>
 						</div>
 						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/31" target="_blank">抢秒杀</a>
@@ -58,66 +58,7 @@
 
 						</div>
 					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/48" target="_blank">
-								<img src="http://cdn.hzjianshi.com/Public/upload/images/2014/0310/531d6d428f943.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/48" target="_blank">美美购</a>
 
-						</div>
-					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/883644183/T2YZq_Xq8XXXXXXXXX-883644183.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">聚划算</a>
-
-						</div>
-					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/883644183/T2YZq_Xq8XXXXXXXXX-883644183.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">聚划算</a>
-
-						</div>
-					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/883644183/T2YZq_Xq8XXXXXXXXX-883644183.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">聚划算</a>
-
-						</div>
-					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/883644183/T2YZq_Xq8XXXXXXXXX-883644183.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">聚划算</a>
-
-						</div>
-					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/883644183/T2YZq_Xq8XXXXXXXXX-883644183.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">聚划算</a>
-
-						</div>
-					</li>
 				</ul>
 				<div style="clear:both"></div>
 			</div>
