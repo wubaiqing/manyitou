@@ -5,8 +5,5 @@
 		</li>
 	</ul>
 	<div class="content-bd">
-		<div class="headbg_index" style="top: 320px;">  <span index="0" class="index_cur"></span>
-			<span index="1" class=""></span><span index="2" class=""></span><span index="3" class=""></span>
-		</div>
 	</div>
 </div>

@@ -12,6 +12,8 @@
 	<script src="{{ asset('static/js/jquery.colorbox.js') }}"></script>
 	<script src="{{ asset('static/js/jquery.lazyload.js') }}"></script>
 	<script src="{{ asset('static/js/index.js') }}"></script>
+	@section('styles')
+	@show
 </head>
 <body>
 	@yield('content')

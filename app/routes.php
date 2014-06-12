@@ -35,6 +35,7 @@ Route::pattern('id', '[0-9]+');
 Route::get('/', ['uses' => 'HomeController@showIndex']);
 Route::get('/lists.html', ['uses' => 'HomeController@showList']);
 Route::get('/detail/{id}.html', ['uses' => 'HomeController@showDetail']);
+Route::get('/billboard/detail/{id}.html', ['uses' => 'BillboardController@showDetail']);
 
 
 /**
