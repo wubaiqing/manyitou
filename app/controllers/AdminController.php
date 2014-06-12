@@ -2,17 +2,17 @@
 
 class AdminController extends BaseController
 {
-	protected $layout = 'layouts.master';
+	protected $layout = 'layouts.admin';
 
 	public function showIndex()
 	{
-		echo '123';
-		exit;
+		$this->layout->content = View::make('admin.goods-list');
 	}
 
-	public function showLogin()
+	public function showLogout()
 	{
-		echo '123';
-		exit;
+		Auth::logout();
+ 		return Redirect::to('/');
 	}
+
 }

@@ -4,8 +4,17 @@ class RolesController extends BaseController
 {
 	protected $layout = 'layouts.roles';
 
-	public function showLogin()
+	public function showIndex()
 	{
 		$this->layout->content = View::make('upstage.roles.login');
+	}
+
+	public function showLogin()
+	{
+		if (Auth::attempt(['username' => Input::get('name'), 'password' => Input::get('password')]))
+		{
+			return Redirect::intended('admin');
+		}
+		return Redirect::to('roles')->with('error', '用户名密码错误');
 	}
 }

@@ -1,24 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-
-
-/**
- * ------------------------------------------
- * Route model binding
- * ------------------------------------------
- */
-Route::model('goods', 'Goods');
-
 /**
  * ------------------------------------------
  * Route constraint patterns
@@ -26,10 +7,9 @@ Route::model('goods', 'Goods');
  */
 Route::pattern('id', '[0-9]+');
 
-
 /**
  * ------------------------------------------
- * Frontend
+ * 前台
  * ------------------------------------------
  */
 Route::get('/', ['uses' => 'HomeController@showIndex']);
@@ -37,22 +17,32 @@ Route::get('/lists.html', ['uses' => 'HomeController@showList']);
 Route::get('/detail/{id}.html', ['uses' => 'HomeController@showDetail']);
 Route::get('/billboard/detail/{id}.html', ['uses' => 'BillboardController@showDetail']);
 
-
 /**
  * ------------------------------------------
- * Backend
+ * 后台
  * ------------------------------------------
  */
-Route::group(array('prefix' => 'admin', 'before' => 'admin.auth'), function()
+Route::group(['prefix' => 'admin', 'before' => 'admin.auth'], function()
 {
+	// 后台首页
 	Route::get('/', 'AdminController@showIndex');
-	Route::controller('admin', 'AdminController');
+	Route::get('logout', array('as' => 'logout', 'uses' => 'AdminController@showLogout'));
+
+	Route::group(['prefix' => 'goods'], function ()
+	{
+		// 添加商品
+		Route::get('/', 'GoodsController@showIndex');
+	});
 });
 
 /**
  * ------------------------------------------
- * Roles
+ * 登陆
  * ------------------------------------------
  */
-Route::get('roles/login', 'RolesController@showLogin');
+Route::group(['prefix' => 'roles'], function()
+{
+	Route::get('/', 'RolesController@showIndex');
+	Route::post('login', 'RolesController@showLogin');
+});
 

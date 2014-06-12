@@ -1,6 +1,10 @@
 <div class="container">
 	<div class="box span6 offset2" style="margin-top: 80px;">
-		<form class="form-horizontal" action="/index.php?r=site/login" method="post">
+		<form class="form-horizontal" action="{{ URL::to('roles/login') }}" method="post">
+			<input type="hidden" name="_token" value="{{ csrf_token() }}">
+			@if ( Session::get('error') )
+				<div class="alert alert-danger">{{ Session::get('error') }}</div>
+			@endif
 			<div class="control-group">
 				<label class="control-label" for="name">帐号</label>
 				<div class="controls">
