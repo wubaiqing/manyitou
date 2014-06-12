@@ -9,8 +9,11 @@ class HomeController extends BaseController
 	{
 		$items = Goods::getIndex();
 		$goods = Paginator::make($items['data'], $items['total'], $items['per_page']);
+
+		$billboard = Billboard::getIndex();
 		$this->layout->content = View::make('upstage.home.index', [
-			'goods' => $goods
+			'goods' => $goods,
+			'billboard' => $billboard
 		]);
 	}
 

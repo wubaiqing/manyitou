@@ -13,3 +13,31 @@
 #deal-record {
   padding: 20px;
 }
+#billboard {
+  width: 998px;
+  margin: 0 auto;
+  height: 42px;
+  line-height: 42px;
+  background: #F5F5F5;
+  border: 1px solid #D8D8D8;
+  margin-top: 10px;
+}
+#billboard span {
+  font-weight: bold;
+  width: 100px;
+  display: block;
+  text-indent: 11px;
+}
+#billboard #billboard-left {
+  float: left;
+}
+#billboard #billboard-right {
+  float: left;
+}
+#billboard #billboard-right li {
+  float: left;
+  width: 220px;
+}
+#billboard #billboard-right li a {
+  color: #0087BF;
+}
