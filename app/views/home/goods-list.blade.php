@@ -5,16 +5,6 @@
 				<div class="mid-nav"><span><a href="/">满意投</a></span>
 					<span class="sep"> > </span>
 					<span><a href="{{ URL::to('lists.html')}}">活动中心</a></span>
-					<div class="search">
-						<div class="select">排序：
-							<select name="order">
-								<option value="rank" selected="selected">默认排序</option>
-								<option value="uv">使用人数</option>
-								<option value="fee">价格低->高</option>
-								<option value="sell_cnt">销量高->低</option>
-							</select>
-						</div>
-					</div>
 				</div>
 				<div class="list">
 					<div class="list-t">
@@ -29,7 +19,7 @@
 					<div class="list-c clearfix">
 						<div class="pic-item">
 							<a href="{{ URL::to('detail/' . $item['id'] . '.html') }}" target="_blank">
-								<img src="{{ $item['logo'] }}">
+								<img src="{{ $item['logo'] }}" class="lazy-index-logo" data-original="{{ $item['logo'] }}"">
 							</a>
 						</div>
 						<div class="text-item">
@@ -42,7 +32,7 @@
 						</div>
 						<div class="uvnum">
 							<a href="{{ $item['claim_image'] }}" class="imageBox">
-								<img src="{{ $item['claim_image'] }}" width="180" />
+								<img data-original="{{ $item['claim_image'] }}" src="http://l.com/static/css/images/image_bg.jpg" class="lazy-index-image" width="180" />
 							</a>
 						</div>
 						<div class="likenum">

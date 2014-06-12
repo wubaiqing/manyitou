@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('static/css/colorbox.css') }}">
 	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
 	<script src="{{ asset('static/js/jquery.colorbox.js') }}"></script>
+	<script src="{{ asset('static/js/jquery.lazyload.js') }}"></script>
 	<script src="{{ asset('static/js/index.js') }}"></script>
 </head>
 <body>
