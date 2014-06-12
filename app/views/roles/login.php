@@ -1,4 +1,3 @@
-@section
 <div class="container">
 	<div class="box span6 offset2" style="margin-top: 80px;">
 		<form class="form-horizontal" action="/index.php?r=site/login" method="post">
@@ -22,4 +21,3 @@
 		</form>
 	</div>
 </div>
-@stop

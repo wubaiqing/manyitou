@@ -6,6 +6,6 @@ class RolesController extends BaseController
 
 	public function showLogin()
 	{
-		$this->layout->content = View::make('roles.login');
+		$this->layout->content = View::make('upstage.roles.login');
 	}
 }
