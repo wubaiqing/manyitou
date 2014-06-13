@@ -1,7 +1,5 @@
 <?php
 
-include(__DIR__ . '/../extension/aliyun.php');
-
 use Aliyun\OSS\OSSClient;
 
 class AdminController extends BaseController
