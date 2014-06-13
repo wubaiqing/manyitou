@@ -1,6 +1,7 @@
 <?php
 
-require_once __DIR__ . '/../extension/aliyun.php';
+include(__DIR__ . '/../extension/aliyun.php');
+
 use Aliyun\OSS\OSSClient;
 
 class AdminController extends BaseController
@@ -22,9 +23,16 @@ class AdminController extends BaseController
 	{
 		$client = OSSClient::factory(array(
 			'AccessKeyId' => 'OdJ4QqumwkDsQB9G',
-			'AccessKeySecret' => '3ZVXBVEgDLZcYjcbKywQbn1nYpWInk'
+			'AccessKeySecret' => '3ZVXBVEgDLZcYjcbKywQbn1nYpWInk',
 		));
-		return $client;
+
+		$client->putObject(array(
+			'Bucket' => 'wubaiqing',
+			'Key' => 'images/wubaiqing-test',
+			'Content' => 'This sdfkljasdfkl;asjdfkl;asjdfl;kasjdfl;ksjl;dfis my content',
+		));
+
+		echo '123';
 	}
 
 }

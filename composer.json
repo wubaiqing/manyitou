@@ -8,7 +8,14 @@
         "way/generators": "2.*",
         "rmccue/requests": "dev-master",
         "shark/simple_html_dom": "dev-master",
-		"symfony/class-loader": "2.6.*@dev"
+		"symfony/class-loader": "2.6.*@dev",
+		"guzzle/parser": "3.7.*@dev",
+		"guzzle/common": "3.7.*@dev",
+		"guzzle/http": "3.7.*@dev",
+		"guzzle/stream": "3.7.*@dev",
+		"guzzle/plugin": "3.7.*@dev",
+		"symfony/class-loader": "2.6.*@dev",
+		"symfony/event-dispatcher": "2.6.*@dev"
 	},
 	"autoload": {
 		"classmap": [
