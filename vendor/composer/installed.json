@@ -999,67 +999,6 @@
         "homepage": "http://symfony.com"
     },
     {
-        "name": "symfony/event-dispatcher",
-        "version": "v2.5.0",
-        "version_normalized": "2.5.0.0",
-        "target-dir": "Symfony/Component/EventDispatcher",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/EventDispatcher.git",
-            "reference": "cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8",
-            "reference": "cb62ec8dd05893fc8e4f0e6e21e326e1fc731fe8",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/config": "~2.0",
-            "symfony/dependency-injection": "~2.0",
-            "symfony/stopwatch": "~2.2"
-        },
-        "suggest": {
-            "symfony/dependency-injection": "",
-            "symfony/http-kernel": ""
-        },
-        "time": "2014-04-29 10:13:57",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.5-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\EventDispatcher\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com",
-                "homepage": "http://fabien.potencier.org",
-                "role": "Lead Developer"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony EventDispatcher Component",
-        "homepage": "http://symfony.com"
-    },
-    {
         "name": "symfony/debug",
         "version": "v2.4.6",
         "version_normalized": "2.4.6.0",
@@ -1834,128 +1773,6 @@
         ]
     },
     {
-        "name": "guzzlehttp/streams",
-        "version": "1.1.0",
-        "version_normalized": "1.1.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/guzzle/streams.git",
-            "reference": "cf0c8c33ca95cc147efba4c714f630ee44767180"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/guzzle/streams/zipball/cf0c8c33ca95cc147efba4c714f630ee44767180",
-            "reference": "cf0c8c33ca95cc147efba4c714f630ee44767180",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "~4.0"
-        },
-        "time": "2014-04-03 04:48:24",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "GuzzleHttp\\Stream\\": "src/"
-            },
-            "files": [
-                "src/functions.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Michael Dowling",
-                "email": "mtdowling@gmail.com",
-                "homepage": "https://github.com/mtdowling"
-            }
-        ],
-        "description": "Provides a simple abstraction over streams of data (Guzzle 4+)",
-        "homepage": "http://guzzlephp.org/",
-        "keywords": [
-            "Guzzle",
-            "stream"
-        ]
-    },
-    {
-        "name": "guzzlehttp/guzzle",
-        "version": "4.1.1",
-        "version_normalized": "4.1.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/guzzle/guzzle.git",
-            "reference": "577a69ff7d0a24e9576a2885c3a7afbaadd51ec1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/guzzle/guzzle/zipball/577a69ff7d0a24e9576a2885c3a7afbaadd51ec1",
-            "reference": "577a69ff7d0a24e9576a2885c3a7afbaadd51ec1",
-            "shasum": ""
-        },
-        "require": {
-            "ext-json": "*",
-            "guzzlehttp/streams": "~1.0",
-            "php": ">=5.4.0"
-        },
-        "require-dev": {
-            "ext-curl": "*",
-            "phpunit/phpunit": "~4.0",
-            "psr/log": "~1.0"
-        },
-        "suggest": {
-            "ext-curl": "Guzzle will use specific adapters if cURL is present"
-        },
-        "time": "2014-06-08 20:00:20",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.1.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "GuzzleHttp\\": "src/"
-            },
-            "files": [
-                "src/functions.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Michael Dowling",
-                "email": "mtdowling@gmail.com",
-                "homepage": "https://github.com/mtdowling"
-            }
-        ],
-        "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
-        "homepage": "http://guzzlephp.org/",
-        "keywords": [
-            "client",
-            "curl",
-            "framework",
-            "http",
-            "http client",
-            "rest",
-            "web service"
-        ]
-    },
-    {
         "name": "symfony/class-loader",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -2008,5 +1825,343 @@
         ],
         "description": "Symfony ClassLoader Component",
         "homepage": "http://symfony.com"
+    },
+    {
+        "name": "guzzle/common",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Guzzle/Common",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/common.git",
+            "reference": "707428cd8a99486418a66c859777b56194d67d6c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/common/zipball/707428cd8a99486418a66c859777b56194d67d6c",
+            "reference": "707428cd8a99486418a66c859777b56194d67d6c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2",
+            "symfony/event-dispatcher": ">=2.1"
+        },
+        "time": "2014-05-07 17:04:22",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Guzzle\\Common": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Common libraries used by Guzzle",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "collection",
+            "common",
+            "event",
+            "exception"
+        ]
+    },
+    {
+        "name": "guzzle/stream",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Guzzle/Stream",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/stream.git",
+            "reference": "60c7fed02e98d2c518dae8f97874c8f4622100f0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/stream/zipball/60c7fed02e98d2c518dae8f97874c8f4622100f0",
+            "reference": "60c7fed02e98d2c518dae8f97874c8f4622100f0",
+            "shasum": ""
+        },
+        "require": {
+            "guzzle/common": "self.version",
+            "php": ">=5.3.2"
+        },
+        "suggest": {
+            "guzzle/http": "To convert Guzzle request objects to PHP streams"
+        },
+        "time": "2014-05-01 21:36:02",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Guzzle\\Stream": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Guzzle stream wrapper component",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "Guzzle",
+            "component",
+            "stream"
+        ]
+    },
+    {
+        "name": "guzzle/parser",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Guzzle/Parser",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/parser.git",
+            "reference": "6874d171318a8e93eb6d224cf85e4678490b625c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/parser/zipball/6874d171318a8e93eb6d224cf85e4678490b625c",
+            "reference": "6874d171318a8e93eb6d224cf85e4678490b625c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "time": "2014-02-05 18:29:46",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Guzzle\\Parser": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Interchangeable parsers used by Guzzle",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "URI Template",
+            "cookie",
+            "http",
+            "message",
+            "url"
+        ]
+    },
+    {
+        "name": "guzzle/http",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Guzzle/Http",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/http.git",
+            "reference": "222c4e7bccb945c612283d1dd81762f2a20a4efc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/http/zipball/222c4e7bccb945c612283d1dd81762f2a20a4efc",
+            "reference": "222c4e7bccb945c612283d1dd81762f2a20a4efc",
+            "shasum": ""
+        },
+        "require": {
+            "guzzle/common": "self.version",
+            "guzzle/parser": "self.version",
+            "guzzle/stream": "self.version",
+            "php": ">=5.3.2"
+        },
+        "suggest": {
+            "ext-curl": "*"
+        },
+        "time": "2014-05-01 21:56:28",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Guzzle\\Http": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "HTTP libraries used by Guzzle",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "Guzzle",
+            "client",
+            "curl",
+            "http",
+            "http client"
+        ]
+    },
+    {
+        "name": "symfony/event-dispatcher",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/EventDispatcher",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/EventDispatcher.git",
+            "reference": "7a4f4b42886f8c2e35acb1071f157a0b8eb1bd39"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/7a4f4b42886f8c2e35acb1071f157a0b8eb1bd39",
+            "reference": "7a4f4b42886f8c2e35acb1071f157a0b8eb1bd39",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~2.0",
+            "symfony/dependency-injection": "~2.0",
+            "symfony/stopwatch": "~2.2"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "",
+            "symfony/http-kernel": ""
+        },
+        "time": "2014-05-23 14:36:49",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.6-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\EventDispatcher\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony EventDispatcher Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "guzzle/plugin",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Guzzle/Plugin",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/plugin.git",
+            "reference": "1ae0bf66ba48657bb00daaf85fa67b7a66b2d266"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/plugin/zipball/1ae0bf66ba48657bb00daaf85fa67b7a66b2d266",
+            "reference": "1ae0bf66ba48657bb00daaf85fa67b7a66b2d266",
+            "shasum": ""
+        },
+        "require": {
+            "guzzle/http": "self.version",
+            "php": ">=5.3.2"
+        },
+        "replace": {
+            "guzzle/plugin-async": "self.version",
+            "guzzle/plugin-backoff": "self.version",
+            "guzzle/plugin-cache": "self.version",
+            "guzzle/plugin-cookie": "self.version",
+            "guzzle/plugin-curlauth": "self.version",
+            "guzzle/plugin-error-response": "self.version",
+            "guzzle/plugin-history": "self.version",
+            "guzzle/plugin-log": "self.version",
+            "guzzle/plugin-md5": "self.version",
+            "guzzle/plugin-mock": "self.version",
+            "guzzle/plugin-oauth": "self.version"
+        },
+        "suggest": {
+            "guzzle/cache": "dev-master",
+            "guzzle/log": "dev-master"
+        },
+        "time": "2014-04-16 17:46:30",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Guzzle\\Plugin": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Guzzle plugin component containing all Guzzle HTTP plugins",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "Guzzle",
+            "client",
+            "extension",
+            "http",
+            "plugin"
+        ]
     }
 ]
