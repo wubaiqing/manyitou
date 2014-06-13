@@ -1,5 +1,7 @@
 <?php
 
+use Aliyun\OSS\OSSClient;
+
 class AdminController extends BaseController
 {
 	protected $layout = 'layouts.admin';
@@ -13,6 +15,15 @@ class AdminController extends BaseController
 	{
 		Auth::logout();
  		return Redirect::to('/');
+	}
+
+	public function showUpload()
+	{
+		$client = OSSClient::factory(array(
+			'AccessKeyId' => 'OdJ4QqumwkDsQB9G',
+			'AccessKeySecret' => '3ZVXBVEgDLZcYjcbKywQbn1nYpWInk',
+		));
+		return $client;
 	}
 
 }

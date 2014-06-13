@@ -2,12 +2,11 @@
 <link rel="stylesheet" type="text/css" href="http://admin.meipin.com/scripts/jQuery-File-Upload/css/jquery.fileupload-ui.css" media="all" />
 <script type="text/javascript" src="http://admin.meipin.com/scripts/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
 <script type="text/javascript" src="http://admin.meipin.com/scripts/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
-
 <script type="text/javascript" src="http://admin.meipin.com/scripts/jQuery-File-Upload/js/jquery.fileupload.js"></script>
 <script>
 	$(document).ready(function () {
 		$('.upload-placeholder').fileupload({
-			url: 'index.php?r=site/upload',
+			url: "{{ URL::to('admin/upload') }}",
 			dataType: 'json',
 			done: function(e, data) {
 				if(data.result.success) {
@@ -23,7 +22,7 @@
 
 @section('content')
 	<h3 class="box-header">添加活动</h3>
-	{{ Form::open(array('url' => 'goods/create', 'method' => 'put', 'class' => 'form-horizontal')) }}
+	{{ Form::open(array('url' => 'goods/create', 'method' => 'post', 'class' => 'form-horizontal')) }}
 		<div class="control-group">
 			<label class="control-label">LOGO</label>
 			<div class="controls">

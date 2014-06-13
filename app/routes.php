@@ -27,6 +27,8 @@ Route::group(['prefix' => 'admin', 'before' => 'admin.auth'], function()
 	// 后台首页
 	Route::get('/', 'AdminController@showIndex');
 	Route::get('logout', array('as' => 'logout', 'uses' => 'AdminController@showLogout'));
+	Route::post('upload', array('as' => 'upload', 'uses' => 'AdminController@showUpload'));
+	Route::get('upload', array('as' => 'upload', 'uses' => 'AdminController@showUpload'));
 
 	Route::group(['prefix' => 'goods'], function ()
 	{
