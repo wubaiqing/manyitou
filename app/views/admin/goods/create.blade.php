@@ -9,20 +9,32 @@
 			url: "{{ URL::to('admin/upload') }}",
 			dataType: 'json',
 			done: function(e, data) {
-				if(data.result.success) {
-					$('#Goods_picture').val(data.result.path);
+				if(data.result) {
+					var id = $(this).attr('data-id');
+					$('input[name="' + id + '"]').val(data.result.data);
 				} else {
-					alert(data.result.message);
+					alert('图片上传失败');
 				}
 			}
 		});
 	});
+
+	$('#Goods_picture').hover(function(){
+		var src = $(this).val();
+		if (src != '') {
+			$('#picture-preview').position($(this).position());
+			$('#picture-preview').attr('src', src).show();
+		}
+	}, function(){
+		$('#picture-preview').hide();
+	});
+
 </script>
 @stop
 
 @section('content')
 	<h3 class="box-header">添加活动</h3>
-	{{ Form::open(array('url' => 'goods/create', 'method' => 'post', 'class' => 'form-horizontal')) }}
+	{{ Form::open(array('url' => @isset($post) ? '/admin/goods/' . $post['id'] . '/edit/' : '/admin/goods/create', 'method' => 'post', 'class' => 'form-horizontal')) }}
 		<div class="control-group">
 			<label class="control-label">LOGO</label>
 			<div class="controls">
@@ -31,8 +43,8 @@
 					<span class="btn fileinput-button">
 						<i class="glyphicon glyphicon-plus"></i>
 						<span>上传</span>
-						<input class="upload-placeholder" type="file" name="file">
-						<img src="about:blank" width="200" style="position: absolute; z-index: 9999; margin-left: 4px;" id="picture-preview" class="hide" />
+						<input class="upload-placeholder" type="file" name="file" data-id="logo">
+						<img src="about:blank" width="200" style="position: absolute; z-index: 9999; margin-left: 4px;" id="picture-preview" />
 					</span>
 				</span>
 			</div>

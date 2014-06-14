@@ -37,6 +37,12 @@ Route::group(['prefix' => 'admin', 'before' => 'admin.auth'], function()
 
 		// 添加商品
 		Route::get('create', 'GoodsController@showCreate');
+
+		// 添加商品
+		Route::post('create', 'GoodsController@showCreate');
+
+		// 添加商品
+		Route::get('edit', 'GoodsController@postGoods');
 	});
 });
 

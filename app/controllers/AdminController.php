@@ -19,18 +19,28 @@ class AdminController extends BaseController
 
 	public function showUpload()
 	{
+		$file = Input::file('file');
 		$client = OSSClient::factory(array(
 			'AccessKeyId' => 'OdJ4QqumwkDsQB9G',
 			'AccessKeySecret' => '3ZVXBVEgDLZcYjcbKywQbn1nYpWInk',
 		));
 
+		$domain = 'http://myt.oss-cn-hangzhou.aliyuncs.com/';
+		$prefixImage = 'images/';
+		$imagePath = date('Y/m/d/');
+		$fileName = $prefixImage . $imagePath . '/' . uniqid() . '.' . $file->getClientOriginalExtension();
+
 		$client->putObject(array(
-			'Bucket' => 'wubaiqing',
-			'Key' => 'images/wubaiqing-test',
-			'Content' => 'This sdfkljasdfkl;asjdfkl;asjdfl;kasjdfl;ksjl;dfis my content',
+			'Bucket' => 'myt',
+			'Key' => $fileName,
+			'Content' => fopen($file->getRealPath(), 'r'),
+			'ContentLength' => $file->getSize(),
 		));
 
-		echo '123';
+		return Response::json([
+			'status' => 1,
+			'data' => $domain . $fileName
+		]);;
 	}
 
 }
