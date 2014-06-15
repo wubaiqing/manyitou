@@ -58,7 +58,7 @@ class SiteController extends BaseController
 		// 商品详情
 		$detail = Goods::getDetail($id);
 
-		$this->layout->content = View::make('upstage.home.detail', [
+		$this->layout->content = View::make('site.detail', [
 			'detail' => $detail
 		]);
 	}

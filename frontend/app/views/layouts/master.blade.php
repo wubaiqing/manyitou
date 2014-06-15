@@ -16,8 +16,9 @@
 	@show
 </head>
 <body>
-	@include('home.top')
+	@include('site.top')
 	@yield('content')
+	@include('layouts.footer')
 	@include('layouts.cnzz')
 </body>
 </html>
