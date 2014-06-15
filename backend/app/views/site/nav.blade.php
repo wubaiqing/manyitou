@@ -21,12 +21,12 @@
 			</h4>
 		</li>
 		<li>
-			<a href="{{ URL::to('goods/create') }}">
+			<a href="{{ URL::to('billboard/create') }}">
 				添加广告
 			</a>
 		</li>
 		<li>
-			<a href="{{ URL::to('goods/admin') }}">
+			<a href="{{ URL::to('billboard/admin') }}">
 				广告管理
 			</a>
 		</li>

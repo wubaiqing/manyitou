@@ -2,7 +2,11 @@
 
 class Billboard extends \Eloquent
 {
-	protected $fillable = [];
+	protected $fillable = [
+		'title',
+		'content',
+		'status'
+	];
 
 	protected $table = 'billboard';
 
@@ -21,6 +25,16 @@ class Billboard extends \Eloquent
 		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () {
 			return Billboard::status()->get();
 		});
+	}
+
+
+	public static function rulesCreate()
+	{
+		return [
+			'title' => 'required',
+			'content' => 'required',
+
+		];
 	}
 
 	/**

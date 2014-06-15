@@ -15,7 +15,7 @@
 		<td>{{ $item->id }}</td>
 		<td><a target="_blank" href="{{ URL::to('detail/' . $item->id . '.html')}}">{{ $item->platform_name }}</a></td>
 		<td><a target="_blank" href="{{ $item->playform_url }}">{{ $item->playform_url }}</a></td>
-		<td>修改 | 删除</td>
+		<td><a href="{{ URL::to('goods/update', ['id' => $item->id]) }}">修改</a> | <a href="{{ URL::to('goods/delete', ['id' => $item->id]) }}">删除</a></td>
 	</tr>
 	@endforeach
 	</tbody>

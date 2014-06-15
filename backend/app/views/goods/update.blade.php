@@ -41,8 +41,9 @@
 @stop
 
 @section('content')
+
 	<h3 class="box-header">添加活动</h3>
-	{{ Form::open(array('url' => 'goods/create', 'method' => 'post', 'class' => 'form-horizontal')) }}
+	{{ Form::open(array('url' => 'goods/update/' . $model->id, 'method' => 'post', 'class' => 'form-horizontal')) }}
 
 		@if ($errors->all())
 		<div class="control-group">
@@ -59,7 +60,7 @@
 		<div class="control-group">
 			<label class="control-label">LOGO</label>
 			<div class="controls">
-				{{ Form::text('logo', Input::old('logo')) }}
+				{{ Form::text('logo', Input::old('logo', $model->logo)) }}
 				<span class="help-inline">
 					<span class="btn fileinput-button">
 						<i class="glyphicon glyphicon-plus"></i>
@@ -72,7 +73,7 @@
 		<div class="control-group">
 			<label class="control-label">展示广告位</label>
 			<div class="controls">
-				{{ Form::text('claim_image', Input::old('claim_image')) }}
+				{{ Form::text('claim_image', Input::old('claim_image', $model->claim_image)) }}
 				<span class="help-inline">
 					<span class="btn fileinput-button">
 						<i class="glyphicon glyphicon-plus"></i>
@@ -86,44 +87,47 @@
 		<div class="control-group">
 			<label class="control-label">平台名称</label>
 			<div class="controls">
-				{{ Form::text('platform_name', Input::old('platform_name')) }}
+				{{ Form::text('platform_name', Input::old('platform_name', $model->platform_name)) }}
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label">平台URL</label>
 			<div class="controls">
-				{{ Form::text('playform_url', Input::old('playform_url')) }}
+				{{ Form::text('playform_url', Input::old('playform_url', $model->playform_url)) }}
 			</div>
 		</div>
+
 		<div class="control-group">
 			<label class="control-label">平台描述（首页）</label>
 			<div class="controls">
-				{{ Form::textArea('playform_sort_desc', Input::old('playform_sort_desc'), ['class' => 'span5', 'rows' => '4']) }}
+				{{ Form::textArea('playform_sort_desc', Input::old('playform_sort_desc', $model->playform_sort_desc), ['class' => 'span5', 'rows' => '4']) }}
 			</div>
 		</div>
-		<div class="control-group">
-			<label class="control-label">平台描述（详情）</label>
-			<div class="controls">
-				{{ Form::textArea('playform_desc', Input::old('playform_desc'), ['class' => 'span5', 'rows' => '3', 'id' => 'playform_desc', 'style' => 'height:220px']) }}
-			</div>
-		</div>
+
 		<div class="control-group">
 			<label class="control-label">规则</label>
 			<div class="controls">
-				{{ Form::textArea('rules', Input::old('rules'), ['class' => 'span5', 'rows' => '3', 'id' => 'rules', 'style' => 'height:220px']) }}
+				{{ Form::textArea('rules', Input::old('rules', $model->rules), ['class' => 'span5', 'rows' => '3', 'id' => 'rules', 'style' => 'height:220px']) }}
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label">平台描述（详情）</label>
+			<div class="controls">
+				{{ Form::textArea('playform_desc', Input::old('playform_desc', $model->playform_desc), ['class' => 'span5', 'rows' => '3', 'id' => 'playform_desc', 'style' => 'height:220px']) }}
 			</div>
 		</div>
 
 		<div class="control-group">
 			<label class="control-label">价格</label>
 			<div class="controls">
-				{{ Form::textArea('price_text', null, ['class' => 'span5', 'rows' => '3 ', 'id' => 'price_text', 'style' => 'height:220px']) }}
+				{{ Form::textArea('price_text', Input::old('price_text', $model->price_text), ['class' => 'span5', 'rows' => '3 ', 'id' => 'price_text', 'style' => 'height:220px']) }}
 			</div>
 		</div>
 		<div class="control-group">
 			<label class="control-label">状态</label>
 			<div class="controls">
-				{{ Form::select('status', ['1' => '在售', '0' => '停售']) }}
+				{{ Form::select('status', ['1' => '在售', '0' => '停售'], Input::old('status', $model->status)) }}
 			</div>
 		</div>
 		<div class="form-actions">

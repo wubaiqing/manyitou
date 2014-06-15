@@ -6,6 +6,7 @@ class BillboardController extends BaseController
 	public function showDetail($id)
 	{
 		$detail = Billboard::getDetail($id);
+
 		$this->layout->content = View::make('upstage.home.billboard', [
 			'detail' => $detail
 		]);
