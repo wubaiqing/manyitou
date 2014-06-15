@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>满意投 - 各大U站平台秒上！</title>
+	<title>满意投—打造国内最大的电商资源广告联盟</title>
 	<link rel="stylesheet" type="text/css" href="{{ asset('static/css/base-min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('static/css/index.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('static/css/page.css') }}">
