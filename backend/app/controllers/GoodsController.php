@@ -1,11 +1,10 @@
 <?php
 /**
- * 满意投后台商品管理
+ * 后台-商品管理
  * @author wubaiqing<wubaiqing@vip.qq.com>
- * @copyright Copyright (c) 2013 今天值得买
+ * @copyright Copyright (c) 2014 满意投
  * @since 1.0
  */
-
 use \Aliyun\OSS\OSSClient;
 
 class GoodsController extends BaseController

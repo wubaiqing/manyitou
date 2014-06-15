@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * ------------------------------------------
+ * ID参数匹配规则
+ * ------------------------------------------
+ */
 Route::pattern('id', '[0-9]+');
 
 /**
@@ -10,7 +15,6 @@ Route::pattern('id', '[0-9]+');
 Route::get('/', 'SiteController@login');
 Route::post('/', 'SiteController@login');
 Route::get('logout', array('uses' => 'SiteController@logout'));
-
 
 /**
  * ------------------------------------------
@@ -44,23 +48,18 @@ Route::group(['prefix' => 'goods', 'before' => 'admin.auth'], function ()
  */
 Route::group(['prefix' => 'billboard', 'before' => 'admin.auth'], function ()
 {
-	// 添加商品
-	Route::get('create', 'BillboardController@showCreate');
-
-	// 添加商品POST
-	Route::post('create', 'BillboardController@showCreate');
-
-	// 添加商品POST
-	Route::get('update/{id}', 'BillboardController@showUpdate');
-
-	// 添加商品POST
-	Route::post('update/{id}', 'BillboardController@showUpdate');
-
-	// 删除get
-	Route::get('delete/{id}', 'BillboardController@showDelete');
-
 	// 商品列表
-	Route::get('admin', 'BillboardController@showAdmin');
-});
+	Route::get('admin', 'BillboardController@admin');
 
+	// 添加公告
+	Route::get('create', 'BillboardController@create');
+	Route::post('create', 'BillboardController@create');
+
+	// 修改公告
+	Route::get('update/{id}', 'BillboardController@update');
+	Route::post('update/{id}', 'BillboardController@update');
+
+	// 删除公告
+	Route::get('delete/{id}', 'BillboardController@delete');
+});
 

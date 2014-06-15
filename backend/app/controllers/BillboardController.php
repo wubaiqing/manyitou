@@ -1,21 +1,29 @@
 <?php
-
-
+/**
+ * 后台-公告管理
+ * @author wubaiqing<wubaiqing@vip.qq.com>
+ * @copyright Copyright (c) 2014 满意投
+ * @since 1.0
+ */
 class BillboardController extends BaseController
 {
-	protected $layout = 'layouts.admin';
-
+	/**
+	 * @var string 继承master视图
+	 */
+	protected $layout = 'layouts.master';
 
 	/**
-	 * 自定义验证消息
-	 * @var array
+	 * @var array 自定义验证消息
 	 */
 	protected $validatorMessages = array(
 		'title.required' => '请填写标题',
 		'content.required' => '请填写内容',
 	);
 
-	public function showAdmin()
+	/**
+	 * 公告管理
+	 */
+	public function admin()
 	{
 		$billboard = Billboard::where('status', '=', '1')->orderBy('id', 'desc')->paginate(10);
 		$this->layout->content = View::make('billboard.index', [
@@ -23,7 +31,10 @@ class BillboardController extends BaseController
 		]);
 	}
 
-	public function showCreate()
+	/**
+	 * 创建公告
+	 */
+	public function create()
 	{
 		$model = new Billboard();
 		$post = Input::all();
@@ -43,7 +54,11 @@ class BillboardController extends BaseController
 		$this->layout->content = View::make('billboard.create');
 	}
 
-	public function showUpdate($id)
+	/**
+	 * 修改公告
+	 * @param int $id 公告ID
+	 */
+	public function update($id)
 	{
 		$model = Billboard::find($id);
 		$post = Input::all();
@@ -63,7 +78,11 @@ class BillboardController extends BaseController
 		$this->layout->content = View::make('billboard.update')->with(compact('model', $model));
 	}
 
-	public function showDelete($id)
+	/**
+	 * 删除公告
+	 * @param int $id 公告ID
+	 */
+	public function delete($id)
 	{
 		$model = Billboard::find($id);
 		$model->status = 0;
