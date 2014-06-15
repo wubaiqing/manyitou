@@ -24,7 +24,7 @@ Route::group(['prefix' => 'admin', 'before' => 'admin.auth'], function()
 Route::group(['prefix' => 'goods', 'before' => 'admin.auth'], function ()
 {
 	// 添加商品
-	Route::get('/', 'GoodsController@showIndex');
+	Route::get('admin', 'GoodsController@showAdmin');
 
 	// 添加商品
 	Route::get('create', 'GoodsController@showCreate');
@@ -41,5 +41,6 @@ Route::group(['prefix' => 'goods', 'before' => 'admin.auth'], function ()
  * 登陆
  * ------------------------------------------
  */
-Route::get('/', 'SiteController@showIndex');
-Route::post('login', 'SiteController@showLogin');
+Route::get('/', 'SiteController@showLogin');
+Route::post('/', 'SiteController@showLogin');
+Route::get('logout', array('as' => 'logout', 'uses' => 'SiteController@showLogout'));

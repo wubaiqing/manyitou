@@ -13,7 +13,7 @@
 <body>
 <div class="container-fluid">
 	<div class="row-fluid btn-block">
-		@include('admin.nav')
+		@include('site.nav')
 		<div class="span10">
 			<div class="box">
 				@yield('content')

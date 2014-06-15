@@ -4,20 +4,29 @@ class SiteController extends BaseController
 {
 	protected $layout = 'layouts.roles';
 
-	public function showIndex()
+	public function showLogin()
 	{
 		if (Auth::check()) {
-			return Redirect::intended('admin/goods');
+			return Redirect::intended('goods/admin');
+		}
+
+		$post = Input::all();
+		if (!empty($post)) {
+			if (Auth::attempt(['username' => Input::get('name'), 'password' => Input::get('password')]))
+			{
+				return Redirect::intended('goods/admin');
+			}
+			return Redirect::to('/')->with('error', '用户名密码错误');
 		}
 		$this->layout->content = View::make('upstage.roles.login');
 	}
 
-	public function showLogin()
+	public function showLogout()
 	{
-		if (Auth::attempt(['username' => Input::get('name'), 'password' => Input::get('password')]))
-		{
-			return Redirect::intended('admin/goods');
-		}
-		return Redirect::to('roles')->with('error', '用户名密码错误');
+		Auth::logout();
+		return Redirect::to('/');
 	}
+
+
+
 }
