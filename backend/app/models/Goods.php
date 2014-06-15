@@ -1,7 +1,20 @@
 <?php
+/**
+ * 满意投后台商品模型
+ * @author wubaiqing<wubaiqing@vip.qq.com>
+ * @copyright Copyright (c) 2013 今天值得买
+ * @since 1.0
+ */
+class Goods extends \Eloquent
+{
+	/**
+	 * @var string 表名
+	 */
+	protected $table = 'goods';
 
-class Goods extends \Eloquent {
-
+	/**
+	 * @var array 允许填充字段
+	 */
 	protected $fillable = [
 		'logo',
 		'rules',
@@ -14,39 +27,10 @@ class Goods extends \Eloquent {
 		'status',
 	];
 
-
-	protected $table = 'goods';
-
-	public function scopeIndex($query)
-	{
-		return $query->where('status', '=' ,'1')->orderBy('id', 'DESC');
-	}
-
 	/**
-	 * 首页商品列表
-	 * @return mixed
+	 * 创建商品规则
+	 * @return array
 	 */
-	public static function getIndex()
-	{
-		$cacheKey = 'get-index-'.Input::get('page');
-		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () {
-			return Goods::index()->paginate(Config::get('workbench.indexPageSize'))->toArray();
-		});
-	}
-
-	/**
-	 * 首页商品详情
-	 * @param int $id
-	 * @return mixed
-	 */
-	public static function getDetail($id)
-	{
-		$cacheKey = 'get-detail-'.$id;
-		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () use($id) {
-			return Goods::find($id);
-		});
-	}
-
 	public static function rulesCreate()
 	{
 		return [

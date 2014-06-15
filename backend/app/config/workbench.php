@@ -43,4 +43,10 @@ return array(
 	 */
 	'cacheTime' => 3600,
 
+	/**
+	 * 阿里云-云存储OSS信息
+	 */
+	'accessKeyId' => 'OdJ4QqumwkDsQB9G',
+	'accessKeySecret' => '3ZVXBVEgDLZcYjcbKywQbn1nYpWInk',
+
 );

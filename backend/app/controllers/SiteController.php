@@ -8,7 +8,7 @@
 class SiteController extends BaseController
 {
 	/**
-	 * @var string 继承视图
+	 * @var string 继承login视图
 	 */
 	protected $layout = 'layouts.login';
 

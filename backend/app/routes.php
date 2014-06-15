@@ -4,18 +4,6 @@ Route::pattern('id', '[0-9]+');
 
 /**
  * ------------------------------------------
- * 后台首页
- * ------------------------------------------
- */
-Route::group(['prefix' => 'admin', 'before' => 'admin.auth'], function()
-{
-	// 后台首页
-	Route::get('/', 'AdminController@showIndex');
-	Route::get('logout', array('as' => 'logout', 'uses' => 'AdminController@showLogout'));
-});
-
-/**
- * ------------------------------------------
  * 登陆页
  * ------------------------------------------
  */
@@ -31,27 +19,22 @@ Route::get('logout', array('uses' => 'SiteController@logout'));
  */
 Route::group(['prefix' => 'goods', 'before' => 'admin.auth'], function ()
 {
-	// 添加商品
-	Route::get('create', 'GoodsController@showCreate');
-
-	// 添加商品POST
-	Route::post('create', 'GoodsController@showCreate');
-
-	// 添加商品POST
-	Route::get('delete/{id}', 'GoodsController@showDelete');
-
-
-	// 添加商品POST
-	Route::get('update/{id}', 'GoodsController@showUpdate');
-
-	// 添加商品POST
-	Route::post('update/{id}', 'GoodsController@showUpdate');
-
 	// 商品列表
-	Route::get('admin', 'GoodsController@showAdmin');
+	Route::get('admin', 'GoodsController@admin');
+
+	// 添加商品
+	Route::get('create', 'GoodsController@create');
+	Route::post('create', 'GoodsController@create');
+
+	// 修改商品
+	Route::get('update/{id}', 'GoodsController@update');
+	Route::post('update/{id}', 'GoodsController@update');
+
+	// 删除商品
+	Route::get('delete/{id}', 'GoodsController@delete');
 
 	// 上传图片
-	Route::post('upload', array('as' => 'upload', 'uses' => 'GoodsController@showUpload'));
+	Route::post('upload', array('uses' => 'GoodsController@upload'));
 });
 
 /**
