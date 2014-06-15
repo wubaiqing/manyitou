@@ -19,13 +19,19 @@
 	},
 	"autoload": {
 		"classmap": [
-			"app/commands",
-			"app/controllers",
-			"app/models",
-			"app/database/migrations",
-			"app/database/seeds",
-			"app/tests/TestCase.php"
-		],
+			"frontend/app/commands",
+			"frontend/app/controllers",
+			"frontend/app/models",
+			"frontend/app/database/migrations",
+			"frontend/app/database/seeds",
+			"frontend/app/tests/TestCase.php",
+            "backend/app/commands",
+            "backend/app/controllers",
+            "backend/app/models",
+            "backend/app/database/migrations",
+            "backend/app/database/seeds",
+            "backend/app/tests/TestCase.php"
+        ],
 		"psr-0" : {
 			"Aliyun" : "vendor/src/"
 		}
