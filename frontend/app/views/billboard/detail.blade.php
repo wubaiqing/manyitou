@@ -20,7 +20,5 @@
 		</div>
 	</div>
 
-	@include('home.footer')
-
 @stop
 
