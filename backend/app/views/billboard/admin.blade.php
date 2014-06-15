@@ -13,7 +13,10 @@
 	<tr>
 		<td width="60">{{ $item->id }}</td>
 		<td>{{ Str::limit($item->title, 60, '...') }}</td>
-		<td width="80"><a href="{{ URL::to('billboard/update', ['id' => $item->id]) }}">修改</a> | <a href="{{ URL::to('billboard/delete', ['id' => $item->id]) }}">删除</a></td>
+		<td width="80">
+			<a href="{{ URL::to('billboard/update', ['id' => $item->id]) }}">修改</a> |
+			<a href="{{ URL::to('billboard/delete', ['id' => $item->id]) }}">删除</a>
+		</td>
 	</tr>
 	@endforeach
 	</tbody>

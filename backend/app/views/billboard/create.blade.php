@@ -11,8 +11,10 @@
 @stop
 
 @section('content')
-	<h3 class="box-header">添加公告</h3>
+
 	{{ Form::open(array('url' => 'billboard/create', 'method' => 'post', 'class' => 'form-horizontal')) }}
+
+		<h3 class="box-header">添加公告</h3>
 
 		@if ($errors->all())
 		<div class="control-group">
@@ -32,7 +34,6 @@
 			</div>
 		</div>
 
-
 		<div class="control-group">
 			<label class="control-label">公告内容</label>
 			<div class="controls">
@@ -40,9 +41,11 @@
 			</div>
 		</div>
 
-{{ Form::hidden('status', 1)  }}
+		{{ Form::hidden('status', 1)  }}
+
 		<div class="form-actions">
 			{{ Form::submit('添加', ['class' => 'btn btn-primary save']) }}
 		</div>
-{{ Form::close() }}
+
+	{{ Form::close() }}
 @stop

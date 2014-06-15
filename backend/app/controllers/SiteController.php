@@ -48,6 +48,8 @@ class SiteController extends BaseController
 	 */
 	public function clearCache()
 	{
-		Cache::flush();
+		exec(__DIR__ . '/../../artisan cache:clear');
+		exec(__DIR__ . '/../../../backend/artisan cache:clear');
+		return Redirect::to('/');
 	}
 }

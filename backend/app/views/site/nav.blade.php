@@ -36,6 +36,11 @@
 			</h4>
 		</li>
 		<li>
+			<a href="{{ URL::to('clearCache') }}">
+				清空缓存
+			</a>
+		</li>
+		<li>
 			<a href="{{ URL::to('logout') }}">
 				退出登陆
 			</a>
