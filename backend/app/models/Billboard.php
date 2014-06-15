@@ -1,33 +1,30 @@
 <?php
-
+/**
+ * 后台-公告模型
+ * @author wubaiqing<wubaiqing@vip.qq.com>
+ * @copyright Copyright (c) 2014 满意投
+ * @since 1.0
+ */
 class Billboard extends \Eloquent
 {
+	/**
+	 * @var string 表名
+	 */
+	protected $table = 'billboard';
+
+	/**
+	 * @var array 允许填充字段
+	 */
 	protected $fillable = [
 		'title',
 		'content',
 		'status'
 	];
 
-	protected $table = 'billboard';
-
-	public function scopeStatus($query)
-	{
-		return $query->where('deleted_at', '=' ,'0');
-	}
-
 	/**
-	 * 首页商品列表
-	 * @return mixed
+	 * 创建商品规则
+	 * @return array
 	 */
-	public static function getIndex()
-	{
-		$cacheKey = 'get-billboard-list';
-		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () {
-			return Billboard::status()->get();
-		});
-	}
-
-
 	public static function rulesCreate()
 	{
 		return [
@@ -35,18 +32,5 @@ class Billboard extends \Eloquent
 			'content' => 'required',
 
 		];
-	}
-
-	/**
-	 * 首页商品详情
-	 * @param int $id
-	 * @return mixed
-	 */
-	public static function getDetail($id)
-	{
-		$cacheKey = 'get-billboard-detail-'.$id;
-		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () use($id) {
-			return Billboard::find($id);
-		});
 	}
 }

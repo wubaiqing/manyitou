@@ -26,7 +26,7 @@ class BillboardController extends BaseController
 	public function admin()
 	{
 		$billboard = Billboard::where('status', '=', '1')->orderBy('id', 'desc')->paginate(10);
-		$this->layout->content = View::make('billboard.index', [
+		$this->layout->content = View::make('billboard.admin', [
 			'billboard' => $billboard
 		]);
 	}
