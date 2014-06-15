@@ -1,5 +1,7 @@
 <?php
 
+use \Aliyun\OSS\OSSClient;
+
 class GoodsController extends BaseController
 {
 	protected $layout = 'layouts.admin';
@@ -14,27 +16,22 @@ class GoodsController extends BaseController
 
 	public function showCreate()
 	{
+		$model = new Goods;
 		$post = Input::all();
-		$post = Input::except('_token');
 
 		if (!empty($post)) {
-			$model = new Goods;
-			foreach ($post as $key => $value) {
-				$model->setAttribute($key, $value);
+			$model->fill($post);
+			$validator = Validator::make($post, Goods::rulesCreate(), ['required' => '属性 :attribute 不能为空.']);
+			if ($validator->fails()) {
+				return Redirect::to('goods/create')->withInput()->withErrors($validator);
 			}
+
 			if ($model->save()) {
 				return Redirect::to('goods/admin');
 			}
 
 		}
 		$this->layout->content = View::make('goods.create');
-	}
-
-	public function postGoods()
-	{
-		var_dump(Input::all());
-		exit;
-
 	}
 
 	public function showUpload()
@@ -50,11 +47,16 @@ class GoodsController extends BaseController
 		$imagePath = date('Y/m/d/');
 		$fileName = $prefixImage . $imagePath . '/' . uniqid() . '.' . $file->getClientOriginalExtension();
 
+		$size = $file->getSize();
+		if ($size == false) {
+			$size = filesize($file->getRealPath());
+		}
+		
 		$client->putObject(array(
 			'Bucket' => 'myt',
 			'Key' => $fileName,
 			'Content' => fopen($file->getRealPath(), 'r'),
-			'ContentLength' => $file->getSize(),
+			'ContentLength' => $size,
 		));
 
 		return Response::json([

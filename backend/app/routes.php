@@ -17,23 +17,22 @@ Route::group(['prefix' => 'admin', 'before' => 'admin.auth'], function()
 	// 后台首页
 	Route::get('/', 'AdminController@showIndex');
 	Route::get('logout', array('as' => 'logout', 'uses' => 'AdminController@showLogout'));
-	Route::post('upload', array('as' => 'upload', 'uses' => 'AdminController@showUpload'));
 
 });
 
 Route::group(['prefix' => 'goods', 'before' => 'admin.auth'], function ()
 {
 	// 添加商品
-	Route::get('admin', 'GoodsController@showAdmin');
-
-	// 添加商品
 	Route::get('create', 'GoodsController@showCreate');
 
-	// 添加商品
+	// 添加商品POST
 	Route::post('create', 'GoodsController@showCreate');
 
-	// 添加商品
-	Route::get('edit', 'GoodsController@postGoods');
+	// 商品列表
+	Route::get('admin', 'GoodsController@showAdmin');
+
+	// 上传图片
+	Route::post('upload', array('as' => 'upload', 'uses' => 'GoodsController@showUpload'));
 });
 
 /**
