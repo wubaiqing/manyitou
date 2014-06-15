@@ -26,6 +26,7 @@ class GoodsController extends BaseController
 		'playform_url.required' => '请填写平台URL',
 		'claim_image.required' => '请上传展示广告位图片',
 		'price_text.required' => '请填写价格',
+		'order.required' => '请填排序',
 	);
 
 	/**

@@ -25,6 +25,7 @@ class Goods extends \Eloquent
 		'claim_image',
 		'price_text',
 		'status',
+		'order'
 	];
 
 	/**
@@ -43,6 +44,7 @@ class Goods extends \Eloquent
 			'claim_image' => 'required',
 			'price_text' => 'required',
 			'status' => 'required',
+			'order' => 'required'
 		];
 	}
 

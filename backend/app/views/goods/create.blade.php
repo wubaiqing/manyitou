@@ -96,6 +96,12 @@
 			</div>
 		</div>
 		<div class="control-group">
+			<label class="control-label">排序</label>
+			<div class="controls">
+				{{ Form::text('order', Input::old('order')) }}
+			</div>
+		</div>
+		<div class="control-group">
 			<label class="control-label">平台描述（首页）</label>
 			<div class="controls">
 				{{ Form::textArea('playform_sort_desc', Input::old('playform_sort_desc'), ['class' => 'span5', 'rows' => '4']) }}
