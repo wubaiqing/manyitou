@@ -7,7 +7,6 @@
 	<div class="site-nav">
 		<ul class="quick-menu">
 			<li class="index"><a target="_top" href="/" onclick="a_click(this)"><span><i></i>首页</span></a></li>
-			<li class="help"><a target="_top" href="javascript:void(0);"><span>帮助中心</span></a></li>
 		</ul>
 	</div>
 </div>

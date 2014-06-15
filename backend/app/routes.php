@@ -1,10 +1,5 @@
 <?php
 
-/**
- * ------------------------------------------
- * Route constraint patterns
- * ------------------------------------------
- */
 Route::pattern('id', '[0-9]+');
 
 /**
@@ -21,12 +16,12 @@ Route::group(['prefix' => 'admin', 'before' => 'admin.auth'], function()
 
 /**
  * ------------------------------------------
- * 登陆
+ * 登陆页
  * ------------------------------------------
  */
-Route::get('/', 'SiteController@showLogin');
-Route::post('/', 'SiteController@showLogin');
-Route::get('logout', array('as' => 'logout', 'uses' => 'SiteController@showLogout'));
+Route::get('/', 'SiteController@login');
+Route::post('/', 'SiteController@login');
+Route::get('logout', array('uses' => 'SiteController@logout'));
 
 
 /**
@@ -51,9 +46,6 @@ Route::group(['prefix' => 'goods', 'before' => 'admin.auth'], function ()
 
 	// 添加商品POST
 	Route::post('update/{id}', 'GoodsController@showUpdate');
-
-
-
 
 	// 商品列表
 	Route::get('admin', 'GoodsController@showAdmin');

@@ -42,7 +42,7 @@
 
 @section('content')
 
-	<h3 class="box-header">添加活动</h3>
+	<h3 class="box-header">修改活动</h3>
 	{{ Form::open(array('url' => 'goods/update/' . $model->id, 'method' => 'post', 'class' => 'form-horizontal')) }}
 
 		@if ($errors->all())
@@ -131,7 +131,7 @@
 			</div>
 		</div>
 		<div class="form-actions">
-			{{ Form::submit('添加', ['class' => 'btn btn-primary save']) }}
+			{{ Form::submit('修改', ['class' => 'btn btn-primary save']) }}
 		</div>
 {{ Form::close() }}
 @stop

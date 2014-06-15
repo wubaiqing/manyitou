@@ -17,17 +17,17 @@
 		</li>
 		<li class="nav-header">
 			<h4>
-				广告管理
+				公告管理
 			</h4>
 		</li>
 		<li>
 			<a href="{{ URL::to('billboard/create') }}">
-				添加广告
+				添加公告
 			</a>
 		</li>
 		<li>
 			<a href="{{ URL::to('billboard/admin') }}">
-				广告管理
+				公告管理
 			</a>
 		</li>
 		<li class="nav-header">

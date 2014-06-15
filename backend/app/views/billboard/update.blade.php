@@ -11,7 +11,7 @@
 @stop
 
 @section('content')
-<h3 class="box-header">添加公告</h3>
+<h3 class="box-header">修改公告</h3>
 {{ Form::open(array('url' => 'billboard/update/' . $model->id, 'method' => 'post', 'class' => 'form-horizontal')) }}
 
 @if ($errors->all())
@@ -42,7 +42,7 @@
 {{ Form::hidden('status', 1)  }}
 
 <div class="form-actions">
-	{{ Form::submit('添加', ['class' => 'btn btn-primary save']) }}
+	{{ Form::submit('修改', ['class' => 'btn btn-primary save']) }}
 </div>
 {{ Form::close() }}
 @stop

@@ -8,7 +8,7 @@ class Billboard extends \Eloquent
 
 	public function scopeStatus($query)
 	{
-		return $query->where('deleted_at', '=' ,'0');
+		return $query->where('status', '=' ,'1');
 	}
 
 	/**
@@ -19,7 +19,7 @@ class Billboard extends \Eloquent
 	{
 		$cacheKey = 'get-billboard-list';
 		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () {
-			return Billboard::status()->get();
+			return Billboard::status()->paginate(4)->getItems();
 		});
 	}
 
