@@ -99,7 +99,7 @@
 		<div class="control-group">
 			<label class="control-label">排序</label>
 			<div class="controls">
-				{{ Form::text('order', Input::old('order')) }}
+				{{ Form::text('order', Input::old('order', $model->order)) }}
 			</div>
 		</div>
 
