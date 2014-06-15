@@ -96,6 +96,12 @@
 				{{ Form::text('playform_url', Input::old('playform_url', $model->playform_url)) }}
 			</div>
 		</div>
+		<div class="control-group">
+			<label class="control-label">排序</label>
+			<div class="controls">
+				{{ Form::text('order', Input::old('order')) }}
+			</div>
+		</div>
 
 		<div class="control-group">
 			<label class="control-label">平台描述（首页）</label>
