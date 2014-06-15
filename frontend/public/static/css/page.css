@@ -1,0 +1,44 @@
+.page {
+  text-align: center;
+}
+.page .pagination {
+  clear: both;
+  height: 40px;
+  line-height: 40px;
+}
+.page .pagination li {
+  display: inline-block;
+  width: 30px;
+}
+#deal-record {
+  padding: 20px;
+}
+#billboard {
+  width: 998px;
+  margin: 0 auto;
+  height: 120px;
+  line-height: 42px;
+  background: #F5F5F5;
+  border: 1px solid #D8D8D8;
+  margin-top: 10px;
+}
+#billboard h3 {
+  font-weight: bold;
+  display: block;
+  text-indent: 11px;
+  height: 30px;
+  line-height: 30px;
+}
+#billboard ul {
+  width: 980px;
+  margin-left: 10px;
+}
+#billboard li {
+  float: left;
+  width: 450px;
+  overflow: hidden;
+}
+#billboard li a {
+  color: #0087BF;
+  text-indent: 30px;
+}
