@@ -1,11 +1,14 @@
 <?php
 
-class RolesController extends BaseController
+class SiteController extends BaseController
 {
 	protected $layout = 'layouts.roles';
 
 	public function showIndex()
 	{
+		if (Auth::check()) {
+			return Redirect::intended('admin/goods');
+		}
 		$this->layout->content = View::make('upstage.roles.login');
 	}
 
