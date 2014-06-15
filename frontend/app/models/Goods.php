@@ -19,7 +19,7 @@ class Goods extends \Eloquent {
 
 	public function scopeIndex($query)
 	{
-		return $query->where('status', '=' ,'1')->orderBy('id', 'DESC');
+		return $query->where('status', '=' ,'1')->orderBy('order', 'DESC')->orderBy('id', 'DESC');
 	}
 
 	/**
