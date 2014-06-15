@@ -76,7 +76,5 @@
 	</div>
 <!-- End 商品列表 -->
 
-@include('home.footer')
-
 @stop
 
