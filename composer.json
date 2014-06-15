@@ -18,23 +18,9 @@
 		"symfony/event-dispatcher": "2.6.*@dev"
 	},
 	"autoload": {
-		"classmap": [
-			"frontend/app/commands",
-			"frontend/app/controllers",
-			"frontend/app/models",
-			"frontend/app/database/migrations",
-			"frontend/app/database/seeds",
-			"frontend/app/tests/TestCase.php",
-            "backend/app/commands",
-            "backend/app/controllers",
-            "backend/app/models",
-            "backend/app/database/migrations",
-            "backend/app/database/seeds",
-            "backend/app/tests/TestCase.php"
-        ],
 		"psr-0" : {
 			"Aliyun" : "vendor/src/"
-		}
+		},
 	},
 	"scripts": {
 		"post-install-cmd": [

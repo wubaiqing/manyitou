@@ -6,19 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'AdminController' => $baseDir . '/backend/app/controllers/AdminController.php',
-    'BaseController' => $baseDir . '/backend/app/controllers/BaseController.php',
-    'Billboard' => $baseDir . '/backend/app/models/Billboard.php',
-    'BillboardController' => $baseDir . '/backend/app/controllers/BillboardController.php',
-    'DatabaseSeeder' => $baseDir . '/backend/app/database/seeds/DatabaseSeeder.php',
-    'Goods' => $baseDir . '/backend/app/models/Goods.php',
-    'GoodsController' => $baseDir . '/backend/app/controllers/GoodsController.php',
     'IlluminateQueueClosure' => $vendorDir . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
-    'SiteController' => $baseDir . '/backend/app/controllers/SiteController.php',
-    'TestCase' => $baseDir . '/backend/app/tests/TestCase.php',
-    'User' => $baseDir . '/backend/app/models/User.php',
-    'Zhe800Fetch' => $baseDir . '/backend/app/models/Zhe800Fetch.php',
     'simple_html_dom' => $vendorDir . '/shark/simple_html_dom/simple_html_dom.php',
     'simple_html_dom_node' => $vendorDir . '/shark/simple_html_dom/simple_html_dom.php',
 );
