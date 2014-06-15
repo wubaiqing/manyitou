@@ -1,6 +1,6 @@
 <?php
 /**
- * 后台-控制器
+ * 前台-控制器
  * @author wubaiqing<wubaiqing@vip.qq.com>
  * @copyright Copyright (c) 2014 满意投
  * @since 1.0
