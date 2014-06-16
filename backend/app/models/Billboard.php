@@ -30,7 +30,6 @@ class Billboard extends \Eloquent
 		return [
 			'title' => 'required',
 			'content' => 'required',
-
 		];
 	}
 }

@@ -73,7 +73,6 @@ class BillboardController extends BaseController
 			if ($model->save()) {
 				return Redirect::to('billboard/admin');
 			}
-
 		}
 		$this->layout->content = View::make('billboard.update')->with(compact('model', $model));
 	}
@@ -90,5 +89,4 @@ class BillboardController extends BaseController
 			return Redirect::to('billboard/admin');
 		}
 	}
-
 }

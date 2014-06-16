@@ -26,11 +26,12 @@ class SiteController extends BaseController
 		$post = Input::all();
 		if (!empty($post)) {
 			// 验证账户信息
-			if (Auth::attempt(['username' => Input::get('name'), 'password' => Input::get('password')])) {
+			if (Auth::attempt(['username' => $post['name'], 'password' => $post['password']])) {
 				return Redirect::intended('goods/admin');
 			}
 			return Redirect::to('/')->with('error', '用户名密码错误');
 		}
+
 		$this->layout->content = View::make('site.login');
 	}
 
