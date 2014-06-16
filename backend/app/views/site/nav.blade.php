@@ -32,6 +32,21 @@
 		</li>
 		<li class="nav-header">
 			<h4>
+				Banner
+			</h4>
+		</li>
+		<li>
+			<a href="{{ URL::to('banner/create') }}">
+				添加BANNER
+			</a>
+		</li>
+		<li>
+			<a href="{{ URL::to('banner/admin') }}">
+				管理BANNER
+			</a>
+		</li>
+		<li class="nav-header">
+			<h4>
 				系统
 			</h4>
 		</li>
