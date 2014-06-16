@@ -17,11 +17,6 @@ class SiteController extends BaseController
 	 */
 	public function login()
 	{
-		// 验证用户是否登陆
-		if (Auth::check()) {
-			return Redirect::intended('goods/admin');
-		}
-
 		// 提交登陆
 		$post = Input::all();
 		if (!empty($post)) {

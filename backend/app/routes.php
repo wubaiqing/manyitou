@@ -9,19 +9,12 @@ Route::pattern('id', '[0-9]+');
 
 /**
  * ------------------------------------------
- * 登陆页
+ * 登陆、退出、缓存
  * ------------------------------------------
  */
-Route::get('/', 'SiteController@login');
-Route::post('/', 'SiteController@login');
-Route::get('logout', array('uses' => 'SiteController@logout'));
-
-/**
- * ------------------------------------------
- * 缓存管理
- * ------------------------------------------
- */
-Route::get('clearCache', array('uses' => 'SiteController@clearCache'));
+Route::any('/', ['before' => 'admin.isLogin', 'uses' => 'SiteController@login']);
+Route::get('logout', ['uses' => 'SiteController@logout']);
+Route::get('clearCache', ['before' => 'admin.auth' ,'uses' => 'SiteController@clearCache']);
 
 /**
  * ------------------------------------------
@@ -65,4 +58,3 @@ Route::group(['prefix' => 'billboard', 'before' => 'admin.auth'], function ()
 	// 删除公告
 	Route::get('delete/{id}', 'BillboardController@delete');
 });
-

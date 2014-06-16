@@ -35,9 +35,16 @@ App::after(function($request, $response)
 
 Route::filter('admin.auth', function()
 {
-	if (Auth::guest()) return Redirect::guest('roles');
+	if (Auth::guest()) return Redirect::guest('/');
 });
 
+Route::filter('admin.isLogin', function ()
+{
+	// 验证用户是否登陆
+	if (Auth::check()) {
+		return Redirect::intended('goods/admin');
+	}
+});
 
 Route::filter('auth.basic', function()
 {
