@@ -10,55 +10,52 @@
 				<ul class="info_ul">
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/31" target="_blank">
-								<img src="http://cdn.hzjianshi.com/Public/upload/images/526e68c4b9e5b.jpg" width="230">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/website/114%E5%95%A6%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA.jpg" width="230">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/31" target="_blank">抢秒杀</a>
-
+						<div class="rollbox_a">
+							114啦网址导航
 						</div>
 					</li>
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/122" target="_blank">
-								<img src="http://cdn.hzjianshi.com/Public/upload/images/2014/0529/53869e0f8ca4e.jpg">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/website/2345%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA.jpg" width="230">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/122" target="_blank">推霸联盟</a>
-
+						<div class="rollbox_a">
+							2345网址导航
 						</div>
 					</li>
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/40" target="_blank">
-								<img src="http://img2.tbcdn.cn/tfscom/i2/12778021800455146/T2a7DMXaxXXXXXXXXX_!!398662778-0-dgshop.jpg_80x80.jpg">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/website/360%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA.jpg" width="230">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/40" target="_blank">亏本吧</a>
-
+						<div class="rollbox_a">
+							360网址导航
 						</div>
 					</li>
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/118" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/1809519474/T24FwOXQlXXXXXXXXX-1809519474.jpg">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/website/%E6%8A%98800.jpg" width="230">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/118" target="_blank">第一联盟</a>
-
+						<div class="rollbox_a">
+							折800
 						</div>
 					</li>
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/119" target="_blank">
-								<img src="http://img03.taobaocdn.com/imgextra/i3/394376885/T2WVtdXYVXXXXXXXXX_!!394376885.jpg">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/website/%E7%81%AB%E7%8B%90%E4%B8%BB%E9%A1%B5.jpg" width="230">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/119" target="_blank">百万联盟</a>
-
+						<div class="rollbox_a">
+							火狐主页
 						</div>
 					</li>
-
+					<li>
+						<div class="pic">
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/website/%E9%87%91%E5%B1%B1%E6%AF%92%E9%9C%B8%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA.jpg" width="230">
+						</div>
+						<div class="rollbox_a">
+							金山毒霸网址导航
+						</div>
+					</li>
 				</ul>
 				<div style="clear:both"></div>
 			</div>

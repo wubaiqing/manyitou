@@ -10,112 +10,50 @@
 				<ul class="info_ul">
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/31" target="_blank">
-								<img src="http://cdn.hzjianshi.com/Public/upload/images/526e68c4b9e5b.jpg">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/store/%E5%8D%93%E8%AF%97%E5%B0%BC%E6%97%97%E8%88%B0%E5%BA%97.jpg">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/31" target="_blank">抢秒杀</a>
-
+						<div class="rollbox_a">
+							卓诗尼旗舰店
 						</div>
 					</li>
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/122" target="_blank">
-								<img src="http://cdn.hzjianshi.com/Public/upload/images/2014/0529/53869e0f8ca4e.jpg">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/store/%E7%BA%A2%E8%9C%BB%E8%9C%93%E5%93%81%E7%89%8C%E6%97%97%E8%88%B0%E5%BA%97.jpg">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/122" target="_blank">推霸联盟</a>
-
+						<div class="rollbox_a">
+							红蜻蜓品牌旗舰店
 						</div>
 					</li>
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/40" target="_blank">
-								<img src="http://img2.tbcdn.cn/tfscom/i2/12778021800455146/T2a7DMXaxXXXXXXXXX_!!398662778-0-dgshop.jpg_80x80.jpg">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/store/%E7%BE%8E%E5%8D%B3%E5%AE%98%E6%96%B9%E6%97%97%E8%88%B0%E5%BA%97.jpg">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/40" target="_blank">亏本吧</a>
-
+						<div class="rollbox_a">
+							美即官方旗舰店
 						</div>
 					</li>
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/118" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/1809519474/T24FwOXQlXXXXXXXXX-1809519474.jpg">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/store/%E8%86%9C%E6%B3%95%E4%B8%96%E5%AE%B61908%E6%97%97%E8%88%B0%E5%BA%97.jpg">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/118" target="_blank">第一联盟</a>
-
+						<div class="rollbox_a">
+							膜法世家1908旗舰店
 						</div>
 					</li>
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/119" target="_blank">
-								<img src="http://img03.taobaocdn.com/imgextra/i3/394376885/T2WVtdXYVXXXXXXXXX_!!394376885.jpg">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/store/%E9%98%BF%E8%8A%99%E5%AE%98%E6%96%B9%E6%97%97%E8%88%B0%E5%BA%97.jpg">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/119" target="_blank">百万联盟</a>
-
+						<div class="rollbox_a">
+							阿芙官方旗舰店
 						</div>
 					</li>
 					<li>
 						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/48" target="_blank">
-								<img src="http://cdn.hzjianshi.com/Public/upload/images/2014/0310/531d6d428f943.jpg">
-							</a>
+							<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/store/%E9%9F%A9%E9%83%BD%E8%A1%A3%E8%88%8D%E6%97%97%E8%88%B0%E5%BA%97.jpg">
 						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/48" target="_blank">美美购</a>
-
-						</div>
-					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/883644183/T2YZq_Xq8XXXXXXXXX-883644183.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">聚划算</a>
-
-						</div>
-					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/883644183/T2YZq_Xq8XXXXXXXXX-883644183.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">聚划算</a>
-
-						</div>
-					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/883644183/T2YZq_Xq8XXXXXXXXX-883644183.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">聚划算</a>
-
-						</div>
-					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/883644183/T2YZq_Xq8XXXXXXXXX-883644183.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">聚划算</a>
-
-						</div>
-					</li>
-					<li>
-						<div class="pic">
-							<a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">
-								<img src="http://img04.taobaocdn.com/imgextra/i4/883644183/T2YZq_Xq8XXXXXXXXX-883644183.jpg">
-							</a>
-						</div>
-						<div class="rollbox_a"> <a href="/index.php/AdPosition/adPositionInfo/id/74" target="_blank">聚划算</a>
-
+						<div class="rollbox_a">
+							韩都衣舍旗舰店
 						</div>
 					</li>
 				</ul>
