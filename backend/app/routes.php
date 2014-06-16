@@ -34,12 +34,10 @@ Route::group(['prefix' => 'goods', 'before' => 'admin.auth'], function ()
 	Route::get('admin', 'GoodsController@admin');
 
 	// 添加商品
-	Route::get('create', 'GoodsController@create');
-	Route::post('create', 'GoodsController@create');
+	Route::any('create', 'GoodsController@create');
 
 	// 修改商品
-	Route::get('update/{id}', 'GoodsController@update');
-	Route::post('update/{id}', 'GoodsController@update');
+	Route::any('update/{id}', 'GoodsController@update');
 
 	// 删除商品
 	Route::get('delete/{id}', 'GoodsController@delete');
@@ -59,12 +57,10 @@ Route::group(['prefix' => 'billboard', 'before' => 'admin.auth'], function ()
 	Route::get('admin', 'BillboardController@admin');
 
 	// 添加公告
-	Route::get('create', 'BillboardController@create');
-	Route::post('create', 'BillboardController@create');
+	Route::any('create', 'BillboardController@create');
 
 	// 修改公告
-	Route::get('update/{id}', 'BillboardController@update');
-	Route::post('update/{id}', 'BillboardController@update');
+	Route::any('update/{id}', 'BillboardController@update');
 
 	// 删除公告
 	Route::get('delete/{id}', 'BillboardController@delete');
