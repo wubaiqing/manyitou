@@ -12,8 +12,10 @@
 			<ul>
 				@foreach ($list as $item)
 				<li>
-					<a target="_blank" href="">{{ Str::limit($item->title, 40) }}</a>
-					<span class="date">{{ $item->created_at }}</span>
+					<a target="_blank" href="{{ URL::to('billboard/detail/' . $item->id . '.html') }}">{{ Str::limit($item->title, 40) }}</a>
+					<span class="date">
+						<a target="_blank" href="{{ URL::to('billboard/detail/' . $item->id . '.html') }}">{{ $item->created_at }}</a>
+					</span>
 				</li>
 				@endforeach
 			</ul>
