@@ -46,8 +46,6 @@
 								{{ $item['rules'] }}
 							</div>
 							<div class="likenum">
-								<span class="product-name">{{ $item['platform_name'] }}今日特惠：</span>
-
 								<div>
 									{{ $item['price_text'] }}
 								</div>
