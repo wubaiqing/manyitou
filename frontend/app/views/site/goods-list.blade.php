@@ -13,8 +13,8 @@
 							<div class="main">logo</div>
 							<div class="usenum cur">平台</div>
 							<div class="dyuz">图示广告位</div>
-							<div class="usenum">活动价格</div>
-							<div class="ljxq cur">了解详情</div>
+							<div class="usenum cur">活动价格</div>
+							<div class="ljxq">了解详情</div>
 						</div>
 						@foreach ($goods as $item)
 						<div class="list-c clearfix">
