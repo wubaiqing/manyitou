@@ -21,13 +21,12 @@
 #billboard {
   width: 998px;
   margin: 0 auto;
-  height: 120px;
   line-height: 42px;
   background: #F5F5F5;
   border: 1px solid #D8D8D8;
   margin-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000325}}
 #billboard h3 {
   font-weight: bold;
   display: block;
@@ -35,46 +34,46 @@
   height: 30px;
   line-height: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000331}}
 #billboard h3 span {
   float: right;
   display: inline-block;
   margin-right: 10px;
   font-weight: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000338}}
 #billboard ul {
   width: 980px;
   margin-left: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000342}}
 #billboard li {
   float: left;
-  width: 450px;
+  width: 326px;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000346}}
 #billboard li a {
   color: #0087BF;
   text-indent: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000353}}
 .process {
   margin-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000357}}
 #billboard-list {
   padding: 10px;
   margin-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000360}}
 #billboard-list li {
   border-bottom: 1px dashed #ccc;
   clear: both;
   margin-bottom: 5px;
   height: 25px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000365}}
 #billboard-list li span {
   float: right;
   display: inline-block;

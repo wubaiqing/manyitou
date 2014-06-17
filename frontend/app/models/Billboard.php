@@ -19,7 +19,7 @@ class Billboard extends \Eloquent
 	{
 		$cacheKey = 'get-billboard-list';
 		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () {
-			return Billboard::status()->paginate(4)->getItems();
+			return Billboard::status()->paginate(15)->getItems();
 		});
 	}
 
