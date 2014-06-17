@@ -1,9 +1,5 @@
 @extends('layouts.master')
 
-@section('styles')
-<link rel="stylesheet" type="text/css" href="{{ asset('static/css/about.css') }}">
-@stop
-
 @section('content')
 
 <div id="content">
@@ -20,7 +16,9 @@
 				@endforeach
 			</ul>
 		</div>
-		{{ $list->links() }}
+		<div class="page">
+			{{ $list->links() }}
+		</div>
 	</div>
 </div>
 @stop
