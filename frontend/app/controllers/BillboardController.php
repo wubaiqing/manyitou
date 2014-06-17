@@ -30,7 +30,7 @@ class BillboardController extends BaseController
 	 */
 	public function lists()
 	{
-		$list = Billboard::paginate(1);
+		$list = Billboard::paginate(22);
 		$this->layout->content = View::make('billboard.list', [
 			'list' => $list
 		]);
