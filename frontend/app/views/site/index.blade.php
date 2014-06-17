@@ -6,6 +6,7 @@
 	<div id="content">
 		@include('site.banner')
 		@include('site.billboard', ['billboard' => $billboard])
+		@include('site.process')
 		@include('site.goods-list', ['goods' => $goods])
 		@include('site.website-list')
 		@include('site.store-list')

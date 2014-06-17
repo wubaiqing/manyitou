@@ -1,18 +1,23 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\000031}}
 .page {
   text-align: center;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\000033}}
 .page .pagination {
   clear: both;
   height: 40px;
   line-height: 40px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\000037}}
 .page .pagination li {
   display: inline-block;
   width: 30px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000314}}
 #deal-record {
   padding: 20px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000318}}
 #billboard {
   width: 998px;
   margin: 0 auto;
@@ -22,6 +27,7 @@
   border: 1px solid #D8D8D8;
   margin-top: 10px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000326}}
 #billboard h3 {
   font-weight: bold;
   display: block;
@@ -29,16 +35,23 @@
   height: 30px;
   line-height: 30px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000333}}
 #billboard ul {
   width: 980px;
   margin-left: 10px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000337}}
 #billboard li {
   float: left;
   width: 450px;
   overflow: hidden;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000341}}
 #billboard li a {
   color: #0087BF;
   text-indent: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/htdocs\/laravel\/frontend\/public\/static\/less\/page\.less}line{font-family:\0000348}}
+.process {
+  margin-top: 10px;
 }
