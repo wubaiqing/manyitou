@@ -22,3 +22,4 @@ Route::get('/detail/{id}.html', ['uses' => 'SiteController@detail']);
  * ------------------------------------------
  */
 Route::get('/billboard/detail/{id}.html', ['uses' => 'BillboardController@detail']);
+Route::get('/billboard/list.html', ['uses' => 'BillboardController@lists']);

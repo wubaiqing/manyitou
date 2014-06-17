@@ -23,4 +23,16 @@ class BillboardController extends BaseController
 			'detail' => $detail
 		]);
 	}
+
+	/**
+	 * 公告列表页
+	 * @param int $id 公告ID
+	 */
+	public function lists()
+	{
+		$list = Billboard::paginate(24);
+		$this->layout->content = View::make('billboard.list', [
+			'list' => $list
+		]);
+	}
 }
