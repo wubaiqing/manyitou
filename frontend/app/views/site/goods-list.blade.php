@@ -13,7 +13,6 @@
 							<div class="main">logo</div>
 							<div class="usenum cur">平台</div>
 							<div class="dyuz">图示广告位</div>
-							<div class="usenum cur">活动要求</div>
 							<div class="usenum">活动价格</div>
 							<div class="ljxq cur">了解详情</div>
 						</div>
@@ -41,9 +40,6 @@
 									     src="http://l.com/static/css/images/image_bg.jpg" class="lazy-index-image"
 									     width="180"/>
 								</a>
-							</div>
-							<div class="likenum">
-								{{ $item['rules'] }}
 							</div>
 							<div class="likenum">
 								<div>
