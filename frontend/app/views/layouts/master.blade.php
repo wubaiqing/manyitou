@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>满意投—打造国内最大的电商资源广告联盟</title>
 	<link rel="stylesheet" type="text/css" href="{{ asset('static/css/base-min.css?v=1.0.5') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('static/css/index.css?v=1.0.5') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('static/css/index.css?v=1.0.6') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('static/css/page.css?v=1.0.5') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('static/css/colorbox.css?v=1.0.5') }}">
 	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
