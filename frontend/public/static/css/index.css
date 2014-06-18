@@ -3953,3 +3953,76 @@ label .label-hidden {
     font-weight: normal;
     padding-bottom: 5px;
 }
+
+/* qq */
+.wn_right_xf {
+    margin-left: 506px;
+    width: 71px;
+    position: fixed;
+    left: 50%;
+    top: 222px;
+}
+.wn_show_t {
+    width: 71px;
+    height: 22px;
+    background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/xf_t.png) no-repeat scroll 0% 0% transparent;
+    text-align: center;
+    line-height: 22px;
+    color: #FFF;
+    cursor: pointer;
+}
+.wn_xf_c {
+    width: 70px;
+    border: 1px solid #DCDCDC;
+    background: none repeat scroll 0% 0% #FFF;
+}
+.wn_c_a {
+    background: url(http://www.woniujie.cn/static/index/default/css/images/xf_a_bj.png) no-repeat;
+    color: #666;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+}
+
+.wn_c_a_tx {
+    background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/tousu.png) no-repeat;
+    color: #666;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+}
+.wn_c_div {
+    width: 60px;
+    margin: 0px auto 5px;
+    text-align: center;
+    padding-top: 5px;
+    border-top: 1px dashed #C4C2C2;
+    color: #F64881;
+    font-family: Arial;
+    margin-top: 10px;
+}
+
+.wn_kefu_sj {
+    display: block;
+    width: 71px;
+    height: 26px;
+    line-height: 27px;
+    color: #FFF;
+    text-align: center;
+    margin: 3px 0px;
+    background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/maijia_w71.png) no-repeat scroll 0% 0% transparent;
+    outline: medium none;
+}
+.wn_fanhui {
+    width: 71px;
+    height: 65px;
+    background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/huidingbu.png) no-repeat scroll 0% 0% transparent;
+    display: block;
+    outline: medium none;
+}
