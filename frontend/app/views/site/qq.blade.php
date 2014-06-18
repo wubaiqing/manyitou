@@ -1,5 +1,5 @@
 <div class="wn_right_xf">
-	<div class="wn_show_t">返利客服</div>
+	<div class="wn_show_t">联系我们</div>
 	<div class="wn_xf_c">
 		<a class="wn_c_a" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=417669527&amp;site=qq&amp;menu=yes" rel="nofollow">
 			<img border="0" align="absmiddle" alt="点这里给我发消息" src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/qq.png">
