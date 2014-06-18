@@ -12,8 +12,7 @@
 		@include('site.store-list')
 	</div>
 
-	@include('site.qq')
-	<!-- End Banner -->
+
 
 
 @stop

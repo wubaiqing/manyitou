@@ -18,6 +18,7 @@
 <body>
 	@include('site.top')
 	@yield('content')
+	@include('site.qq')
 	@include('layouts.footer')
 	@include('layouts.cnzz')
 </body>

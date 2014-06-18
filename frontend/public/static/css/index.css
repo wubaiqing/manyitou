@@ -3961,6 +3961,7 @@ label .label-hidden {
     position: fixed;
     left: 50%;
     top: 222px;
+    z-index:999;
 }
 .wn_show_t {
     width: 71px;
