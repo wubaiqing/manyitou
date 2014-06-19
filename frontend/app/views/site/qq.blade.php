@@ -5,7 +5,7 @@
 			<img border="0" align="absmiddle" alt="点这里给我发消息" src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/qq.png">
 			<span>客服1</span>
 		</a>
-		<a class="wn_c_a" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=6261316968&amp;site=qq&amp;menu=yes" rel="nofollow">
+		<a class="wn_c_a" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=626131696&amp;site=qq&amp;menu=yes" rel="nofollow">
 			<img border="0" align="absmiddle" alt="点这里给我发消息" src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/qq.png">
 			<span>客服2</span>
 		</a>
