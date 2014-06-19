@@ -3,19 +3,19 @@
 	<div class="wn_xf_c">
 		<a class="wn_c_a" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1150376392&amp;site=qq&amp;menu=yes" rel="nofollow">
 			<img border="0" align="absmiddle" alt="点这里给我发消息" src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/qq.png">
-			<span style="font-size:12px;">客服1</span>
+			<span>客服1</span>
 		</a>
 		<a class="wn_c_a" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=534095228&amp;site=qq&amp;menu=yes" rel="nofollow">
 			<img border="0" align="absmiddle" alt="点这里给我发消息" src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/qq.png">
-			<span style="font-size:12px;">客服2</span>
+			<span>客服2</span>
 		</a>
 		<a class="wn_c_a" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=626131696&amp;site=qq&amp;menu=yes" rel="nofollow">
 			<img border="0" align="absmiddle" alt="点这里给我发消息" src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/qq.png">
-			<span style="font-size:12px;">客服3</span>
+			<span>客服3</span>
 		</a>
 		<a class="wn_c_a" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1602842441&amp;site=qq&amp;menu=yes" rel="nofollow">
 			<img border="0" align="absmiddle" alt="点这里给我发消息" src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/qq.png">
-			<span style="font-size:12px;">客服4</span>
+			<span>客服4</span>
 		</a>
 		<div class="wn_c_div">
 			<span>工作时间</span><br>8:30-23:30
