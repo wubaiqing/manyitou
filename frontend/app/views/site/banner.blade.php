@@ -1,7 +1,8 @@
 <div class="content_login">
 	<ul class="bg_ul">
-		<li index="0" style="width: 1425px; background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/banner_2.jpg) 50% 50%;"></li>
-		<li index="1" style="width: 1425px; background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/banner_1.jpg) 50% 50%;"></li>
+		@foreach ($banner as $key => $item)
+			<li index="{{ $key }}" style="width: 1425px; background:#{{ $item->color }} url({{ $item->image}}) no-repeat 50% 50%;"></li>
+		@endforeach
 	</ul>
 	<div class="content-bd">
 		<div class="headbg_index" style="top: 320px;">

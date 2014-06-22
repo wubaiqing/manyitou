@@ -26,8 +26,12 @@ class SiteController extends BaseController
 		// 公告
 		$billboard = Billboard::getIndex();
 
+		// BANNER
+		$banner = Banner::getIndex();
+
 		$this->layout->content = View::make('site.index', [
 			'goods' => $goods,
+			'banner' => $banner,
 			'billboard' => $billboard
 		]);
 

@@ -4,7 +4,7 @@
 
 	<!-- Banner -->
 	<div id="content">
-		@include('site.banner')
+		@include('site.banner', ['banner' => $banner])
 		@include('site.billboard', ['billboard' => $billboard])
 		@include('site.process')
 		@include('site.goods-list', ['goods' => $goods])

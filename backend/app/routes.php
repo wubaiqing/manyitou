@@ -58,3 +58,26 @@ Route::group(['prefix' => 'billboard', 'before' => 'admin.auth'], function ()
 	// 删除公告
 	Route::get('delete/{id}', 'BillboardController@delete');
 });
+
+/**
+ * ------------------------------------------
+ * BANNER管理
+ * ------------------------------------------
+ */
+Route::group(['prefix' => 'banner', 'before' => 'admin.auth'], function ()
+{
+	// 商品列表
+	Route::get('admin', 'BannerController@admin');
+
+	// 添加商品
+	Route::any('create', 'BannerController@create');
+
+	// 修改商品
+	Route::any('update/{id}', 'BannerController@update');
+
+	// 删除商品
+	Route::get('delete/{id}', 'BannerController@delete');
+
+	// 上传图片
+	Route::post('upload', array('uses' => 'BannerController@upload'));
+});

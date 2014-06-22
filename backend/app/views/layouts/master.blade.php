@@ -7,6 +7,7 @@
 	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 	<script src="{{ asset('static/js/ueditor/ueditor.config.js') }}"></script>
 	<script src="{{ asset('static/js/ueditor/ueditor.all.min.js') }}"></script>
+	<script src="{{ asset('static/css/admin.css') }}"></script>
 	@section('styles')
 	@show
 </head>
