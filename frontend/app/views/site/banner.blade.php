@@ -6,8 +6,9 @@
 	</ul>
 	<div class="content-bd">
 		<div class="headbg_index" style="top: 320px;">
-			<span index="0" class=""></span>
-			<span index="1" class=""></span>
+			@foreach ($banner as $key => $item)
+			<span index="{{ $key }}" class=""></span>
+			@endforeach
 		</div>
 	</div>
 </div>
