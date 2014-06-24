@@ -107,28 +107,28 @@
 		<div class="control-group">
 			<label class="control-label">平台描述（首页）</label>
 			<div class="controls">
-				{{ Form::textArea('playform_sort_desc', Input::old('playform_sort_desc', $model->playform_sort_desc), ['class' => 'span5', 'rows' => '4', 'id' => 'playform_sort_desc', 'style' => 'height:220px']) }}
+				{{ Form::textArea('playform_sort_desc', Input::old('playform_sort_desc', $model->playform_sort_desc), ['class' => 'span5', 'rows' => '4', 'id' => 'playform_sort_desc', 'style' => 'height:220px; width:600px;']) }}
 			</div>
 		</div>
 
 		<div class="control-group">
 			<label class="control-label">规则</label>
 			<div class="controls">
-				{{ Form::textArea('rules', Input::old('rules', $model->rules), ['class' => 'span5', 'rows' => '3', 'id' => 'rules', 'style' => 'height:220px']) }}
+				{{ Form::textArea('rules', Input::old('rules', $model->rules), ['class' => 'span5', 'rows' => '3', 'id' => 'rules', 'style' => 'height:220px; width:600px;']) }}
 			</div>
 		</div>
 
 		<div class="control-group">
 			<label class="control-label">平台描述（详情）</label>
 			<div class="controls">
-				{{ Form::textArea('playform_desc', Input::old('playform_desc', $model->playform_desc), ['class' => 'span5', 'rows' => '3', 'id' => 'playform_desc', 'style' => 'height:220px']) }}
+				{{ Form::textArea('playform_desc', Input::old('playform_desc', $model->playform_desc), ['class' => 'span5', 'rows' => '3', 'id' => 'playform_desc', 'style' => 'height:220px; width:600px;']) }}
 			</div>
 		</div>
 
 		<div class="control-group">
 			<label class="control-label">价格</label>
 			<div class="controls">
-				{{ Form::textArea('price_text', Input::old('price_text', $model->price_text), ['class' => 'span5', 'rows' => '3 ', 'id' => 'price_text', 'style' => 'height:220px']) }}
+				{{ Form::textArea('price_text', Input::old('price_text', $model->price_text), ['class' => 'span5', 'rows' => '3 ', 'id' => 'price_text', 'style' => 'height:220px; width:600px;']) }}
 			</div>
 		</div>
 		<div class="control-group">

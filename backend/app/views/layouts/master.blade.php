@@ -5,9 +5,9 @@
 	<title>满意投-后台管理</title>
 	<link rel="stylesheet" type="text/css" href="{{ asset('static/css/bootstrap.css') }}">
 	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-	<script src="{{ asset('static/js/ueditor/ueditor.config.js') }}"></script>
+	<script src="{{ asset('static/js/ueditor/ueditor.config.js?v=1') }}"></script>
 	<script src="{{ asset('static/js/ueditor/ueditor.all.min.js') }}"></script>
-	<script src="{{ asset('static/css/admin.css') }}"></script>
+	<link rel="stylesheet" type="text/css" src="{{ asset('static/css/admin.css') }}">
 	@section('styles')
 	@show
 </head>
