@@ -18,6 +18,7 @@
 			}
 		});
 
+		UE.getEditor('playform_sort_desc');
 		UE.getEditor('price_text');
 		UE.getEditor('playform_desc');
 		UE.getEditor('rules');
@@ -106,7 +107,7 @@
 		<div class="control-group">
 			<label class="control-label">平台描述（首页）</label>
 			<div class="controls">
-				{{ Form::textArea('playform_sort_desc', Input::old('playform_sort_desc', $model->playform_sort_desc), ['class' => 'span5', 'rows' => '4']) }}
+				{{ Form::textArea('playform_sort_desc', Input::old('playform_sort_desc', $model->playform_sort_desc), ['class' => 'span5', 'rows' => '4', 'id' => 'playform_sort_desc', 'style' => 'height:220px']) }}
 			</div>
 		</div>
 
