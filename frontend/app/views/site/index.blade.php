@@ -2,7 +2,7 @@
 
 @section('content')
 
-	@include('site.banner', ['billboard' => $billboard])
+	@include('site.banner', ['billboard' => $billboard, 'banner' => $banner])
 	<!-- Banner -->
 	<div id="content">
 		@include('site.process')

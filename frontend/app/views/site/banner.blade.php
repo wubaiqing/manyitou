@@ -263,40 +263,22 @@
 <div class="banner fl">
 	<div id="J_SlidePlayer_510" class="tb-slide">
 		<ul class="img-box" style="">
-			<li>
-				<a href="javascript:void(0)" target="_blank" onclick="ads_place_report(3)">
-					<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/banner/1.jpg" border="0" width="690" height="270">
-				</a>
-			</li>
+				@foreach ($banner as $key => $item)
+				<li index="{{ $key }}" style="background:#{{ $item->color }} url({{ $item->image}}) no-repeat 50% 50%;">
+					<img src="{{ $item->image }}" border="0" width="690" height="270">
+				</li>
+				@endforeach
 		</ul>
 		<ul class="flash_item">
-			<li class="">1</li>
+			@foreach ($banner as $key => $item)
+				<li class="">{{ $key }}</li>
+			@endforeach
 		</ul>
 	</div>
 	<script type="text/javascript">
 		$("#J_SlidePlayer_510").slideImg({
 			speed: "normal",
 			timer: 3000
-		});
-	</script>
-	<span style="position:absolute;right:10px;bottom:11px;width:14px;height:16px;cursor:pointer;" title="换一组" id="replace_focus"></span>
-	<script type="text/javascript">
-		$("#replace_focus").click(function(){
-			$.ajax({
-				type:'GET',
-				dataType:'json',
-				url:'index.php?m=index&a=getFocusImg',
-				success:function(data){
-					var aList=$('.img-box li a');
-					var imgList=$('.img-box li a img');
-					for(var i in data)
-					{
-						imgList.eq(i).attr('src','/uploads/'+data[i]['img']);
-						aList.eq(i).attr('href',data[i]['url']);
-						imgList.eq(i).attr('title',data[i]['title']);
-					}
-				}
-			});
 		});
 	</script>
 </div>
