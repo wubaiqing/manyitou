@@ -252,6 +252,10 @@
 	line-height: 30px;
 }
 
+#login-top {
+	height:173px;
+}
+
 </style>
 <div class="throughbar">
 
@@ -297,17 +301,19 @@
 	</script>
 </div>
 <div class="login" id="index_login">
-	<ul class="tabs">
-		<li class="selected">网站公告</li>
-	</ul>
+		<ul class="tabs">
+			<li class="selected">网站公告</li>
+		</ul>
 	<div class="clear"></div>
 	<!--网站主登陆  -->
 	<div class="tabs_con" style="display: block;">
+		<div id="login-top">
 		<ul>
 			@foreach ($billboard as $item)
 			<li><a target="_blank" href="{{ URL::to('billboard/detail/' . $item->id . '.html') }}">{{ Str::limit($item->title, 40) }}</a></li>
 			@endforeach
 		</ul>
+		</div>
 		<div class="reg_btn">
 			<a href="{{ URL::to('billboard/list.html') }}">查看更多</a>
 		</div>
