@@ -260,8 +260,8 @@
 	<div id="J_SlidePlayer_510" class="tb-slide">
 		<ul class="img-box" style="">
 			<li>
-				<a href="http://www.duomai.com/uploads/2014-06-24/53a9361db6b66.jpg" target="_blank" onclick="ads_place_report(3)">
-					<img src="http://www.duomai.com/uploads/2014-06-24/53a9361db6b66.jpg" alt="6月活动" border="0" width="690" height="270">
+				<a href="javascript:void(0)" target="_blank" onclick="ads_place_report(3)">
+					<img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/banner/1.jpg" border="0" width="690" height="270">
 				</a>
 			</li>
 		</ul>
@@ -309,7 +309,7 @@
 			@endforeach
 		</ul>
 		<div class="reg_btn">
-			<a href="/index.php?m=siter&amp;a=register">10秒钟免费注册</a>
+			<a href="{{ URL::to('billboard/list.html') }}">查看更多</a>
 		</div>
 
 	</div>
