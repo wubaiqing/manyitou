@@ -103,7 +103,7 @@
 		<div class="overall">
 			<ul>
 				<li class="selected">
-					<a href="/index.php" title="首页">首页</a>
+					<a href="/" title="首页">首页</a>
 				</li>
 				<li>
 					<a href="http://www.manyitou.com/lists.html" title="资源中心">资源中心</a>
