@@ -366,8 +366,8 @@
 	<div class="tabs_con" style="display: block;">
 		<div id="login-top">
 		<ul>
-			@foreach ($billboard as $item)
-			<li><a target="_blank" href="{{ URL::to('billboard/detail/' . $item->id . '.html') }}">{{ Str::limit($item->title, 40) }}</a></li>
+			@foreach ($billboard as $key => $item)
+			<li><a target="_blank" href="{{ URL::to('billboard/detail/' . $item->id . '.html') }}">{{ ($key + 1)}}. {{ Str::limit($item->title, 40) }}</a></li>
 			@endforeach
 		</ul>
 		</div>
