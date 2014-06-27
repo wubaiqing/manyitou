@@ -1,6 +1,6 @@
 <style>
 	/*首页头部*/
-	.index_header{ margin-bottom:17px; background-color: #fff;}
+	.index_header{ margin-bottom:10px; background-color: #fff;}
 	.header_info .top_nav{ float:right; margin-top:36px;}
 
 	.index_nav{ height:40px; background:url(../images/index_navbg.gif) repeat-x;}
