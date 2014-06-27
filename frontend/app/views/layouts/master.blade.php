@@ -17,7 +17,7 @@
 	@show
 </head>
 <body>
-	@include('site.top')
+	@include('site.header')
 	@yield('content')
 	@include('site.qq')
 	@include('layouts.footer')

@@ -611,17 +611,7 @@
     margin-bottom: 15px;
 }
 
-.banner ul {
-    background: url(../images/index_16.jpg) repeat-x;
-    height: 45px;
-    border: 1px solid #e1e1e1;
-    padding: 8px 0 0 8px;
-}
 
-.banner li {
-    float: left;
-    margin-right: 30px;
-}
 
 .nr {
 }
