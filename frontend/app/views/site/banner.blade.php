@@ -259,7 +259,7 @@
 </style>
 <div class="throughbar">
 
-<script type="text/javascript" src="/statics/js/slideimg.js"></script>
+<script type="text/javascript" src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/js/slideimg.js"></script>
 <div class="banner fl">
 	<div id="J_SlidePlayer_510" class="tb-slide">
 		<ul class="img-box" style="">
@@ -279,7 +279,7 @@
 			timer: 3000
 		});
 	</script>
-	<span style="position:absolute;right:10px;bottom:11px;width:14px;height:16px;background:url('/statics/images/ico/33.png');cursor:pointer;" title="换一组" id="replace_focus"></span>
+	<span style="position:absolute;right:10px;bottom:11px;width:14px;height:16px;cursor:pointer;" title="换一组" id="replace_focus"></span>
 	<script type="text/javascript">
 		$("#replace_focus").click(function(){
 			$.ajax({
