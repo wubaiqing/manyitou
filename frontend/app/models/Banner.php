@@ -14,7 +14,7 @@ class Banner extends \Eloquent
 
     public function scopeIndex($query)
     {
-        return $query->where('status', '=' ,'1')->orderBy('id', 'DESC');
+        return $query->where('status', '=' ,'1')->orderBy('sort', 'DESC')->orderBy('id', 'DESC');
     }
 
     /**

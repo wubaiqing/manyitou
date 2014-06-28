@@ -23,7 +23,7 @@
 
 @section('content')
 <h3 class="box-header">添加BANNER</h3>
-{{ Form::open(array('url' => 'banner/update/' . $model->id, 'method' => 'post', 'class' => 'form-horizontal')) }}
+{{ Form::open(array('url' => ($model->id > 0) ? 'banner/update/' . $model->id : 'banner/create', 'method' => 'post', 'class' => 'form-horizontal')) }}
 
 @if ($errors->all())
 <div class="control-group">
@@ -41,6 +41,20 @@
     <div class="controls">
         {{ Form::text('color', Input::old('color', $model->color)) }}
         <span style="display: inline-block; width: 20px; height: 20px; background-color: #{{ $model->color }};"></span>
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label">URL</label>
+    <div class="controls">
+        {{ Form::text('url', Input::old('url', $model->url)) }}
+    </div>
+</div>
+
+<div class="control-group">
+    <label class="control-label">排序</label>
+    <div class="controls">
+        {{ Form::text('sort', Input::old('sort', $model->sort)) }}
     </div>
 </div>
 

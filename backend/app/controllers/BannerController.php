@@ -14,7 +14,9 @@ class BannerController extends BaseController
 
     protected $validatorMessages = [
         'color.required' => '填充色必填',
-        'image.required' => '图片地址必填'
+        'image.required' => '图片地址必填',
+        'sort.required' => '排序必填',
+        'url.required' => 'URL必填'
     ];
 
     /**
@@ -55,7 +57,7 @@ class BannerController extends BaseController
             }
         }
 
-        $this->layout->content = View::make('banner.create')->with(compact('model', $model));;
+        $this->layout->content = View::make('banner.update')->with(compact('model', $model));;
     }
 
     /**

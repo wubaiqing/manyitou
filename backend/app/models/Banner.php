@@ -16,6 +16,8 @@ class Banner extends \Eloquent
      * @var array 允许填充字段
      */
     protected $fillable = [
+		'sort',
+		'url',
         'color',
         'image',
     ];
@@ -29,6 +31,8 @@ class Banner extends \Eloquent
         return [
             'color' => 'required',
             'image' => 'required',
+            'sort' => 'required',
+            'url' => 'required',
         ];
     }
 
