@@ -20,7 +20,7 @@
 	"autoload": {
 		"psr-0" : {
 			"Aliyun" : "vendor/src/"
-		},
+		}
 	},
 	"scripts": {
 		"post-install-cmd": [
