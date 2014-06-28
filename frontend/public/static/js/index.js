@@ -4,11 +4,11 @@ $(document).ready(function() {
 		'rel': 'imageBox'
 	});
 	$("img.lazy-index-logo").lazyload();
-	return $("img.lazy-index-image").lazyload();
 	$("#J_SlidePlayer_510").slideImg({
 		speed: "normal",
 		timer: 3000
 	});
+	return $("img.lazy-index-image").lazyload();
 });
 
 function bookmark() {

@@ -17,6 +17,7 @@
     @show
 </head>
 <body>
+
     @include('site.header')
     @yield('content')
     @include('site.qq')

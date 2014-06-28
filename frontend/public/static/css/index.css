@@ -4284,7 +4284,11 @@ em {
 			   #nav li a:link, #nav li a:visited {
 				   color:#fff;
 			   }
-			   #nav .selected{
+			   #nav .selected {
+					background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/navli_selected.png) no-repeat 0 0;
+				}
+				   #nav li.selected{
+				   background-image:url() no-repeat 0 0;
 			   }
 			   #nav .search{float:right;height:27px;margin:9px 0;width:179px;}
 
@@ -4326,4 +4330,7 @@ em {
 				   width:980px;
 				   margin:0 auto;
 				   margin-top:10px;
+			   }
+			   .selected a {
+				   color:#fff;
 			   }
