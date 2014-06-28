@@ -4,7 +4,9 @@
 			<ul class="img-box" style="">
 				@foreach ($banner as $key => $item)
 				<li index="{{ $key }}" style="background:#{{ $item->color }} url({{ $item->image}}) no-repeat 50% 50%;">
-					<img src="{{ $item->image }}" border="0" width="690" height="270">
+					<a target="_blank" href="{{ !empty($item->url && strstr($item->url, 'http://')) ? $item->url : 'javascript:void(0);' }}">
+						<img src="{{ $item->image }}" border="0" width="690" height="270">
+					</a>
 				</li>
 				@endforeach
 			</ul>

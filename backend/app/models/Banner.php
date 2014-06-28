@@ -32,7 +32,6 @@ class Banner extends \Eloquent
             'color' => 'required',
             'image' => 'required',
             'sort' => 'required',
-            'url' => 'required',
         ];
     }
 
