@@ -7,47 +7,50 @@
  */
 class SiteController extends BaseController
 {
-	/**
-	 * @var string 继承login视图
-	 */
-	protected $layout = 'layouts.login';
+    /**
+     * @var string 继承login视图
+     */
+    protected $layout = 'layouts.login';
 
-	/**
-	 * 用户登陆
-	 */
-	public function login()
-	{
-		// 提交登陆
-		$post = Input::all();
-		if (!empty($post)) {
-			// 验证账户信息
-			if (Auth::attempt(['username' => $post['name'], 'password' => $post['password']])) {
-				return Redirect::intended('goods/admin');
-			}
-			return Redirect::to('/')->with('error', '用户名密码错误');
-		}
+    /**
+     * 用户登陆
+     */
+    public function login()
+    {
+        // 提交登陆
+        $post = Input::all();
+        if (!empty($post)) {
+            // 验证账户信息
+            if (Auth::attempt(['username' => $post['name'], 'password' => $post['password']])) {
+                return Redirect::intended('goods/admin');
+            }
 
-		$this->layout->content = View::make('site.login');
-	}
+            return Redirect::to('/')->with('error', '用户名密码错误');
+        }
 
-	/**
-	 * 用户退出
-	 */
-	public function logout()
-	{
-		Auth::logout();
-		return Redirect::to('/');
-	}
+        $this->layout->content = View::make('site.login');
+    }
 
-	/**
-	 * 清空缓存
-	 */
-	public function clearCache()
-	{
-		$frontend = 'php ' . __DIR__ . '/../../../frontend/artisan cache:clear';
-		$backend = 'php ' . __DIR__ . '/../../artisan cache:clear';
-		exec($frontend);
-		exec($backend);
-		return Redirect::to('/');
-	}
+    /**
+     * 用户退出
+     */
+    public function logout()
+    {
+        Auth::logout();
+
+        return Redirect::to('/');
+    }
+
+    /**
+     * 清空缓存
+     */
+    public function clearCache()
+    {
+        $frontend = 'php ' . __DIR__ . '/../../../frontend/artisan cache:clear';
+        $backend = 'php ' . __DIR__ . '/../../artisan cache:clear';
+        exec($frontend);
+        exec($backend);
+
+        return Redirect::to('/');
+    }
 }

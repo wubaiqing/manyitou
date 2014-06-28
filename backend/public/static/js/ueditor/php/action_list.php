@@ -5,7 +5,7 @@
  * Date: 14-04-09
  * Time: 上午10:17
  */
-include "Uploader.class.php";
+include 'Uploader.class.php';
 
 /* 判断类型 */
 switch ($_GET['action']) {
@@ -43,11 +43,11 @@ if (!count($files)) {
 
 /* 获取指定范围的列表 */
 $len = count($files);
-for ($i = min($end, $len) - 1, $list = array(); $i < $len && $i >= 0 && $i >= $start; $i--){
+for ($i = min($end, $len) - 1, $list = array(); $i < $len && $i >= 0 && $i >= $start; $i--) {
     $list[] = $files[$i];
 }
 //倒序
-//for ($i = $end, $list = array(); $i < $len && $i < $end; $i++){
+//for ($i = $end, $list = array(); $i < $len && $i < $end; $i++) {
 //    $list[] = $files[$i];
 //}
 
@@ -60,7 +60,6 @@ $result = json_encode(array(
 ));
 
 return $result;
-
 
 /**
  * 遍历获取目录下的指定类型的文件
@@ -88,5 +87,6 @@ function getfiles($path, $allowFiles, &$files = array())
             }
         }
     }
+
     return $files;
 }

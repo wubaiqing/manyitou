@@ -15,8 +15,10 @@ use Aliyun\Common\Communication\HttpResponse;
 
 use Aliyun\OSS\Models\Owner;
 
-class SXListBucketsParser extends SXParser {
-    public function parse(HttpResponse $response, $options) {
+class SXListBucketsParser extends SXParser
+{
+    public function parse(HttpResponse $response, $options)
+    {
         $xml = $this->getXmlObject($response->getContent());
         $buckets = array();
 
@@ -26,15 +28,16 @@ class SXListBucketsParser extends SXParser {
 
         if ($xml->Buckets) {
             foreach ($xml->Buckets->children() as $bucket) {
-                $bucketName = (string)$bucket->Name;
-                $creationDate = (string)$bucket->CreationDate;
+                $bucketName = (string) $bucket->Name;
+                $creationDate = (string) $bucket->CreationDate;
                 $bucket = new Bucket($bucketName);
                 $bucket->setOwner($owner);
                 $bucket->setName($bucketName);
                 $bucket->setCreationDate(DateUtils::parseDate($creationDate));
                 $buckets[] = $bucket;
-            }            
+            }
         }
+
         return $buckets;
     }
 }

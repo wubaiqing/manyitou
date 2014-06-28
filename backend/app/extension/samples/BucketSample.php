@@ -4,7 +4,8 @@ require_once dirname(__DIR__) . '/aliyun.php';
 use Aliyun\OSS\OSSClient;
 
 // Sample of create client
-function createClient($accessKeyId, $accessKeySecret) {
+function createClient($accessKeyId, $accessKeySecret)
+{
     return OSSClient::factory(array(
         'AccessKeyId' => $accessKeyId,
         'AccessKeySecret' => $accessKeySecret,
@@ -12,7 +13,8 @@ function createClient($accessKeyId, $accessKeySecret) {
 }
 
 // Sample of list buckets
-function listBuckets(OSSClient $client) {
+function listBuckets(OSSClient $client)
+{
     $buckets = $client->listBuckets();
 
     foreach ($buckets as $bucket) {
@@ -21,14 +23,16 @@ function listBuckets(OSSClient $client) {
 }
 
 // Sample of create Bucket
-function createBucket(OSSClient $client, $bucket) {
+function createBucket(OSSClient $client, $bucket)
+{
     $client->createBucket(array(
         'Bucket' => $bucket,
     ));
 }
 
 // Sample of get Bucket Acl
-function getBucketAcl(OSSClient $client, $bucket) {
+function getBucketAcl(OSSClient $client, $bucket)
+{
     $acl = $client->getBucketAcl(array(
         'Bucket' => $bucket,
     ));
@@ -38,7 +42,8 @@ function getBucketAcl(OSSClient $client, $bucket) {
 }
 
 // Sample of delete Bucket
-function deleteBucket(OSSClient $client, $bucket) {
+function deleteBucket(OSSClient $client, $bucket)
+{
     $client->deleteBucket(array(
         'Bucket' => $bucket,
     ));
@@ -56,6 +61,3 @@ listBuckets($client);
 createBucket($client, $bucket);
 getBucketAcl($client, $bucket);
 deleteBucket($client, $bucket);
-
-
-

@@ -12,8 +12,8 @@ namespace Aliyun\OSS\Models;
  *
  * @package Aliyun\OSS\Models
  */
-class InitiateMultipartUploadResult {
-
+class InitiateMultipartUploadResult
+{
     /**
      * @var string 上传Object的Bucket的名字
      */
@@ -33,7 +33,8 @@ class InitiateMultipartUploadResult {
      * @internal
      * @param string $bucket
      */
-    public function setBucketName($bucketName) {
+    public function setBucketName($bucketName)
+    {
         $this->bucketName = $bucketName;
     }
 
@@ -42,7 +43,8 @@ class InitiateMultipartUploadResult {
      *
      * @return string
      */
-    public function getBucketName() {
+    public function getBucketName()
+    {
         return $this->bucketName;
     }
 
@@ -50,7 +52,8 @@ class InitiateMultipartUploadResult {
      * @internal
      * @param string $key
      */
-    public function setKey($key) {
+    public function setKey($key)
+    {
         $this->key = $key;
     }
 
@@ -59,7 +62,8 @@ class InitiateMultipartUploadResult {
      *
      * @return string
      */
-    public function getKey() {
+    public function getKey()
+    {
         return $this->key;
     }
 
@@ -67,7 +71,8 @@ class InitiateMultipartUploadResult {
      * @internal
      * @param string $uploadId
      */
-    public function setUploadId($uploadId) {
+    public function setUploadId($uploadId)
+    {
         $this->uploadId = $uploadId;
     }
 
@@ -76,7 +81,8 @@ class InitiateMultipartUploadResult {
      *
      * @return string
      */
-    public function getUploadId() {
+    public function getUploadId()
+    {
         return $this->uploadId;
     }
 

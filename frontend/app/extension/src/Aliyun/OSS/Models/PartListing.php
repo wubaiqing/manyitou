@@ -11,8 +11,8 @@ namespace Aliyun\OSS\Models;
  * List Parts 的返回结果
  * @package Aliyun\OSS\Models
  */
-class PartListing {
-
+class PartListing
+{
     /**
      * @var string
      */
@@ -62,7 +62,8 @@ class PartListing {
      * @internal
      * @param string $bucketName
      */
-    public function setBucketName($bucketName) {
+    public function setBucketName($bucketName)
+    {
         $this->bucketName = $bucketName;
     }
 
@@ -71,7 +72,8 @@ class PartListing {
      *
      * @return string
      */
-    public function getBucketName() {
+    public function getBucketName()
+    {
         return $this->bucketName;
     }
 
@@ -79,7 +81,8 @@ class PartListing {
      * @internal
      * @param string $key
      */
-    public function setKey($key) {
+    public function setKey($key)
+    {
         $this->key = $key;
     }
 
@@ -88,7 +91,8 @@ class PartListing {
      *
      * @return string
      */
-    public function getKey() {
+    public function getKey()
+    {
         return $this->key;
     }
 
@@ -97,7 +101,8 @@ class PartListing {
      *
      * @param boolean $isTruncated
      */
-    public function setIsTruncated($isTruncated) {
+    public function setIsTruncated($isTruncated)
+    {
         $this->isTruncated = $isTruncated;
     }
 
@@ -106,7 +111,8 @@ class PartListing {
      *
      * @return boolean
      */
-    public function getIsTruncated() {
+    public function getIsTruncated()
+    {
         return $this->isTruncated;
     }
 
@@ -115,7 +121,8 @@ class PartListing {
      *
      * @param int $maxParts
      */
-    public function setMaxParts($maxParts) {
+    public function setMaxParts($maxParts)
+    {
         $this->maxParts = $maxParts;
     }
 
@@ -124,7 +131,8 @@ class PartListing {
      *
      * @return int
      */
-    public function getMaxParts() {
+    public function getMaxParts()
+    {
         return $this->maxParts;
     }
 
@@ -132,7 +140,8 @@ class PartListing {
      * @internal
      * @param int $nextPartNumberMarker
      */
-    public function setNextPartNumberMarker($nextPartNumberMarker) {
+    public function setNextPartNumberMarker($nextPartNumberMarker)
+    {
         $this->nextPartNumberMarker = $nextPartNumberMarker;
     }
 
@@ -141,7 +150,8 @@ class PartListing {
      *
      * @return int
      */
-    public function getNextPartNumberMarker() {
+    public function getNextPartNumberMarker()
+    {
         return $this->nextPartNumberMarker;
     }
 
@@ -149,7 +159,8 @@ class PartListing {
      * @internal
      * @param int $partNumberMarker
      */
-    public function setPartNumberMarker($partNumberMarker) {
+    public function setPartNumberMarker($partNumberMarker)
+    {
         $this->partNumberMarker = $partNumberMarker;
     }
 
@@ -158,7 +169,8 @@ class PartListing {
      *
      * @return int
      */
-    public function getPartNumberMarker() {
+    public function getPartNumberMarker()
+    {
         return $this->partNumberMarker;
     }
 
@@ -166,7 +178,8 @@ class PartListing {
      * @internal
      * @param array $parts
      */
-    public function setParts($parts) {
+    public function setParts($parts)
+    {
         $this->parts = $parts;
     }
 
@@ -175,7 +188,8 @@ class PartListing {
      *
      * @return array
      */
-    public function getParts() {
+    public function getParts()
+    {
         return $this->parts;
     }
 
@@ -183,7 +197,8 @@ class PartListing {
      * @internal
      * @param string $uploadId
      */
-    public function setUploadId($uploadId) {
+    public function setUploadId($uploadId)
+    {
         $this->uploadId = $uploadId;
     }
 
@@ -192,7 +207,8 @@ class PartListing {
      *
      * @return string
      */
-    public function getUploadId() {
+    public function getUploadId()
+    {
         return $this->uploadId;
     }
 
@@ -200,7 +216,8 @@ class PartListing {
      * @internal
      * @param string $storageClass
      */
-    public function setStorageClass($storageClass) {
+    public function setStorageClass($storageClass)
+    {
         $this->storageClass = $storageClass;
     }
 
@@ -209,7 +226,8 @@ class PartListing {
      *
      * @return string
      */
-    public function getStorageClass() {
+    public function getStorageClass()
+    {
         return $this->storageClass;
     }
 }

@@ -7,13 +7,13 @@
  */
 class BaseController extends Controller
 {
-	/**
-	 * 设置Layouts
-	 */
-	protected function setupLayout()
-	{
-		if (!is_null($this->layout)) {
-			$this->layout = View::make($this->layout);
-		}
-	}
+    /**
+     * 设置Layouts
+     */
+    protected function setupLayout()
+    {
+        if (!is_null($this->layout)) {
+            $this->layout = View::make($this->layout);
+        }
+    }
 }

@@ -146,13 +146,13 @@ class QueryString extends Collection
     /**
      * Provide a function for combining multi-valued query string parameters into a single or multiple fields
      *
-     * @param null|QueryAggregatorInterface $aggregator Pass in a QueryAggregatorInterface object to handle converting
-     *                                                  deeply nested query string variables into a flattened array.
-     *                                                  Pass null to use the default PHP style aggregator. For legacy
-     *                                                  reasons, this function accepts a callable that must accepts a
-     *                                                  $key, $value, and query object.
+     * @param  null|QueryAggregatorInterface $aggregator Pass in a QueryAggregatorInterface object to handle converting
+     *                                                   deeply nested query string variables into a flattened array.
+     *                                                   Pass null to use the default PHP style aggregator. For legacy
+     *                                                   reasons, this function accepts a callable that must accepts a
+     *                                                   $key, $value, and query object.
      * @return self
-     * @see \Guzzle\Http\QueryString::aggregateUsingComma()
+     *                                                  @see \Guzzle\Http\QueryString::aggregateUsingComma()
      */
     public function setAggregator(QueryAggregatorInterface $aggregator = null)
     {
@@ -172,8 +172,8 @@ class QueryString extends Collection
     /**
      * Set whether or not field names and values should be rawurlencoded
      *
-     * @param bool|string $encode Set to TRUE to use RFC 3986 encoding (rawurlencode), false to disable encoding, or
-     *                            form_urlencoding to use application/x-www-form-urlencoded encoding (urlencode)
+     * @param  bool|string $encode Set to TRUE to use RFC 3986 encoding (rawurlencode), false to disable encoding, or
+     *                             form_urlencoding to use application/x-www-form-urlencoded encoding (urlencode)
      * @return self
      */
     public function useUrlEncoding($encode)

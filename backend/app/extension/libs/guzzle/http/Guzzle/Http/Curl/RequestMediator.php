@@ -79,11 +79,11 @@ class RequestMediator
     /**
      * Received a progress notification
      *
-     * @param int        $downloadSize Total download size
-     * @param int        $downloaded   Amount of bytes downloaded
-     * @param int        $uploadSize   Total upload size
-     * @param int        $uploaded     Amount of bytes uploaded
-     * @param resource   $handle       CurlHandle object
+     * @param int      $downloadSize Total download size
+     * @param int      $downloaded   Amount of bytes downloaded
+     * @param int      $uploadSize   Total upload size
+     * @param int      $uploaded     Amount of bytes uploaded
+     * @param resource $handle       CurlHandle object
      */
     public function progress($downloadSize, $downloaded, $uploadSize, $uploaded, $handle = null)
     {

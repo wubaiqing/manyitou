@@ -19,8 +19,10 @@ use Aliyun\OSS\Utilities\OSSRequestBuilder;
 
 use Aliyun\OSS\Utilities\OSSUtils;
 
-class CopyObjectCommand extends OSSCommand {
-    protected function checkOptions($options) {
+class CopyObjectCommand extends OSSCommand
+{
+    protected function checkOptions($options)
+    {
         $options = parent::checkOptions($options);
         AssertUtils::assertSet(array(
             OSSOptions::SOURCE_BUCKET,
@@ -37,8 +39,8 @@ class CopyObjectCommand extends OSSCommand {
         return $options;
     }
 
-    protected function getRequest($options) {
-
+    protected function getRequest($options)
+    {
         $builder = OSSRequestBuilder::factory();
 
         if (isset($options[OSSOptions::MODIFIED_SINCE_CONSTRAINT])) {

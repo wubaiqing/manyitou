@@ -4,14 +4,16 @@ require_once dirname(__DIR__) . '/aliyun.php';
 use Aliyun\OSS\OSSClient;
 
 // Sample of create client
-function createClient($accessKeyId, $accessKeySecret) {
+function createClient($accessKeyId, $accessKeySecret)
+{
     return OSSClient::factory(array(
         'AccessKeyId' => $accessKeyId,
         'AccessKeySecret' => $accessKeySecret,
     ));
 }
 
-function listObjects(OSSClient $client, $bucket) {
+function listObjects(OSSClient $client, $bucket)
+{
     $result = $client->listObjects(array(
         'Bucket' => $bucket,
     ));
@@ -21,7 +23,8 @@ function listObjects(OSSClient $client, $bucket) {
 }
 
 // Sample of put object from string
-function putStringObject(OSSClient $client, $bucket, $key, $content) {
+function putStringObject(OSSClient $client, $bucket, $key, $content)
+{
     $result = $client->putObject(array(
         'Bucket' => $bucket,
         'Key' => $key,
@@ -31,7 +34,8 @@ function putStringObject(OSSClient $client, $bucket, $key, $content) {
 }
 
 // Sample of put object from resource
-function putResourceObject(OSSClient $client, $bucket, $key, $content, $size) {
+function putResourceObject(OSSClient $client, $bucket, $key, $content, $size)
+{
     $result = $client->putObject(array(
         'Bucket' => $bucket,
         'Key' => $key,
@@ -42,7 +46,8 @@ function putResourceObject(OSSClient $client, $bucket, $key, $content, $size) {
 }
 
 // Sample of get object
-function getObject(OSSClient $client, $bucket, $key) {
+function getObject(OSSClient $client, $bucket, $key)
+{
     $object = $client->getObject(array(
         'Bucket' => $bucket,
         'Key' => $key,
@@ -53,7 +58,8 @@ function getObject(OSSClient $client, $bucket, $key) {
 }
 
 // Sample of delete object
-function deleteObject(OSSClient $client, $bucket, $key) {
+function deleteObject(OSSClient $client, $bucket, $key)
+{
     $client->deleteObject(array(
         'Bucket' => $bucket,
         'Key' => $key,

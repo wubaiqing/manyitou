@@ -184,8 +184,8 @@ interface RequestInterface extends MessageInterface, HasDispatcherInterface
      * @param string      $scheme   Authentication scheme ('Basic', 'Digest', or a CURLAUTH_* constant (deprecated))
      *
      * @return self
-     * @link http://www.ietf.org/rfc/rfc2617.txt
-     * @link http://php.net/manual/en/function.curl-setopt.php See the available options for CURLOPT_HTTPAUTH
+     *                          @link http://www.ietf.org/rfc/rfc2617.txt
+     *                          @link http://php.net/manual/en/function.curl-setopt.php See the available options for CURLOPT_HTTPAUTH
      * @throws RequestException
      */
     public function setAuth($user, $password = '', $scheme = 'Basic');
@@ -242,8 +242,8 @@ interface RequestInterface extends MessageInterface, HasDispatcherInterface
      * This method should be invoked when you need to send the response's entity body somewhere other than the normal
      * php://temp buffer. For example, you can send the entity body to a socket, file, or some other custom stream.
      *
-     * @param EntityBodyInterface|string|resource $body Response body object. Pass a string to attempt to store the
-     *                                                  response body in a local file.
+     * @param  EntityBodyInterface|string|resource $body Response body object. Pass a string to attempt to store the
+     *                                                   response body in a local file.
      * @return Request
      */
     public function setResponseBody($body);

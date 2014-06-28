@@ -38,7 +38,6 @@ class RequestFactory implements RequestFactoryInterface
             static::$instance = new static();
         }
         // @codeCoverageIgnoreEnd
-
         return static::$instance;
     }
 

@@ -192,6 +192,7 @@ class EntityEnclosingRequest extends Request implements EntityEnclosingRequestIn
             foreach ($filename as $file) {
                 $this->addPostFile($field, $file, $contentType);
             }
+
             return $this;
         } elseif (!is_string($filename)) {
             throw new RequestException('The path to a file must be a string');

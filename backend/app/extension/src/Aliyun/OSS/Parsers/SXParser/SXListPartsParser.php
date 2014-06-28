@@ -17,9 +17,10 @@ use Aliyun\OSS\Models\PartSummary;
 
 use Aliyun\OSS\Utilities\OSSUtils;
 
-class SXListPartsParser extends SXParser {
-
-    public function parse(HttpResponse $response, $options) {
+class SXListPartsParser extends SXParser
+{
+    public function parse(HttpResponse $response, $options)
+    {
         $xml = $this->getXmlObject($response->getContent());
 
         $partListing = new PartListing();
@@ -60,6 +61,7 @@ class SXListPartsParser extends SXParser {
             }
             $partListing->setParts($parts);
         }
+
         return $partListing;
     }
 }

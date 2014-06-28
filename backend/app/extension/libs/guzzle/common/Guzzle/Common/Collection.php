@@ -375,6 +375,7 @@ class Collection implements \ArrayAccess, \IteratorAggregate, \Countable, ToArra
                         $result = array_merge_recursive($result, (array) $test);
                     }
                 }
+
                 return $result;
             }
         }
@@ -388,7 +389,7 @@ class Collection implements \ArrayAccess, \IteratorAggregate, \Countable, ToArra
      * @param string $input Input to inject
      *
      * @return string
-     * @deprecated
+     *                @deprecated
      */
     public function inject($input)
     {

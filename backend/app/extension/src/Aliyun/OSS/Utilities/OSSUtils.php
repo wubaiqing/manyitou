@@ -15,7 +15,8 @@ use Aliyun\Common\Utilities\ServiceConstants;
 
 use Aliyun\OSS\Models\OSSOptions;
 
-class OSSUtils {
+class OSSUtils
+{
     const DEFAULT_CONTENT_TYPE = "application/octet-stream";
 
     const SUBRESOURCE_UPLOADS = "uploads";
@@ -30,20 +31,24 @@ class OSSUtils {
         OSSOptions::USER_METADATA,
     );
 
-    public static function getAllMetaOptions() {
+    public static function getAllMetaOptions()
+    {
         return self::$_metaOptions;
     }
 
-    public static function containsMetaOptions($options) {
+    public static function containsMetaOptions($options)
+    {
         foreach (self::$_metaOptions as $metaOption) {
             if (isset($options[$metaOption])) {
                 return true;
             }
         }
+
         return false;
     }
 
-    public static function populateOverrides(&$parameters, $options) {
+    public static function populateOverrides(&$parameters, $options)
+    {
         // Overrides
         if (isset($options[OSSOptions::RESPONSE_CACHE_CONTROL])) {
             $parameters[ResponseHeaderOverrides::RESPONSE_HEADER_CACHE_CONTROL]
@@ -76,8 +81,8 @@ class OSSUtils {
         }
     }
 
-    public static function  populateObjectMetadata(&$headers, $options) {
-
+    public static function populateObjectMetadata(&$headers, $options)
+    {
         if (isset($options[OSSOptions::CONTENT_DISPOSITION])) {
             $headers[OSSHeaders::CONTENT_DISPOSITION] = $options[OSSOptions::CONTENT_DISPOSITION];
         }
@@ -105,7 +110,8 @@ class OSSUtils {
         }
     }
 
-    public static function buildEndpoint($endpoint, $bucket) {
+    public static function buildEndpoint($endpoint, $bucket)
+    {
         $urlParameters = parse_url($endpoint);
         $bucketEndpoint = $urlParameters['host'];
 
@@ -124,23 +130,28 @@ class OSSUtils {
         return $bucketEndpoint;
     }
 
-    public static function buildResourcePath($key) {
+    public static function buildResourcePath($key)
+    {
         return empty($key) ? '/' : '/'.rawurlencode($key);
     }
 
-    public static function trimQuotes($string) {
+    public static function trimQuotes($string)
+    {
         return trim($string, "\"");
     }
 
-    public static function validBucketName($bucketName) {
+    public static function validBucketName($bucketName)
+    {
         $pattern = '/^[a-z0-9][a-z0-9_\-]{2,254}$/';
         if (preg_match($pattern, $bucketName)) {
             return true;
         }
+
         return false;
     }
 
-    public static function validObjectKey($key) {
+    public static function validObjectKey($key)
+    {
         if (!mb_check_encoding($key, ServiceConstants::CHARSET)) {
             return false;
         }
@@ -156,17 +167,19 @@ class OSSUtils {
         }
 
         $byteLength = strlen($key);
+
         return $byteLength > 0 && $byteLength < 1024;
     }
 
-
-    public static function assertBucketName($bucketName) {
+    public static function assertBucketName($bucketName)
+    {
         if (!self::validBucketName($bucketName)) {
             throw new \InvalidArgumentException(ResourceManager::getInstance()->getString('BucketNameInvalid'));
         }
     }
 
-    public static function assertObjectKey($key) {
+    public static function assertObjectKey($key)
+    {
         if (!self::validObjectKey($key)) {
             throw new \InvalidArgumentException(ResourceManager::getInstance()->getString('ObjectKeyInvalid'));
         }

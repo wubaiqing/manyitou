@@ -51,6 +51,7 @@ class CurlMultiProxy extends AbstractHasDispatcher implements CurlMultiInterface
         foreach ($this->queued as $i => $r) {
             if ($request === $r) {
                 unset($this->queued[$i]);
+
                 return true;
             }
         }

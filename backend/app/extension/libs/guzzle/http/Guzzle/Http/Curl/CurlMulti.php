@@ -81,6 +81,7 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
                 unset($this->requests[$i]);
                 $this->requests = array_values($this->requests);
                 $this->dispatch(self::REMOVE_REQUEST, array('request' => $request));
+
                 return true;
             }
         }
@@ -121,8 +122,8 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
     /**
      * Build and throw a MultiTransferException
      *
-     * @param array $exceptions Exceptions encountered
-     * @param array $successful Successful requests
+     * @param  array                  $exceptions Exceptions encountered
+     * @param  array                  $successful Successful requests
      * @throws MultiTransferException
      */
     protected function throwMultiException(array $exceptions, array $successful)
@@ -147,8 +148,8 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
     /**
      * Prepare for sending
      *
-     * @param RequestInterface $request Request to prepare
-     * @throws \Exception on error preparing the request
+     * @param  RequestInterface $request Request to prepare
+     * @throws \Exception       on error preparing the request
      */
     protected function beforeSend(RequestInterface $request)
     {
@@ -375,7 +376,7 @@ class CurlMulti extends AbstractHasDispatcher implements CurlMultiInterface
     /**
      * Throw an exception for a cURL multi response if needed
      *
-     * @param int $code Curl response code
+     * @param  int           $code Curl response code
      * @throws CurlException
      */
     private function checkCurlResult($code)

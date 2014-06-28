@@ -7,29 +7,29 @@
  */
 class Billboard extends \Eloquent
 {
-	/**
-	 * @var string 表名
-	 */
-	protected $table = 'billboard';
+    /**
+     * @var string 表名
+     */
+    protected $table = 'billboard';
 
-	/**
-	 * @var array 允许填充字段
-	 */
-	protected $fillable = [
-		'title',
-		'content',
-		'status'
-	];
+    /**
+     * @var array 允许填充字段
+     */
+    protected $fillable = [
+        'title',
+        'content',
+        'status'
+    ];
 
-	/**
-	 * 创建商品规则
-	 * @return array
-	 */
-	public static function rulesCreate()
-	{
-		return [
-			'title' => 'required',
-			'content' => 'required',
-		];
-	}
+    /**
+     * 创建商品规则
+     * @return array
+     */
+    public static function rulesCreate()
+    {
+        return [
+            'title' => 'required',
+            'content' => 'required',
+        ];
+    }
 }

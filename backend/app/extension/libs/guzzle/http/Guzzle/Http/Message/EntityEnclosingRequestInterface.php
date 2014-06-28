@@ -17,11 +17,11 @@ interface EntityEnclosingRequestInterface extends RequestInterface
     /**
      * Set the body of the request
      *
-     * @param string|resource|EntityBodyInterface $body        Body to use in the entity body of the request
-     * @param string                              $contentType Content-Type to set. Leave null to use an existing
-     *                                                         Content-Type or to guess the Content-Type
+     * @param  string|resource|EntityBodyInterface $body        Body to use in the entity body of the request
+     * @param  string                              $contentType Content-Type to set. Leave null to use an existing
+     *                                                          Content-Type or to guess the Content-Type
      * @return self
-     * @throws RequestException if the protocol is < 1.1 and Content-Length can not be determined
+     * @throws RequestException                    if the protocol is < 1.1 and Content-Length can not be determined
      */
     public function setBody($body, $contentType = null);
 
@@ -104,10 +104,10 @@ interface EntityEnclosingRequestInterface extends RequestInterface
     /**
      * Add a POST file to the upload
      *
-     * @param string $field       POST field to use (e.g. file). Used to reference content from the server.
-     * @param string $filename    Full path to the file. Do not include the @ symbol.
-     * @param string $contentType Optional Content-Type to add to the Content-Disposition.
-     *                            Default behavior is to guess. Set to false to not specify.
+     * @param  string $field       POST field to use (e.g. file). Used to reference content from the server.
+     * @param  string $filename    Full path to the file. Do not include the @ symbol.
+     * @param  string $contentType Optional Content-Type to add to the Content-Disposition.
+     *                             Default behavior is to guess. Set to false to not specify.
      * @return self
      */
     public function addPostFile($field, $filename = null, $contentType = null);

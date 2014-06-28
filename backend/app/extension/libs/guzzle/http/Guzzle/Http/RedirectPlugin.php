@@ -4,7 +4,6 @@ namespace Guzzle\Http;
 
 use Guzzle\Common\Event;
 use Guzzle\Http\Exception\BadResponseException;
-use Guzzle\Http\Url;
 use Guzzle\Http\Message\Response;
 use Guzzle\Http\Message\RequestInterface;
 use Guzzle\Http\Message\RequestFactory;
@@ -76,6 +75,7 @@ class RedirectPlugin implements EventSubscriberInterface
                 $original->setResponse($response);
                 $response->setEffectiveUrl($request->getUrl());
             }
+
             return;
         }
 
@@ -111,7 +111,7 @@ class RedirectPlugin implements EventSubscriberInterface
      * @param int              $statusCode Status code of the redirect
      * @param string           $location   Location header of the redirect
      *
-     * @return RequestInterface Returns a new redirect request
+     * @return RequestInterface              Returns a new redirect request
      * @throws CouldNotRewindStreamException If the body needs to be rewound but cannot
      */
     protected function createRedirectRequest(
@@ -174,9 +174,9 @@ class RedirectPlugin implements EventSubscriberInterface
     /**
      * Prepare the request for redirection and enforce the maximum number of allowed redirects per client
      *
-     * @param RequestInterface $original  Origina request
-     * @param RequestInterface $request   Request to prepare and validate
-     * @param Response         $response  The current response
+     * @param RequestInterface $original Origina request
+     * @param RequestInterface $request  Request to prepare and validate
+     * @param Response         $response The current response
      *
      * @return RequestInterface
      */
@@ -192,6 +192,7 @@ class RedirectPlugin implements EventSubscriberInterface
         // Throw an exception if the redirect count is exceeded
         if ($current > $max) {
             $this->throwTooManyRedirectsException($original, $max);
+
             return false;
         } else {
             // Create a redirect request based on the redirect rules set on the request

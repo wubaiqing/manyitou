@@ -11,9 +11,10 @@ use Aliyun\Common\Communication\HttpResponse;
 
 use Aliyun\OSS\Models\InitiateMultipartUploadResult;
 
-class SXInitiateMultipartUploadParser extends SXParser {
-
-    public function parse(HttpResponse $response, $options) {
+class SXInitiateMultipartUploadParser extends SXParser
+{
+    public function parse(HttpResponse $response, $options)
+    {
         $xml = $this->getXmlObject($response->getContent());
         $result = new InitiateMultipartUploadResult();
 

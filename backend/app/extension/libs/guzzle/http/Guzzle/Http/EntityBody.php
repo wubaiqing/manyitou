@@ -5,7 +5,6 @@ namespace Guzzle\Http;
 use Guzzle\Common\Version;
 use Guzzle\Stream\Stream;
 use Guzzle\Common\Exception\InvalidArgumentException;
-use Guzzle\Http\Mimetypes;
 
 /**
  * Entity body used with an HTTP request or response
@@ -141,12 +140,13 @@ class EntityBody extends Stream implements EntityBodyInterface
      * @param bool                $base64Encode Whether or not to base64 encode raw output (only if raw output is true)
      *
      * @return bool|string Returns an MD5 string on success or FALSE on failure
-     * @deprecated This will be deprecated soon
-     * @codeCoverageIgnore
+     *                     @deprecated This will be deprecated soon
+     *                     @codeCoverageIgnore
      */
     public static function calculateMd5(EntityBodyInterface $body, $rawOutput = false, $base64Encode = false)
     {
         Version::warn(__CLASS__ . ' is deprecated. Use getContentMd5()');
+
         return $body->getContentMd5($rawOutput, $base64Encode);
     }
 

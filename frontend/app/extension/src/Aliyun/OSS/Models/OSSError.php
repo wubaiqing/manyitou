@@ -12,8 +12,8 @@ namespace Aliyun\OSS\Models;
  *
  * @package Aliyun\OSS\Models
  */
-class OSSError {
-
+class OSSError
+{
     /**
      * @var string
      */
@@ -39,7 +39,8 @@ class OSSError {
      *
      * @return string
      */
-    public function getCode() {
+    public function getCode()
+    {
         return $this->code;
     }
 
@@ -47,7 +48,8 @@ class OSSError {
      * @internal
      * @param $code
      */
-    public function setCode($code) {
+    public function setCode($code)
+    {
         $this->code = $code;
     }
 
@@ -56,7 +58,8 @@ class OSSError {
      *
      * @return string
      */
-    public function getRequestId() {
+    public function getRequestId()
+    {
         return $this->requestId;
     }
 
@@ -64,7 +67,8 @@ class OSSError {
      * @internal
      * @param $requestId
      */
-    public function setRequestId($requestId) {
+    public function setRequestId($requestId)
+    {
         $this->requestId = $requestId;
     }
 
@@ -72,7 +76,8 @@ class OSSError {
      * 获取HostId
      * @return string
      */
-    public function getHostId() {
+    public function getHostId()
+    {
         return $this->hostId;
     }
 
@@ -80,7 +85,8 @@ class OSSError {
      * @internal
      * @param $hostId
      */
-    public function setHostId($hostId) {
+    public function setHostId($hostId)
+    {
         $this->hostId = $hostId;
     }
 
@@ -89,7 +95,8 @@ class OSSError {
      *
      * @return string
      */
-    public function getMessage() {
+    public function getMessage()
+    {
         return $this->message;
     }
 
@@ -97,7 +104,8 @@ class OSSError {
      * @internal
      * @param $message
      */
-    public function setMessage($message) {
+    public function setMessage($message)
+    {
         $this->message = $message;
     }
 }

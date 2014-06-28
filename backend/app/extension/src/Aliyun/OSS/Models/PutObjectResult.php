@@ -11,8 +11,8 @@ namespace Aliyun\OSS\Models;
  * Put Object的返回结果
  * @package Aliyun\OSS\Models
  */
-class PutObjectResult {
-
+class PutObjectResult
+{
     /**
      * Object 的ETag值
      * @var string
@@ -26,7 +26,8 @@ class PutObjectResult {
      *
      * @param string $eTag
      */
-    public function setETag($eTag) {
+    public function setETag($eTag)
+    {
         $this->eTag = $eTag;
     }
 
@@ -34,9 +35,9 @@ class PutObjectResult {
      * 获取ETag的值
      * @return string
      */
-    public function getETag() {
+    public function getETag()
+    {
         return $this->eTag;
     }
-
 
 }

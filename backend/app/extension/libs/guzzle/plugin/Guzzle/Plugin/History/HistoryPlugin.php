@@ -106,6 +106,7 @@ class HistoryPlugin implements EventSubscriberInterface, \IteratorAggregate, \Co
         // Return an iterator just like the old iteration of the HistoryPlugin for BC compatibility (use getAll())
         return new \ArrayIterator(array_map(function ($entry) {
             $entry['request']->getParams()->set('actual_response', $entry['response']);
+
             return $entry['request'];
         }, $this->transactions));
     }

@@ -13,9 +13,10 @@ use Aliyun\OSS\Models\CompleteMultipartUploadResult;
 
 use Aliyun\OSS\Utilities\OSSUtils;
 
-class SXCompleteMultipartUploadParser extends SXParser {
-
-    public function parse(HttpResponse $response, $options) {
+class SXCompleteMultipartUploadParser extends SXParser
+{
+    public function parse(HttpResponse $response, $options)
+    {
         $xml = $this->getXmlObject($response->getContent());
         $result = new CompleteMultipartUploadResult();
         $result->setETag(OSSUtils::trimQuotes((string) $xml->ETag));

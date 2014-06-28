@@ -17,25 +17,24 @@ use Aliyun\Common\Models\ServiceOptions;
 
 use Guzzle\Common\Event;
 
-use Aliyun\Common\Communication\ServiceClientInterface;
-
 use Guzzle\Http\EntityBody;
 
 use Guzzle\Http\Message\EntityEnclosingRequest;
 
 use Guzzle\Http\ReadLimitEntityBody;
 
-class HttpServiceClient implements ServiceClientInterface {
-	/**
-	 * @var \Guzzle\Http\Client.
-	 */
-	protected $client;
+class HttpServiceClient implements ServiceClientInterface
+{
+    /**
+     * @var \Guzzle\Http\Client.
+     */
+    protected $client;
 
-	public function __construct($config = array()) {
-
+    public function __construct($config = array())
+    {
         // Create internal client.
-		$this->client = new \Guzzle\Http\Client(null, array(
-		    'curl.options' => $config[ServiceOptions::CURL_OPTIONS],
+        $this->client = new \Guzzle\Http\Client(null, array(
+            'curl.options' => $config[ServiceOptions::CURL_OPTIONS],
         ));
 
         // Strict redirect.
@@ -44,12 +43,13 @@ class HttpServiceClient implements ServiceClientInterface {
         ));
 
         // Stop error dispatcher.
-		$this->client->getEventDispatcher()->addListener('request.error', function(Event $event) {
-			$event->stopPropagation();
-		});
-	}
-	
-	public function sendRequest(HttpRequest $request, ExecutionContext $context) {
+        $this->client->getEventDispatcher()->addListener('request.error', function (Event $event) {
+            $event->stopPropagation();
+        });
+    }
+
+    public function sendRequest(HttpRequest $request, ExecutionContext $context)
+    {
         $response = new HttpResponse($request);
         try {
 
@@ -87,15 +87,16 @@ class HttpServiceClient implements ServiceClientInterface {
             }
 
             $request->setResponse($response);
+
             return $response;
         } catch (\Exception $e) {
             $response->close();
             throw new ClientException($e->getMessage(), $e);
         }
-	}
-	
-	protected function buildCoreRequest(HttpRequest $request) {
+    }
 
+    protected function buildCoreRequest(HttpRequest $request)
+    {
         $headers = $request->getHeaders();
         $contentLength = 0;
         if (!$request->isParameterInUrl()) {
@@ -123,5 +124,5 @@ class HttpServiceClient implements ServiceClientInterface {
         }
 
         return $coreRequest;
-	}
+    }
 }

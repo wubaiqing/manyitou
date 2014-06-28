@@ -7,29 +7,29 @@
  */
 class Banner extends \Eloquent
 {
-	/**
-	 * @var string 表名
-	 */
-	protected $table = 'banner';
+    /**
+     * @var string 表名
+     */
+    protected $table = 'banner';
 
-	/**
-	 * @var array 允许填充字段
-	 */
-	protected $fillable = [
-		'color',
-		'image',
-	];
+    /**
+     * @var array 允许填充字段
+     */
+    protected $fillable = [
+        'color',
+        'image',
+    ];
 
-	/**
-	 * 创建商品规则
-	 * @return array
-	 */
-	public static function rulesCreate()
-	{
-		return [
-			'color' => 'required',
-			'image' => 'required',
-		];
-	}
+    /**
+     * 创建商品规则
+     * @return array
+     */
+    public static function rulesCreate()
+    {
+        return [
+            'color' => 'required',
+            'image' => 'required',
+        ];
+    }
 
 }

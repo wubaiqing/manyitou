@@ -23,16 +23,16 @@ class OauthPlugin implements EventSubscriberInterface
      * Create a new OAuth 1.0 plugin
      *
      * @param array $config Configuration array containing these parameters:
-     *     - string 'callback'             OAuth callback
-     *     - string 'consumer_key'         Consumer key
-     *     - string 'consumer_secret'      Consumer secret
-     *     - string 'token'                Token
-     *     - string 'token_secret'         Token secret
-     *     - string 'verifier'             OAuth verifier.
-     *     - string 'version'              OAuth version.  Defaults to 1.0
-     *     - string 'signature_method'     Custom signature method
-     *     - bool   'disable_post_params'  Set to true to prevent POST parameters from being signed
-     *     - array|Closure 'signature_callback' Custom signature callback that accepts a string to sign and a signing key
+     *                      - string 'callback'             OAuth callback
+     *                      - string 'consumer_key'         Consumer key
+     *                      - string 'consumer_secret'      Consumer secret
+     *                      - string 'token'                Token
+     *                      - string 'token_secret'         Token secret
+     *                      - string 'verifier'             OAuth verifier.
+     *                      - string 'version'              OAuth version.  Defaults to 1.0
+     *                      - string 'signature_method'     Custom signature method
+     *                      - bool   'disable_post_params'  Set to true to prevent POST parameters from being signed
+     *                      - array|Closure 'signature_callback' Custom signature callback that accepts a string to sign and a signing key
      */
     public function __construct($config)
     {
@@ -41,7 +41,7 @@ class OauthPlugin implements EventSubscriberInterface
             'consumer_key' => 'anonymous',
             'consumer_secret' => 'anonymous',
             'signature_method' => 'HMAC-SHA1',
-            'signature_callback' => function($stringToSign, $key) {
+            'signature_callback' => function ($stringToSign, $key) {
                 return hash_hmac('sha1', $stringToSign, $key, true);
             }
         ), array(
@@ -60,7 +60,7 @@ class OauthPlugin implements EventSubscriberInterface
     /**
      * Request before-send event handler
      *
-     * @param Event $event Event received
+     * @param  Event $event Event received
      * @return array
      */
     public function onRequestBeforeSend(Event $event)
@@ -170,11 +170,11 @@ class OauthPlugin implements EventSubscriberInterface
             'oauth_token'            => $this->config['token'],
             'oauth_version'          => $this->config['version']
         ));
-        
+
         if (array_key_exists('callback', $this->config) == true) {
             $params['oauth_callback'] = $this->config['callback'];
         }
-        
+
         if (array_key_exists('verifier', $this->config) == true) {
             $params['oauth_verifier'] = $this->config['verifier'];
         }
@@ -183,8 +183,7 @@ class OauthPlugin implements EventSubscriberInterface
         $params->merge($request->getQuery());
 
         // Add POST fields to signing string if required
-        if ($this->shouldPostFieldsBeSigned($request))
-        {
+        if ($this->shouldPostFieldsBeSigned($request)) {
             $params->merge($request->getPostFields());
         }
 

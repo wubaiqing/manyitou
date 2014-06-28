@@ -4,7 +4,8 @@ require_once dirname(__DIR__) . '/aliyun.php';
 use Aliyun\OSS\OSSClient;
 
 // Sample of multipart upload
-function multipartUploadSample() {
+function multipartUploadSample()
+{
     $fileName = '/path/to/file';
     $bucket = 'your-bucket-name';
     $key = 'your-object-key';

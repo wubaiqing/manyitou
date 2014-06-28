@@ -922,7 +922,7 @@ class Mimetypes
      * Get a singleton instance of the class
      *
      * @return self
-     * @codeCoverageIgnore
+     *              @codeCoverageIgnore
      */
     public static function getInstance()
     {

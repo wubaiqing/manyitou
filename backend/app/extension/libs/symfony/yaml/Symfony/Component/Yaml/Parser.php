@@ -42,7 +42,7 @@ class Parser
      * @param Boolean $exceptionOnInvalidType true if an exception must be thrown on invalid types (a PHP resource or object), false otherwise
      * @param Boolean $objectSupport          true if object support is enabled, false otherwise
      *
-     * @return mixed  A PHP value
+     * @return mixed A PHP value
      *
      * @throws ParseException If the YAML is not valid
      */
@@ -369,7 +369,7 @@ class Parser
      * @param Boolean $exceptionOnInvalidType True if an exception must be thrown on invalid types false otherwise
      * @param Boolean $objectSupport          True if object support is enabled, false otherwise
      *
-     * @return mixed  A PHP value
+     * @return mixed A PHP value
      *
      * @throws ParseException When reference does not exist
      */
@@ -412,7 +412,7 @@ class Parser
      * @param string  $indicator   The indicator that was used to begin this folded scalar (+ or -)
      * @param integer $indentation The indentation that was used to begin this folded scalar
      *
-     * @return string  The text value
+     * @return string The text value
      */
     private function parseFoldedScalar($separator, $indicator = '', $indentation = 0)
     {

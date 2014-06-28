@@ -19,8 +19,10 @@ use Aliyun\OSS\Models\Owner;
 
 use Aliyun\OSS\Utilities\OSSUtils;
 
-class SXListObjectsParser extends SXParser {
-    public function parse(HttpResponse $response, $options) {
+class SXListObjectsParser extends SXParser
+{
+    public function parse(HttpResponse $response, $options)
+    {
         $xml = $this->getXmlObject($response->getContent());
 
         $objectListing = new ObjectListing();

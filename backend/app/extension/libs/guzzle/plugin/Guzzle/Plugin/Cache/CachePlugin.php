@@ -39,14 +39,14 @@ class CachePlugin implements EventSubscriberInterface
     protected $autoPurge;
 
     /**
-     * @param array|CacheAdapterInterface|CacheStorageInterface $options Array of options for the cache plugin,
-     *     cache adapter, or cache storage object.
-     *     - CacheStorageInterface storage:      Adapter used to cache responses
-     *     - RevalidationInterface revalidation: Cache revalidation strategy
-     *     - CanCacheInterface     can_cache:    Object used to determine if a request can be cached
-     *     - bool                  auto_purge    Set to true to automatically PURGE resources when non-idempotent
-     *                                           requests are sent to a resource. Defaults to false.
-     * @throws InvalidArgumentException if no cache is provided and Doctrine cache is not installed
+     * @param  array|CacheAdapterInterface|CacheStorageInterface $options Array of options for the cache plugin,
+     *                                                                    cache adapter, or cache storage object.
+     *                                                                    - CacheStorageInterface storage:      Adapter used to cache responses
+     *                                                                    - RevalidationInterface revalidation: Cache revalidation strategy
+     *                                                                    - CanCacheInterface     can_cache:    Object used to determine if a request can be cached
+     *                                                                    - bool                  auto_purge    Set to true to automatically PURGE resources when non-idempotent
+     *                                                                    requests are sent to a resource. Defaults to false.
+     * @throws InvalidArgumentException                          if no cache is provided and Doctrine cache is not installed
      */
     public function __construct($options = null)
     {
@@ -119,6 +119,7 @@ class CachePlugin implements EventSubscriberInterface
                         $this->purge($request);
                     }
             }
+
             return;
         }
 
@@ -256,6 +257,7 @@ class CachePlugin implements EventSubscriberInterface
                 return $this->revalidation->revalidate($request, $response);
             } catch (CurlException $e) {
                 $request->getParams()->set('cache.hit', 'error');
+
                 return $this->canResponseSatisfyFailedRequest($request, $response);
             }
         }

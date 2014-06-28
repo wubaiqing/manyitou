@@ -148,6 +148,7 @@ class Header implements HeaderInterface
     public function hasExactHeader($header)
     {
         Version::warn(__METHOD__ . ' is deprecated');
+
         return $this->header == $header;
     }
 
@@ -158,6 +159,7 @@ class Header implements HeaderInterface
     public function raw()
     {
         Version::warn(__METHOD__ . ' is deprecated. Use toArray()');
+
         return $this->toArray();
     }
 

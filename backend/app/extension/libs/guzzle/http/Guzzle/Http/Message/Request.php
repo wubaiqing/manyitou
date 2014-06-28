@@ -137,7 +137,7 @@ class Request extends AbstractMessage implements RequestInterface
     /**
      * Default method that will throw exceptions if an unsuccessful response is received.
      *
-     * @param Event $event Received
+     * @param  Event                $event Received
      * @throws BadResponseException if the response is not successful
      */
     public static function onRequestError(Event $event)
@@ -308,6 +308,7 @@ class Request extends AbstractMessage implements RequestInterface
             $this->password = $this->username = null;
             $this->removeHeader('Authorization');
             $this->getCurlOptions()->remove(CURLOPT_HTTPAUTH);
+
             return $this;
         }
 
@@ -459,12 +460,13 @@ class Request extends AbstractMessage implements RequestInterface
      * Determine if the response body is repeatable (readable + seekable)
      *
      * @return bool
-     * @deprecated Use getResponseBody()->isSeekable()
-     * @codeCoverageIgnore
+     *              @deprecated Use getResponseBody()->isSeekable()
+     *              @codeCoverageIgnore
      */
     public function isResponseBodyRepeatable()
     {
         Version::warn(__METHOD__ . ' is deprecated. Use $request->getResponseBody()->isRepeatable()');
+
         return !$this->responseBody ? true : $this->responseBody->isRepeatable();
     }
 
@@ -472,6 +474,7 @@ class Request extends AbstractMessage implements RequestInterface
     {
         if ($cookie = $this->getHeader('Cookie')) {
             $data = ParserRegistry::getInstance()->getParser('cookie')->parseCookie($cookie);
+
             return $data['cookies'];
         }
 
@@ -558,7 +561,7 @@ class Request extends AbstractMessage implements RequestInterface
     /**
      * Process a received response
      *
-     * @param array $context Contextual information
+     * @param  array                                 $context Contextual information
      * @throws RequestException|BadResponseException on unsuccessful responses
      */
     protected function processResponse(array $context = array())
@@ -608,6 +611,7 @@ class Request extends AbstractMessage implements RequestInterface
         Version::warn(__METHOD__ . ' is deprecated. Use Guzzle\Plugin\Cache\DefaultCanCacheStrategy.');
         if (class_exists('Guzzle\Plugin\Cache\DefaultCanCacheStrategy')) {
             $canCache = new \Guzzle\Plugin\Cache\DefaultCanCacheStrategy();
+
             return $canCache->canCacheRequest($this);
         } else {
             return false;
@@ -632,6 +636,7 @@ class Request extends AbstractMessage implements RequestInterface
     public function isRedirect()
     {
         Version::warn(__METHOD__ . ' is deprecated. Use the HistoryPlugin to track this.');
+
         return $this->isRedirect;
     }
 }

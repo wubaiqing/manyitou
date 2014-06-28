@@ -96,6 +96,7 @@ class PostFile implements PostFileInterface
     public function getCurlString()
     {
         Version::warn(__METHOD__ . ' is deprecated. Use getCurlValue()');
+
         return $this->getCurlValue();
     }
 

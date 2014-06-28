@@ -44,7 +44,7 @@ class Dumper
      * @param Boolean $exceptionOnInvalidType true if an exception must be thrown on invalid types (a PHP resource or object), false otherwise
      * @param Boolean $objectSupport          true if object support is enabled, false otherwise
      *
-     * @return string  The YAML representation of the PHP value
+     * @return string The YAML representation of the PHP value
      */
     public function dump($input, $inline = 0, $indent = 0, $exceptionOnInvalidType = false, $objectSupport = false)
     {

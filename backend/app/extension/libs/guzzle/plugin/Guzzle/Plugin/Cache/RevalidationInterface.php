@@ -13,8 +13,8 @@ interface RevalidationInterface
     /**
      * Performs a cache revalidation
      *
-     * @param RequestInterface $request    Request to revalidate
-     * @param Response         $response   Response that was received
+     * @param RequestInterface $request  Request to revalidate
+     * @param Response         $response Response that was received
      *
      * @return bool Returns true if the request can be cached
      */

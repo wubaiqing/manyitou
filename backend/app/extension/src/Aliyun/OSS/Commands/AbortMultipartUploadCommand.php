@@ -8,12 +8,7 @@
 
 namespace Aliyun\OSS\Commands;
 
-
 use Aliyun\Common\Utilities\HttpMethods;
-
-use Aliyun\OSS\Parsers\OSSResponseParserFactory;
-
-use Aliyun\OSS\Parsers\ListBucketParser;
 
 use Aliyun\OSS\Models\OSSOptions;
 
@@ -23,9 +18,10 @@ use Aliyun\Common\Utilities\AssertUtils;
 
 use Aliyun\OSS\Utilities\OSSUtils;
 
-class AbortMultipartUploadCommand extends OSSCommand {
-
-    protected function checkOptions($options) {
+class AbortMultipartUploadCommand extends OSSCommand
+{
+    protected function checkOptions($options)
+    {
         $options = parent::checkOptions($options);
         AssertUtils::assertSet(array(
             OSSOptions::BUCKET,
@@ -34,10 +30,12 @@ class AbortMultipartUploadCommand extends OSSCommand {
         ), $options);
         OSSUtils::assertBucketName($options[OSSOptions::BUCKET]);
         OSSUtils::assertObjectKey($options[OSSOptions::KEY]);
+
         return $options;
     }
 
-    protected function getRequest($options) {
+    protected function getRequest($options)
+    {
         return OSSRequestBuilder::factory()
             ->setEndpoint($options[OSSOptions::ENDPOINT])
             ->setBucket($options[OSSOptions::BUCKET])

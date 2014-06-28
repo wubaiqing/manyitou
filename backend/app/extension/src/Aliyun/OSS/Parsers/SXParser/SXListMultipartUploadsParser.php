@@ -15,11 +15,10 @@ use Aliyun\OSS\Models\MultipartUpload;
 
 use Aliyun\OSS\Models\MultipartUploadsListing;
 
-use Aliyun\OSS\Utilities\OSSUtils;
-
-class SXListMultipartUploadsParser extends SXParser {
-
-    public function parse(HttpResponse $response, $options) {
+class SXListMultipartUploadsParser extends SXParser
+{
+    public function parse(HttpResponse $response, $options)
+    {
         $xml = $this->getXmlObject($response->getContent());
 
         $multipartUploadsListing = new MultipartUploadsListing();

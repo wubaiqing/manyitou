@@ -11,15 +11,12 @@
 |
 */
 
-App::before(function($request)
-{
-	//
+App::before(function ($request) {
+    //
 });
 
-
-App::after(function($request, $response)
-{
-	//
+App::after(function ($request, $response) {
+    //
 });
 
 /*
@@ -33,22 +30,19 @@ App::after(function($request, $response)
 |
 */
 
-Route::filter('admin.auth', function()
-{
-	if (Auth::guest()) return Redirect::guest('/');
+Route::filter('admin.auth', function () {
+    if (Auth::guest()) return Redirect::guest('/');
 });
 
-Route::filter('admin.isLogin', function ()
-{
-	// 验证用户是否登陆
-	if (Auth::check()) {
-		return Redirect::intended('goods/admin');
-	}
+Route::filter('admin.isLogin', function () {
+    // 验证用户是否登陆
+    if (Auth::check()) {
+        return Redirect::intended('goods/admin');
+    }
 });
 
-Route::filter('auth.basic', function()
-{
-	return Auth::basic();
+Route::filter('auth.basic', function () {
+    return Auth::basic();
 });
 
 /*
@@ -62,9 +56,8 @@ Route::filter('auth.basic', function()
 |
 */
 
-Route::filter('guest', function()
-{
-	if (Auth::check()) return Redirect::to('/');
+Route::filter('guest', function () {
+    if (Auth::check()) return Redirect::to('/');
 });
 
 /*
@@ -77,10 +70,8 @@ Route::filter('guest', function()
 | session does not match the one given in this request, we'll bail.
 |
 */
-Route::filter('csrf', function()
-{
-	if (Session::token() != Input::get('_token'))
-	{
-		throw new Illuminate\Session\TokenMismatchException;
-	}
+Route::filter('csrf', function () {
+    if (Session::token() != Input::get('_token')) {
+        throw new Illuminate\Session\TokenMismatchException;
+    }
 });

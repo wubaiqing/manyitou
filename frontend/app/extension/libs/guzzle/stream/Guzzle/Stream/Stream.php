@@ -173,12 +173,14 @@ class Stream implements StreamInterface
         $stats = fstat($this->stream);
         if (isset($stats['size'])) {
             $this->size = $stats['size'];
+
             return $this->size;
         } elseif ($this->cache[self::IS_READABLE] && $this->cache[self::SEEKABLE]) {
             // Only get the size based on the content if the the stream is readable and seekable
             $pos = $this->ftell();
             $this->size = strlen((string) $this);
             $this->seek($pos);
+
             return $this->size;
         }
 

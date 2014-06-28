@@ -145,6 +145,7 @@ abstract class AbstractMessage implements MessageInterface
                     }
                 }
             }
+
             return $data;
         }
     }
@@ -156,6 +157,7 @@ abstract class AbstractMessage implements MessageInterface
     public function setTokenizedHeader($header, $data, $token = ';')
     {
         Version::warn(__METHOD__ . ' is deprecated.');
+
         return $this;
     }
 

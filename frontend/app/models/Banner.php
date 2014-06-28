@@ -7,26 +7,27 @@
  */
 class Banner extends \Eloquent
 {
-	/**
-	 * @var string 表名
-	 */
-	protected $table = 'banner';
+    /**
+     * @var string 表名
+     */
+    protected $table = 'banner';
 
-	public function scopeIndex($query)
-	{
-		return $query->where('status', '=' ,'1')->orderBy('id', 'DESC');
-	}
+    public function scopeIndex($query)
+    {
+        return $query->where('status', '=' ,'1')->orderBy('id', 'DESC');
+    }
 
-	/**
-	 * 首页商品列表
-	 * @return mixed
-	 */
-	public static function getIndex()
-	{
-		$cacheKey = 'get-banner-index';
-		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () {
-			return Banner::index()->get();
-		});
-	}
+    /**
+     * 首页商品列表
+     * @return mixed
+     */
+    public static function getIndex()
+    {
+        $cacheKey = 'get-banner-index';
+
+        return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () {
+            return Banner::index()->get();
+        });
+    }
 
 }

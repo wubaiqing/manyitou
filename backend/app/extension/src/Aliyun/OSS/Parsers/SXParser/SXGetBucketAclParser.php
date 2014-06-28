@@ -7,16 +7,16 @@
  */
 namespace Aliyun\OSS\Parsers\SXParser;
 
-
 use Aliyun\Common\Communication\HttpResponse;
 
 use Aliyun\OSS\Models\AccessControlPolicy;
 
 use Aliyun\OSS\Models\Owner;
 
-class SXGetBucketAclParser extends SXParser {
-
-    public function parse(HttpResponse $response, $options) {
+class SXGetBucketAclParser extends SXParser
+{
+    public function parse(HttpResponse $response, $options)
+    {
         $xml = $this->getXmlObject($response->getContent());
 
         $accessPolicy = new AccessControlPolicy();
@@ -35,6 +35,7 @@ class SXGetBucketAclParser extends SXParser {
             }
             $accessPolicy->setGrants($grants);
         }
+
         return $accessPolicy;
     }
 }

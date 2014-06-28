@@ -54,6 +54,7 @@ abstract class AbstractBackoffStrategy implements BackoffStrategyInterface
                 while ($next->makesDecision() && $next->getNext()) {
                     $next = $next->getNext();
                 }
+
                 return !$next->makesDecision() ? $next->getBackoffPeriod($retries, $request, $response, $e) : 0;
             }
         } else {

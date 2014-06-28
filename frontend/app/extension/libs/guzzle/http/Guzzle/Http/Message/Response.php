@@ -244,7 +244,7 @@ class Response extends AbstractMessage implements \Serializable
      *
      * @return array|string|null Returns all stats if no key is set, a single stat if a key is set, or null if a key
      *                           is set and not found
-     * @link http://www.php.net/manual/en/function.curl-getinfo.php
+     *                           @link http://www.php.net/manual/en/function.curl-getinfo.php
      */
     public function getInfo($key = null)
     {
@@ -619,7 +619,7 @@ class Response extends AbstractMessage implements \Serializable
      */
     public function getServer()
     {
-        return (string)  $this->getHeader('Server');
+        return (string) $this->getHeader('Server');
     }
 
     /**
@@ -852,7 +852,7 @@ class Response extends AbstractMessage implements \Serializable
      * Parse the JSON response body and return an array
      *
      * @return array|string|int|bool|float
-     * @throws RuntimeException if the response body is not in JSON format
+     * @throws RuntimeException            if the response body is not in JSON format
      */
     public function json()
     {
@@ -868,7 +868,7 @@ class Response extends AbstractMessage implements \Serializable
      * Parse the XML response body and return a SimpleXMLElement
      *
      * @return \SimpleXMLElement
-     * @throws RuntimeException if the response body is not in XML format
+     * @throws RuntimeException  if the response body is not in XML format
      */
     public function xml()
     {
@@ -923,6 +923,7 @@ class Response extends AbstractMessage implements \Serializable
     public function getPreviousResponse()
     {
         Version::warn(__METHOD__ . ' is deprecated. Use the HistoryPlugin.');
+
         return null;
     }
 
@@ -933,6 +934,7 @@ class Response extends AbstractMessage implements \Serializable
     public function setRequest($request)
     {
         Version::warn(__METHOD__ . ' is deprecated');
+
         return $this;
     }
 
@@ -943,6 +945,7 @@ class Response extends AbstractMessage implements \Serializable
     public function getRequest()
     {
         Version::warn(__METHOD__ . ' is deprecated');
+
         return null;
     }
 }

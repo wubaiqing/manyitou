@@ -31,10 +31,10 @@ use Aliyun\OSS\Utilities\OSSRequestBuilder;
 
 use Aliyun\OSS\Utilities\OSSUtils;
 
-
-
-class Head404ErrorHandle extends OSSErrorResponseHandler {
-    public function handle(HttpResponse $response) {
+class Head404ErrorHandle extends OSSErrorResponseHandler
+{
+    public function handle(HttpResponse $response)
+    {
         if ($response->getStatusCode() == 404) {
             $response->close();
             throw OSSExceptionFactory::factory()->create(OSSErrorCode::NO_SUCH_KEY,
@@ -44,26 +44,31 @@ class Head404ErrorHandle extends OSSErrorResponseHandler {
     }
 }
 
-class GetObjectCommand extends OSSCommand {
-
-    protected function leaveResponseOpen($options) {
-        if (isset($options[OSSOptions::SAVE_AS])){
+class GetObjectCommand extends OSSCommand
+{
+    protected function leaveResponseOpen($options)
+    {
+        if (isset($options[OSSOptions::SAVE_AS])) {
             if (is_string($options[OSSOptions::SAVE_AS])) {
                 return false;
             }
         }
+
         return true;
     }
 
-    protected function getResponseHandlers($options) {
+    protected function getResponseHandlers($options)
+    {
         $handlers = parent::getResponseHandlers($options);
         if ($options[OSSOptions::META_ONLY]) {
             array_unshift($handlers, new Head404ErrorHandle());
         }
+
         return $handlers;
     }
 
-    protected function checkOptions($options) {
+    protected function checkOptions($options)
+    {
         $options = parent::checkOptions($options);
         AssertUtils::assertSet(array(
             OSSOptions::BUCKET,
@@ -82,14 +87,15 @@ class GetObjectCommand extends OSSCommand {
         return $options;
     }
 
-    protected function commandOptions() {
+    protected function commandOptions()
+    {
         return array(
             OSSOptions::META_ONLY => false,
         );
     }
 
-    protected function getRequest($options) {
-
+    protected function getRequest($options)
+    {
         if ($options[OSSOptions::META_ONLY] === true) {
             unset($options[OSSOptions::RANGE]);
             unset($options[OSSOptions::SAVE_AS]);
@@ -108,7 +114,7 @@ class GetObjectCommand extends OSSCommand {
             $rangeValue = 'bytes=';
             if ($range[0] == -1) {
                 $rangeValue .= '-' . $range[1];
-            } else if ($range[1] == -1) {
+            } elseif ($range[1] == -1) {
                 $rangeValue .= $range[0] . '-';
             } else {
                 $rangeValue .= $range[0] . '-' . $range[1];
@@ -139,7 +145,6 @@ class GetObjectCommand extends OSSCommand {
             $builder->setResponseBody($options[OSSOptions::SAVE_AS]);
         }
 
-
         return $builder
                 ->setEndpoint($options[OSSOptions::ENDPOINT])
                 ->setBucket($options[OSSOptions::BUCKET])
@@ -149,8 +154,8 @@ class GetObjectCommand extends OSSCommand {
                 ->build();
     }
 
-    protected function afterResult($result, $options) {
-
+    protected function afterResult($result, $options)
+    {
         if (isset($options[OSSOptions::SAVE_AS])) {
             $result->setObjectContent(null);
         }

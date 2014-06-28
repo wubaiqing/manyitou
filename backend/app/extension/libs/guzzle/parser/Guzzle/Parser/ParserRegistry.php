@@ -23,7 +23,7 @@ class ParserRegistry
 
     /**
      * @return self
-     * @codeCoverageIgnore
+     *              @codeCoverageIgnore
      */
     public static function getInstance()
     {

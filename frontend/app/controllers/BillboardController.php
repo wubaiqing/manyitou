@@ -7,32 +7,32 @@
  */
 class BillboardController extends BaseController
 {
-	/**
-	 * @var string 继承master视图
-	 */
-	protected $layout = 'layouts.master';
+    /**
+     * @var string 继承master视图
+     */
+    protected $layout = 'layouts.master';
 
-	/**
-	 * 公告详情页
-	 * @param int $id 公告ID
-	 */
-	public function detail($id)
-	{
-		$detail = Billboard::getDetail($id);
-		$this->layout->content = View::make('billboard.detail', [
-			'detail' => $detail
-		]);
-	}
+    /**
+     * 公告详情页
+     * @param int $id 公告ID
+     */
+    public function detail($id)
+    {
+        $detail = Billboard::getDetail($id);
+        $this->layout->content = View::make('billboard.detail', [
+            'detail' => $detail
+        ]);
+    }
 
-	/**
-	 * 公告列表页
-	 * @param int $id 公告ID
-	 */
-	public function lists()
-	{
-		$list = Billboard::paginate(22);
-		$this->layout->content = View::make('billboard.list', [
-			'list' => $list
-		]);
-	}
+    /**
+     * 公告列表页
+     * @param int $id 公告ID
+     */
+    public function lists()
+    {
+        $list = Billboard::paginate(22);
+        $this->layout->content = View::make('billboard.list', [
+            'list' => $list
+        ]);
+    }
 }

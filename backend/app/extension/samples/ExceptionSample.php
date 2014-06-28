@@ -8,7 +8,8 @@ use Aliyun\OSS\Exceptions\OSSException;
 use Aliyun\Common\Exceptions\ClientException;
 
 // Sample of handle exception
-function handleExceptionSample() {
+function handleExceptionSample()
+{
     try {
         $client = OSSClient::factory(array(
             'AccessKeyId' => 'your-access-key-id',

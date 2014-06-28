@@ -3,7 +3,6 @@
 namespace Guzzle\Http;
 
 use Guzzle\Common\Exception\InvalidArgumentException;
-use Guzzle\Parser\ParserRegistry;
 
 /**
  * Parses and generates URLs based on URL parts. In favor of performance, URL parts are not validated.
@@ -484,7 +483,7 @@ class Url
      *
      * @return Url
      * @throws InvalidArgumentException
-     * @link http://tools.ietf.org/html/rfc3986#section-5.4
+     *                                  @link http://tools.ietf.org/html/rfc3986#section-5.4
      */
     public function combine($url)
     {
@@ -505,6 +504,7 @@ class Url
             $this->path = $url->getPath();
             $this->query = $url->getQuery();
             $this->fragment = $url->getFragment();
+
             return $this;
         }
 
@@ -516,6 +516,7 @@ class Url
             $this->password = $url->getPassword();
             $this->path = $url->getPath();
             $this->fragment = $url->getFragment();
+
             return $this;
         }
 

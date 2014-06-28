@@ -9,10 +9,6 @@ namespace Aliyun\OSS\Commands;
 
 use Aliyun\Common\Utilities\HttpMethods;
 
-use Aliyun\OSS\Parsers\OSSResponseParserFactory;
-
-use Aliyun\OSS\Parsers\ListBucketParser;
-
 use Aliyun\OSS\Models\OSSOptions;
 
 use Aliyun\OSS\Utilities\OSSRequestBuilder;
@@ -21,10 +17,10 @@ use Aliyun\Common\Utilities\AssertUtils;
 
 use Aliyun\OSS\Utilities\OSSUtils;
 
-
-class ListPartsCommand extends OSSCommand {
-
-    protected function checkOptions($options) {
+class ListPartsCommand extends OSSCommand
+{
+    protected function checkOptions($options)
+    {
         $options = parent::checkOptions($options);
         AssertUtils::assertSet(array(
             OSSOptions::BUCKET,
@@ -46,7 +42,8 @@ class ListPartsCommand extends OSSCommand {
         return $options;
     }
 
-    protected function getRequest($options) {
+    protected function getRequest($options)
+    {
         $builder = OSSRequestBuilder::factory();
 
         $builder->addParameter('uploadId', $options[OSSOptions::UPLOAD_ID]);

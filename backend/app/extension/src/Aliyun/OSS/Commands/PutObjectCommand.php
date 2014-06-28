@@ -7,10 +7,7 @@
  */
 namespace Aliyun\OSS\Commands;
 
-
 use Aliyun\Common\Utilities\HttpMethods;
-
-use Aliyun\OSS\Utilities\OSSHeaders;
 
 use Aliyun\OSS\Models\OSSOptions;
 
@@ -20,9 +17,10 @@ use Aliyun\OSS\Utilities\OSSRequestBuilder;
 
 use Aliyun\OSS\Utilities\OSSUtils;
 
-class PutObjectCommand extends OSSCommand {
-
-    protected function checkOptions($options) {
+class PutObjectCommand extends OSSCommand
+{
+    protected function checkOptions($options)
+    {
         $options = parent::checkOptions($options);
         AssertUtils::assertSet(array(
             OSSOptions::CONTENT,
@@ -44,17 +42,20 @@ class PutObjectCommand extends OSSCommand {
         return $options;
     }
 
-    protected function commandOptions() {
+    protected function commandOptions()
+    {
         return array(
             OSSOptions::CONTENT_TYPE => OSSUtils::DEFAULT_CONTENT_TYPE,
         );
     }
 
-    protected function leaveRequestOpen($options) {
+    protected function leaveRequestOpen($options)
+    {
         return true;
     }
 
-    protected function getRequest($options) {
+    protected function getRequest($options)
+    {
         $builder = OSSRequestBuilder::factory();
 
         if (isset($options[OSSOptions::CONTENT_LENGTH])) {

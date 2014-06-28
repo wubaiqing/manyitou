@@ -280,6 +280,7 @@ class Client extends AbstractHasDispatcher implements ClientInterface
         try {
             /** @var $requests RequestInterface  */
             $this->getCurlMulti()->add($requests)->send();
+
             return $requests->getResponse();
         } catch (ExceptionCollection $e) {
             throw $e->getFirst();
@@ -338,7 +339,7 @@ class Client extends AbstractHasDispatcher implements ClientInterface
      *
      * @param bool $md5Check Set to false to not perform the MD5 validation
      *
-     * @return string Returns the path to the extracted cacert
+     * @return string           Returns the path to the extracted cacert
      * @throws RuntimeException if the file cannot be copied or there is a MD5 mismatch
      */
     public function preparePharCacert($md5Check = true)
@@ -484,6 +485,7 @@ class Client extends AbstractHasDispatcher implements ClientInterface
     public function getDefaultHeaders()
     {
         Version::warn(__METHOD__ . ' is deprecated. Use the request.options array to retrieve default request options');
+
         return $this->defaultHeaders;
     }
 

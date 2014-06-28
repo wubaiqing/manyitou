@@ -10,17 +10,11 @@ namespace Aliyun\OSS\Commands;
 
 use Aliyun\Common\Auth\ServiceSignature;
 
-use Aliyun\Common\Communication\HttpRequest;
-
 use Aliyun\Common\Utilities\AssertUtils;
 
 use Aliyun\Common\Utilities\HttpHeaders;
-use Aliyun\Common\Utilities\HttpMethods;
-use Aliyun\OSS\Auth\OSSRequestSigner;
 
 use Aliyun\OSS\Models\OSSOptions;
-
-use Aliyun\OSS\OSSClient;
 
 use Aliyun\OSS\Utilities\OSSHeaders;
 
@@ -32,21 +26,24 @@ use Aliyun\OSS\Utilities\SignUtils;
 
 use Aliyun\Common\Exceptions\ClientException;
 
-class GeneratePresignedUrlCommand {
-
+class GeneratePresignedUrlCommand
+{
     private $name;
 
-    public function __construct($name) {
+    public function __construct($name)
+    {
         $this->name = $name;
     }
 
-    private function getCommandOptions() {
+    private function getCommandOptions()
+    {
         return array(
             OSSOptions::METHOD => 'GET',
         );
     }
 
-    private function checkOptions($options) {
+    private function checkOptions($options)
+    {
         AssertUtils::assertSet(array(
             OSSOptions::BUCKET,
             OSSOptions::KEY,
@@ -67,7 +64,8 @@ class GeneratePresignedUrlCommand {
         return $options;
     }
 
-    private function generate($options) {
+    private function generate($options)
+    {
         $bucket = $options[OSSOptions::BUCKET];
         $key = $options[OSSOptions::KEY];
         $method = $options[OSSOptions::METHOD];
@@ -108,7 +106,8 @@ class GeneratePresignedUrlCommand {
         return $request->getFullUrl();
     }
 
-    public function execute($clientOptions, $userOptions) {
+    public function execute($clientOptions, $userOptions)
+    {
         $options = array_merge($clientOptions, $this->getCommandOptions(), $userOptions);
         $options = $this->checkOptions($options);
         try {

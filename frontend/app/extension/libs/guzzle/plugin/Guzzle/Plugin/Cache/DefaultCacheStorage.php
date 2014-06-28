@@ -150,6 +150,7 @@ class DefaultCacheStorage implements CacheStorageInterface
             } else {
                 $this->cache->delete($key);
             }
+
             return null;
         }
 

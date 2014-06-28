@@ -90,7 +90,7 @@ class CurlException extends RequestException
      * @param array $info Array of curl transfer information
      *
      * @return self
-     * @link http://php.net/manual/en/function.curl-getinfo.php
+     *              @link http://php.net/manual/en/function.curl-getinfo.php
      */
     public function setCurlInfo(array $info)
     {

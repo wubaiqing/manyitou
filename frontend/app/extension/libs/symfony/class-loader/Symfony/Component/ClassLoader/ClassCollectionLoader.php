@@ -335,10 +335,10 @@ class ClassCollectionLoader
      * This function does not check for circular dependencies as it should never
      * occur with PHP traits.
      *
-     * @param array             $tree       The dependency tree
-     * @param \ReflectionClass  $node       The node
-     * @param \ArrayObject      $resolved   An array of already resolved dependencies
-     * @param \ArrayObject      $unresolved An array of dependencies to be resolved
+     * @param array            $tree       The dependency tree
+     * @param \ReflectionClass $node       The node
+     * @param \ArrayObject     $resolved   An array of already resolved dependencies
+     * @param \ArrayObject     $unresolved An array of dependencies to be resolved
      *
      * @return \ArrayObject The dependencies for the given node
      *

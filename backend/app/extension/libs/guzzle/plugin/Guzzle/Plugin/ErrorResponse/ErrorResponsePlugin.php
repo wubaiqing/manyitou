@@ -41,7 +41,7 @@ class ErrorResponsePlugin implements EventSubscriberInterface
      * @param CommandInterface $command   Command that created the request
      * @param Operation        $operation Operation that defines the request and errors
      *
-     * @return \Closure Returns a closure
+     * @return \Closure               Returns a closure
      * @throws ErrorResponseException
      */
     protected function getErrorClosure(RequestInterface $request, CommandInterface $command, Operation $operation)

@@ -9,10 +9,6 @@ namespace Aliyun\OSS\Commands;
 
 use Aliyun\Common\Utilities\HttpMethods;
 
-use Aliyun\OSS\Parsers\OSSResponseParserFactory;
-
-use Aliyun\OSS\Parsers\ListBucketParser;
-
 use Aliyun\OSS\Models\OSSOptions;
 
 use Aliyun\OSS\Utilities\OSSRequestBuilder;
@@ -21,10 +17,10 @@ use Aliyun\Common\Utilities\AssertUtils;
 
 use Aliyun\OSS\Utilities\OSSUtils;
 
-
-class ListObjectsCommand extends OSSCommand {
-
-    protected function checkOptions($options) {
+class ListObjectsCommand extends OSSCommand
+{
+    protected function checkOptions($options)
+    {
         $options = parent::checkOptions($options);
         AssertUtils::assertSet(array(
             OSSOptions::BUCKET,
@@ -43,7 +39,8 @@ class ListObjectsCommand extends OSSCommand {
         return $options;
     }
 
-    protected function getRequest($options) {
+    protected function getRequest($options)
+    {
         $builder = OSSRequestBuilder::factory();
 
         if (isset($options[OSSOptions::PREFIX])) {
@@ -61,7 +58,6 @@ class ListObjectsCommand extends OSSCommand {
         if (isset($options[OSSOptions::MAX_KEYS])) {
             $builder->addParameter('max-keys', (string) intval($options[OSSOptions::MAX_KEYS]));
         }
-
 
         return $builder
             ->setEndpoint($options[OSSOptions::ENDPOINT])
