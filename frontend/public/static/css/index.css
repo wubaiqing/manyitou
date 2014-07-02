@@ -1129,7 +1129,7 @@
 
 /*购物流程*/
 .content-bd .process {
-	background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/process/process.jpg);
+	background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/site/%E6%B5%81%E7%A8%8B.jpg);
 	height: 90px;
 	font-family: "微软雅黑";
 }
@@ -3951,7 +3951,7 @@ em {
 			   .wn_show_t {
 				   width: 71px;
 				   height: 22px;
-				   background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/xf_t.png) no-repeat scroll 0% 0% transparent;
+				   background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/static_qq_xf_t.png) no-repeat scroll 0% 0% transparent;
 				   text-align: center;
 				   line-height: 22px;
 				   color: #FFF;
@@ -3989,7 +3989,7 @@ em {
 				   text-align: center;
 				   padding-top: 5px;
 				   border-top: 1px dashed #C4C2C2;
-				   color: #F64881;
+				   color: #FF7609;
 				   font-family: Arial;
 				   margin-top: 10px;
 			   }
@@ -4002,13 +4002,13 @@ em {
 				   color: #FFF;
 				   text-align: center;
 				   margin: 3px 0px;
-				   background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/maijia_w71.png) no-repeat scroll 0% 0% transparent;
+				   background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/static_qq_maijia_w71.png) no-repeat scroll 0% 0% transparent;
 				   outline: medium none;
 			   }
 			   .wn_fanhui {
 				   width: 71px;
 				   height: 65px;
-				   background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/huidingbu.png) no-repeat scroll 0% 0% transparent;
+				   background: url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/qq/static_qq_huidingbu.png) no-repeat scroll 0% 0% transparent;
 				   display: block;
 				   outline: medium none;
 			   }
@@ -4256,7 +4256,7 @@ em {
 			   .siter_header{ width:980px; margin:0 auto;margin-bottom:17px;}
 			   /* mc */
 			   .header_info{ width:980px; margin:0 auto; height:75px;}
-			   .header_info .logo{ width:256px; height:58px; display:inline-block; float:left; background:url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/logo_03.png) no-repeat; text-indent:-999px; margin-top:10px; }
+			   .header_info .logo{ width:256px; height:58px; display:inline-block; float:left; background:url(http://myt.oss-cn-hangzhou.aliyuncs.com/static/site/logo.jpg) no-repeat; text-indent:-999px; margin-top:10px; }
 			   .header_info .user_info{ float:right; margin-top:34px; height:31px; background:url(../images/header_userbg.gif) no-repeat left; height:31px;}
 			   .header_info .user_info li{ float:left; display:inline; height:31px; line-height:31px; margin-left:15px;}
 			   .header_info .user_info li.last{background:url(../images/header_userbg.gif) no-repeat right; padding-right:15px;}
