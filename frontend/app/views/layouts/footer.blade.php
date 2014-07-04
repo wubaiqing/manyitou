@@ -6,7 +6,7 @@
         </div>
         <div class="foot_link">
             <a href="http://www.manyitou.com/billboard/detail/1.html" target="_blank">关于我们</a>
-            <a href="javascript:void(0);" target="_blank">联系我们</a>
+            <a href="http://www.manyitou.com/billboard/detail/7.html" target="_blank">联系我们</a>
         </div>
     </div>
 </div>
