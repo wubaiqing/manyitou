@@ -16,7 +16,7 @@
                     <a href="http://www.manyitou.com/lists.html" title="资源中心">资源中心</a>
                 </li>
                 <li class="{{ strpos(URL::current(), 'billboard/detail/2.html') ? 'selected' : ''; }}">
-                    <a href="http://www.manyitou.com/billboard/detail/2.html" title="淘宝入驻">淘宝入驻</a>
+                    <a href="http://www.manyitou.com/billboard/detail/2.html" title="淘宝客入驻">淘宝客入驻</a>
                 </li>
                 <li class="{{ strpos(URL::current(), 'billboard/detail/1.html') ? 'selected' : ''; }}">
                     <a href="http://www.manyitou.com/billboard/detail/1.html" title="关于满意投">关于满意投</a>
