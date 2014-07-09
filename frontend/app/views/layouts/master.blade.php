@@ -8,7 +8,7 @@
 	<meta name="description" content="满意投广告联盟是一家为专注电子商务行业推广的广告联盟。目前是做国内最专业的电商营销推广联盟，我们具有一套专业、精准的广告投放体系，在流量监测，资源整合方面有着多年的实战经验，宗旨是让客户流量价值最大化。">
     <link rel="shortcut icon" href="http://myt.oss-cn-hangzhou.aliyuncs.com/static/favicon/%E5%B0%8F%E5%9B%BE%E6%A0%87.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{{ asset('static/css/base-min.css?v=1.0.5') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('static/css/index.css?v=1.0.9') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('static/css/index.css?v=1.1.0') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('static/css/page.css?v=1.0.5') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('static/css/colorbox.css?v=1.0.5') }}">
     <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
