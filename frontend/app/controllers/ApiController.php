@@ -20,7 +20,6 @@ class ApiController extends BaseController
 			$attrValues = [];
 
 			foreach($item->attr->toArray() as $k => $value) {
-
 				if ($k == 'business_id') {
 					continue;
 				}
@@ -32,6 +31,9 @@ class ApiController extends BaseController
 
 			$baseInfo = $item->toArray();
 			unset($baseInfo['attr']);
+
+			// 接口配置
+			$attrValues['configMode'] = 2;
 
 			// 名称
 			$json['data'][$key] = $baseInfo;
