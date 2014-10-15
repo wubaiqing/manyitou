@@ -32,7 +32,7 @@ class UCBusiness extends \Eloquent
      */
     public static function getData()
     {
-        $cacheKey = 'get-business-json-test-1.0';
+        $cacheKey = 'get-business-json-test-1.2';
 
         return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () {
 	        return UCBusiness::index()->get();
