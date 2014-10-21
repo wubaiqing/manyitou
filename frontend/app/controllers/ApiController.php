@@ -11,10 +11,17 @@ class ApiController extends BaseController
 	 * 公告详情页
 	 * @param int $id 公告ID
 	 */
-	public function ucBusiness()
+	public function ucBusiness($id = 0)
 	{
-		$business = UCBusiness::getData();
+		$business = UCBusiness::getCate($id);
+
 		$json = ['code' => 1, 'message' => null, 'data' => []];
+		if ($business == false) {
+			$json['code'] = 2;
+			$json['message'] = '暂无数据';
+			echo (json_encode($json));
+			exit;
+		}
 		foreach ($business as $key => $item) {
 
 			$attrValues = [];

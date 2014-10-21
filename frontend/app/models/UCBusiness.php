@@ -26,11 +26,35 @@ class UCBusiness extends \Eloquent
         return $query->where('id', '>' ,'20');
     }
 
-    /**
+	public static function getCate($id)
+	{
+		$cacheKey = 'get-business-json-cate-' . intval($id);
+
+		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () use ($id) {
+
+			$getBunsiness = UCBusiness::whereRaw('parentid = ? And status = ?', [$id, 1])->get();
+			if ($getBunsiness->count() == 0) {
+				return false;
+			}
+
+
+			$ids = [];
+			foreach ($getBunsiness as $key => $bunsiness) {
+				$ids[] = $bunsiness->toArray()['id'];
+			}
+
+			$json = [];
+			return UCBusiness::whereIn('parentid', $ids)->get();
+		});
+
+	}
+
+
+	/**
      * 首页商品列表
      * @return mixed
      */
-    public static function getData()
+    public static function getAll()
     {
         $cacheKey = 'get-business-json-test-1.2';
 
