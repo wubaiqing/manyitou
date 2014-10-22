@@ -33,7 +33,7 @@ class ApiController extends BaseController
 				}
 
 				if (!empty($value)) {
-					$attrValues[$k] = $value;
+					$attrValues[$k] = strval($value);
 				}
 			}
 
@@ -41,11 +41,11 @@ class ApiController extends BaseController
 			unset($baseInfo['attr']);
 
 			// 接口配置
-			$attrValues['configMode'] = 2;
+			$attrValues['configMode'] = strval(2);
 
 			// 名称
 			$json['data'][$key] = $baseInfo;
-			$json['data'][$key]['selfcode'] = $attrValues;
+			$json['data'][$key]['selfcode'] = json_encode($attrValues);
 			unset($attrValues);
 		}
 		echo (json_encode($json));
