@@ -34,6 +34,8 @@ class ApiController extends BaseController
 
 				if (!empty($value)) {
 					$attrValues[$k] = strval($value);
+				} else {
+					$attrValues[$k] = "";
 				}
 			}
 

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="90253629-727d-4fae-988a-2c76b0660cc9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app/controllers/ApiController.php" afterPath="$PROJECT_DIR$/frontend/app/controllers/ApiController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/app/models/UCBusiness.php" afterPath="$PROJECT_DIR$/frontend/app/models/UCBusiness.php" />
     </list>
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ApiController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ApiController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/app/controllers/ApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="75" max-vertical-offset="900">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.6" vertical-offset="105" max-vertical-offset="930">
+              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UCBusiness.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UCBusiness.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/app/models/UCBusiness.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44" vertical-offset="120" max-vertical-offset="1080">
-              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+            <state vertical-scroll-proportion="-18.125" vertical-offset="120" max-vertical-offset="1080">
+              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -64,8 +63,8 @@
         <option value="$PROJECT_DIR$/frontend/app/config/database.php" />
         <option value="$PROJECT_DIR$/frontend/app/models/UCBusinessAttr.php" />
         <option value="$PROJECT_DIR$/frontend/app/routes.php" />
-        <option value="$PROJECT_DIR$/frontend/app/controllers/ApiController.php" />
         <option value="$PROJECT_DIR$/frontend/app/models/UCBusiness.php" />
+        <option value="$PROJECT_DIR$/frontend/app/controllers/ApiController.php" />
       </list>
     </option>
   </component>
@@ -448,18 +447,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/controllers/ApiController.php">
+    <entry file="file://$PROJECT_DIR$/frontend/app/models/UCBusiness.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="75" max-vertical-offset="900">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state vertical-scroll-proportion="-18.125" vertical-offset="120" max-vertical-offset="1080">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app/models/UCBusiness.php">
+    <entry file="file://$PROJECT_DIR$/frontend/app/controllers/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44" vertical-offset="120" max-vertical-offset="1080">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.6" vertical-offset="105" max-vertical-offset="930">
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
           <folding />
         </state>
       </provider>
