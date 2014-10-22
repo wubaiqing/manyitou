@@ -39,6 +39,7 @@ class UCBusiness extends \Eloquent
 
 
 			$ids = [];
+			$ids[] = $getBunsiness->toArray()['id'];
 			foreach ($getBunsiness as $key => $bunsiness) {
 				$ids[] = $bunsiness->toArray()['id'];
 			}
