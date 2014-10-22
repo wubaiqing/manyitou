@@ -13,7 +13,7 @@ class ApiController extends BaseController
 	 */
 	public function ucBusiness($id = 0)
 	{
-        header('Content-type: application/json');
+//        header('Content-type: application/json');
 		$business = UCBusiness::getCate($id);
 
 		$json = ['code' => 1, 'message' => null, 'data' => []];

@@ -28,7 +28,7 @@ class UCBusiness extends \Eloquent
 
 	public static function getCate($id)
 	{
-		$cacheKey = 'get-business-json-cate-test-' . intval($id);
+		$cacheKey = 'get-business-json-cate-' . intval($id);
 
 		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () use ($id) {
 
@@ -38,8 +38,7 @@ class UCBusiness extends \Eloquent
 			}
 
 
-			$ids = [];
-			$ids[] = $getBunsiness->toArray()['id'];
+			$ids = [$id];
 			foreach ($getBunsiness as $key => $bunsiness) {
 				$ids[] = $bunsiness->toArray()['id'];
 			}
