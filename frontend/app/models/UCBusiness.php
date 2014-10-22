@@ -28,7 +28,7 @@ class UCBusiness extends \Eloquent
 
 	public static function getCate($id)
 	{
-		$cacheKey = 'get-business-json-cate-' . intval($id);
+		$cacheKey = 'get-business-json-catet-' . intval($id);
 
 		return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () use ($id) {
 
