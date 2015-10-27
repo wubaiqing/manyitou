@@ -1,8 +1,9 @@
 @section('styles')
-<link rel="stylesheet" type="text/css" href="http://admin.meipin.com/scripts/jQuery-File-Upload/css/jquery.fileupload-ui.css" media="all" />
-<script type="text/javascript" src="http://admin.meipin.com/scripts/jQuery-File-Upload/js/vendor/jquery.ui.widget.js"></script>
-<script type="text/javascript" src="http://admin.meipin.com/scripts/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
-<script type="text/javascript" src="http://admin.meipin.com/scripts/jQuery-File-Upload/js/jquery.fileupload.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('static/jQuery-File-Upload/css/jquery.fileupload-ui.css') }}" media="all" />
+
+    <script type="text/javascript" src="{{ asset('static/jQuery-File-Upload/js/vendor/jquery.ui.widget.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('static/jQuery-File-Upload/js/jquery.iframe-transport.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('static/jQuery-File-Upload/js/jquery.fileupload.js') }}"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('.upload-placeholder').fileupload({

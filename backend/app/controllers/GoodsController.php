@@ -1,8 +1,11 @@
 <?php
+
 /**
- * 后台-商品管理
+ * 后台-商品管理.
+ *
  * @author wubaiqing<wubaiqing@vip.qq.com>
  * @copyright Copyright (c) 2014 满意投
+ *
  * @since 1.0
  */
 use \Aliyun\OSS\OSSClient;
@@ -27,23 +30,23 @@ class GoodsController extends BaseController
     );
 
     /**
-     * 商品管理
+     * 商品管理.
      */
     public function admin()
     {
         // 在售状态，ID倒叙
         $goods = Goods::where('status', '=', '1')->orderBy('id', 'desc')->paginate(10);
         $this->layout->content = View::make('goods.admin', [
-            'goods' => $goods
+            'goods' => $goods,
         ]);
     }
 
     /**
-     * 商品添加
+     * 商品添加.
      */
     public function create()
     {
-        $model = new Goods;
+        $model = new Goods();
 
         $post = Input::all();
         if (!empty($post)) {
@@ -67,7 +70,8 @@ class GoodsController extends BaseController
     }
 
     /**
-     * 商品修改
+     * 商品修改.
+     *
      * @param int $id 商品ID
      */
     public function update($id)
@@ -97,7 +101,7 @@ class GoodsController extends BaseController
     }
 
     /**
-     * 删除商品
+     * 删除商品.
      */
     public function delete($id)
     {
@@ -114,7 +118,7 @@ class GoodsController extends BaseController
     }
 
     /**
-     * 使用阿里云-云存储上传商品图片
+     * 使用阿里云-云存储上传商品图片.
      */
     public function upload()
     {
@@ -124,7 +128,7 @@ class GoodsController extends BaseController
         // 阿里云Key
         $client = OSSClient::factory(array(
             'AccessKeyId' => Config::get('workbench.accessKeyId'),
-            'AccessKeySecret' => Config::get('workbench.accessKeySecret')
+            'AccessKeySecret' => Config::get('workbench.accessKeySecret'),
         ));
 
         // 阿里云上传域名
@@ -137,7 +141,7 @@ class GoodsController extends BaseController
         $imagePath = date('Y/m/d/');
 
         // 上传文件路径+名称
-        $fileName = $prefixImage . $imagePath . '/' . uniqid() . '.' . $file->getClientOriginalExtension();
+        $fileName = $prefixImage.$imagePath.'/'.uniqid().'.'.$file->getClientOriginalExtension();
 
         // 获取上传文件大小
         $size = $file->getSize();
@@ -156,8 +160,7 @@ class GoodsController extends BaseController
         // 返回数据
         return Response::json([
             'status' => 1,
-            'data' => $domain . $fileName
-        ]);;
+            'data' => $domain.$fileName,
+        ]);
     }
-
 }

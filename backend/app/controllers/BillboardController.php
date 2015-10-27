@@ -1,8 +1,11 @@
 <?php
+
 /**
- * 后台-公告管理
+ * 后台-公告管理.
+ *
  * @author wubaiqing<wubaiqing@vip.qq.com>
  * @copyright Copyright (c) 2014 满意投
+ *
  * @since 1.0
  */
 class BillboardController extends BaseController
@@ -21,18 +24,18 @@ class BillboardController extends BaseController
     );
 
     /**
-     * 公告管理
+     * 公告管理.
      */
     public function admin()
     {
         $billboard = Billboard::where('status', '=', '1')->orderBy('id', 'desc')->paginate(10);
         $this->layout->content = View::make('billboard.admin', [
-            'billboard' => $billboard
+            'billboard' => $billboard,
         ]);
     }
 
     /**
-     * 创建公告
+     * 创建公告.
      */
     public function create()
     {
@@ -49,13 +52,13 @@ class BillboardController extends BaseController
             if ($model->save()) {
                 return Redirect::to('billboard/admin');
             }
-
         }
         $this->layout->content = View::make('billboard.create');
     }
 
     /**
-     * 修改公告
+     * 修改公告.
+     *
      * @param int $id 公告ID
      */
     public function update($id)
@@ -78,7 +81,8 @@ class BillboardController extends BaseController
     }
 
     /**
-     * 删除公告
+     * 删除公告.
+     *
      * @param int $id 公告ID
      */
     public function delete($id)

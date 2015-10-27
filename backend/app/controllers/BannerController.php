@@ -1,8 +1,11 @@
 <?php
+
 /**
- * 后台-管理
+ * 后台-管理.
+ *
  * @author wubaiqing<wubaiqing@vip.qq.com>
  * @copyright Copyright (c) 2014 满意投
+ *
  * @since 1.0
  */
 class BannerController extends BaseController
@@ -16,23 +19,23 @@ class BannerController extends BaseController
         'color.required' => '填充色必填',
         'image.required' => '图片地址必填',
         'sort.required' => '排序必填',
-        'url.required' => 'URL必填'
+        'url.required' => 'URL必填',
     ];
 
     /**
-     * 商品管理
+     * 商品管理.
      */
     public function admin()
     {
         // 在售状态，ID倒叙
         $banner = Banner::where('status', '=', '1')->orderBy('id', 'desc')->paginate(10);
         $this->layout->content = View::make('banner.admin', [
-            'banner' => $banner
+            'banner' => $banner,
         ]);
     }
 
     /**
-     * 商品添加
+     * 商品添加.
      */
     public function create()
     {
@@ -57,11 +60,12 @@ class BannerController extends BaseController
             }
         }
 
-        $this->layout->content = View::make('banner.update')->with(compact('model', $model));;
+        $this->layout->content = View::make('banner.update')->with(compact('model', $model));
     }
 
     /**
-     * 商品修改
+     * 商品修改.
+     *
      * @param int $id 商品ID
      */
     public function update($id)
@@ -91,7 +95,7 @@ class BannerController extends BaseController
     }
 
     /**
-     * 删除商品
+     * 删除商品.
      */
     public function delete($id)
     {
@@ -106,5 +110,4 @@ class BannerController extends BaseController
             return Redirect::to('banner/admin');
         }
     }
-
 }

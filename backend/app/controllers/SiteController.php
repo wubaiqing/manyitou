@@ -1,8 +1,11 @@
 <?php
+
 /**
- * 后台-管理
+ * 后台-管理.
+ *
  * @author wubaiqing<wubaiqing@vip.qq.com>
  * @copyright Copyright (c) 2014 满意投
+ *
  * @since 1.0
  */
 class SiteController extends BaseController
@@ -13,7 +16,7 @@ class SiteController extends BaseController
     protected $layout = 'layouts.login';
 
     /**
-     * 用户登陆
+     * 用户登陆.
      */
     public function login()
     {
@@ -32,7 +35,7 @@ class SiteController extends BaseController
     }
 
     /**
-     * 用户退出
+     * 用户退出.
      */
     public function logout()
     {
@@ -42,12 +45,12 @@ class SiteController extends BaseController
     }
 
     /**
-     * 清空缓存
+     * 清空缓存.
      */
     public function clearCache()
     {
-        $frontend = 'php ' . __DIR__ . '/../../../frontend/artisan cache:clear';
-        $backend = 'php ' . __DIR__ . '/../../artisan cache:clear';
+        $frontend = 'php '.__DIR__.'/../../../frontend/artisan cache:clear';
+        $backend = 'php '.__DIR__.'/../../artisan cache:clear';
         exec($frontend);
         exec($backend);
 
