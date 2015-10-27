@@ -56,6 +56,7 @@ class Goods extends \Eloquent
      * @var array 允许填充字段
      */
     protected $fillable = [
+        'logo',
         'platform_name',
         'playform_url',
         'type',
@@ -78,6 +79,7 @@ class Goods extends \Eloquent
     public static function rulesCreate()
     {
         return [
+            'logo' => 'required',
             'platform_name' => 'required',
             'playform_url'  => 'required',
             'type'  => 'required',

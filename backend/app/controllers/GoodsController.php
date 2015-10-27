@@ -21,11 +21,12 @@ class GoodsController extends BaseController
      * @var array 自定义验证信息
      */
     protected $validatorMessages = array(
+        'logo.required' => '请上传Logo',
         'platform_name.required' => '请填写平台名称',
         'playform_url.required' => '请填写URL',
         'contact.required' => '请填写联系方式',
         'order.required' => '请填排序',
-        'claim_image.required' => '请填写展示广告位',
+        'claim_image.required' => '请上传展示广告位',
         'playform_desc.required' => '请填写简介',
         'recommended_desc.required' => '请填写推荐理由',
     );

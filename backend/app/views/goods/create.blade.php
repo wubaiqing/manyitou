@@ -53,6 +53,19 @@
         </div>
         @endif
 
+    <div class="control-group">
+        <label class="control-label">LOGO</label>
+        <div class="controls">
+            {{ Form::text('logo', Input::old('logo')) }}
+            <span class="help-inline">
+					<span class="btn fileinput-button">
+						<i class="glyphicon glyphicon-plus"></i>
+						<span>上传</span>
+						<input class="upload-placeholder" type="file" name="file" data-id="logo">
+					</span>
+				</span>
+        </div>
+    </div>
 
         <div class="control-group">
             <label class="control-label">资源名称</label>
