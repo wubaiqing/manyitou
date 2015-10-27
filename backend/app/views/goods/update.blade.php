@@ -140,6 +140,12 @@
         </div>
     </div>
 
+    <div class="control-group">
+        <label class="control-label">状态</label>
+        <div class="controls">
+            {{ Form::select('status', ['1' => '在售', '0' => '停售']) }}
+        </div>
+    </div>
 
 
 
