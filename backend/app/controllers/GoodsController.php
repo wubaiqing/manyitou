@@ -18,15 +18,12 @@ class GoodsController extends BaseController
      * @var array 自定义验证信息
      */
     protected $validatorMessages = array(
-        'logo.required' => '请上传LOGO图片',
-        'rules.required' => '请填写规则',
         'platform_name.required' => '请填写平台名称',
-        'playform_sort_desc.required' => '请填写平台描述（首页）',
-        'playform_desc.required' => '请填写平台描述（详情）',
-        'playform_url.required' => '请填写平台URL',
-        'claim_image.required' => '请上传展示广告位图片',
-        'price_text.required' => '请填写价格',
+        'playform_url.required' => '请填写URL',
+        'contact.required' => '请填写联系方式',
         'order.required' => '请填排序',
+        'claim_image.required' => '请填写展示广告位',
+        'playform_desc.required' => '请填写推荐理由',
     );
 
     /**
