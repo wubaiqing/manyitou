@@ -26,7 +26,8 @@ class GoodsController extends BaseController
         'contact.required' => '请填写联系方式',
         'order.required' => '请填排序',
         'claim_image.required' => '请填写展示广告位',
-        'playform_desc.required' => '请填写推荐理由',
+        'playform_desc.required' => '请填写简介',
+        'recommended_desc.required' => '请填写推荐理由',
     );
 
     /**

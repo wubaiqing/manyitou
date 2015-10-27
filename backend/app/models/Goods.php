@@ -43,6 +43,8 @@ class Goods extends \Eloquent
 
     public static $priceTypes = [
         '1' => '按cps付费',
+        '2' => '免费',
+        '3' => '收坑位费',
     ];
 
     /**
@@ -65,7 +67,8 @@ class Goods extends \Eloquent
         'status',
         'order',
         'claim_image',
-        'playform_desc'
+        'playform_desc',
+        'recommended_desc',
     ];
 
     /**
@@ -86,6 +89,7 @@ class Goods extends \Eloquent
             'status' => 'required',
             'order' => 'required',
             'claim_image' => 'required',
+            'recommended_desc' => 'required',
             'playform_desc' => 'required'
         ];
     }

@@ -19,10 +19,8 @@
             }
         });
 
-        UE.getEditor('playform_sort_desc');
-        UE.getEditor('price_text');
         UE.getEditor('playform_desc');
-        UE.getEditor('rules');
+        UE.getEditor('recommended_desc');
 
     });
 
@@ -134,16 +132,23 @@
 
 
     <div class="control-group">
-        <label class="control-label">推荐理由</label>
+        <label class="control-label">简介</label>
         <div class="controls">
             {{ Form::textArea('playform_desc', Input::old('playform_desc', $model->playform_desc), ['class' => 'span5', 'rows' => '3', 'id' => 'playform_desc', 'style' => 'height:220px; width:600px;']) }}
         </div>
     </div>
 
     <div class="control-group">
+        <label class="control-label">推荐理由</label>
+        <div class="controls">
+            {{ Form::textArea('recommended_desc', Input::old('recommended_desc', $model->recommended_desc), ['class' => 'span5', 'rows' => '3', 'id' => 'recommended_desc', 'style' => 'height:220px; width:600px;']) }}
+        </div>
+    </div>
+
+    <div class="control-group">
         <label class="control-label">状态</label>
         <div class="controls">
-            {{ Form::select('status', ['1' => '在售', '0' => '停售']) }}
+            {{ Form::select('status', ['1' => '显示', '0' => '隐藏']) }}
         </div>
     </div>
 
