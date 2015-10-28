@@ -3,7 +3,7 @@
         margin: 10px auto;
         width: 998px;
         height: 70px;
-        background-color: #f8f8f8;
+        background-color: white;
         overflow: hidden;
     }
     .content-bd a{
@@ -16,7 +16,7 @@
         float: left;
         border-right: 3px solid #dcdcdc;
         padding-top: 18px;
-        background-color:#f8f8f8;
+        background-color: white;
         padding-right: 30px;;
 
     }

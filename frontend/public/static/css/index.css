@@ -4178,7 +4178,7 @@ em {
 			   #index_login .tabs .selected{
 				   color:black;
 			   }
-			   #index_login .tabs_con{border:1px solid #eee;border-top:0;padding:5px 0px 0px 20px;height:122px;overflow:hidden; width: 275px;}
+			   #index_login .tabs_con{border:1px solid #eee;border-top:0;padding:5px 0px 0px 20px;height:116px;overflow:hidden; width: 275px;}
 
 
 			   #index_login .input_text {
@@ -4204,7 +4204,7 @@ em {
 				   padding:5px 0;
 			   }
 			   .reg_btn {width:300px;margin-left:-20px;}
-			   .reg_btn a{ background:#f4f4f4;display:block;width:300px;text-align:center;height:35px;line-height:35px;margin-top:3px;}
+			   .reg_btn a{ background:#f4f4f4;display:block;width:300px;text-align:center;height:27px;line-height:27px;margin-top:3px;}
 			   .reg_btn a:hover{background:#eee;color:#f00;text-decoration:none;}
 			   .login_btn:link,.login_btn:visited{color:#fff;}
 			   .log_on_info {
