@@ -4165,22 +4165,20 @@ em {
 				   background:#fbfbfb;
 				   width:300px;
 				   color:#666;
-				   text-align:center;
 				   line-height:38px;
 				   font-size:14px;
 				   font-weight:bold;
 				   border:1px solid #eee;
 				   border-bottom:1px solid #ff7609;
 				   cursor:pointer;
+				   text-indent: 15px;
+
 			   }
 
 			   #index_login .tabs .selected{
-				   background:#ff7609;
-				   color:#fff;
-				   border:1px solid #ff7609;
-
+				   color:black;
 			   }
-			   #index_login .tabs_con{border:1px solid #eee;border-top:0;padding:20px;height:191px;overflow:hidden;}
+			   #index_login .tabs_con{border:1px solid #eee;border-top:0;padding:5px 0px 0px 20px;height:122px;overflow:hidden;}
 
 
 			   #index_login .input_text {
@@ -4289,12 +4287,12 @@ em {
 
 
 			   .tabs_con ul li {
-				   height:30px;
-				   line-height: 30px;
+				   height:20px;
+				   line-height: 20px;
 			   }
 
 			   #login-top {
-				   height:173px;
+				   height:85px;
 			   }
 
 			   /*首页头部*/
@@ -4306,7 +4304,7 @@ em {
 			   .main_nav ul li{ float:left; padding-right:5px;}
 			   .main_nav ul li a{ font-size:14px; font-weight:700; color:#FFF;padding:0 18px 0 18px; text-decoration:none; float:left; }
 			   .main_nav ul li.selected{ background:url(../images/nav_selbg.gif) no-repeat right;}
-			   .main_nav ul li.selected a{ color:#ff6d00; background:url(../images/nav_selbg.gif) no-repeat left;}
+			   .main_nav ul li.selected a{ color:black; background:url(../images/nav_selbg.gif) no-repeat left;}
 			   /*网站主头部*/
 			   .siter_header{ width:980px; margin:0 auto;margin-bottom:17px;}
 			   /* mc */
@@ -4387,5 +4385,6 @@ em {
 				   margin-top:10px;
 			   }
 			   .selected a {
-				   color:#fff;
+				   color:black;
 			   }
+
