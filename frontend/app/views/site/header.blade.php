@@ -3,7 +3,7 @@
         <a href="/index.php" class="logo" alt="满意投">满意投</a>
         <div class="top_nav">
             <div class="fl" style="height:20px;margin-right:5px;">
-                <a href="/index.php?m=app&amp;a=index" style="display:none;">手机客户端</a> <span class="gray">|</span> <a id="setHomepage" href="javascript:void(0);">设为首页</a> <span class="gray">|</span> <a href="javascript:bookmark();">加入收藏</a> </div>
+               <span class="gray"></span> <a id="setHomepage" href="javascript:void(0);">设为首页</a> <span class="gray">|</span> <a href="javascript:bookmark();">加入收藏</a> </div>
         </div>
     </div>
     <div id="nav">
