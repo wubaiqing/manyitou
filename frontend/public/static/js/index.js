@@ -8,7 +8,15 @@ $(document).ready(function() {
 		speed: "normal",
 		timer: 3000
 	});
-	return $("img.lazy-index-image").lazyload();
+
+	$("img.lazy-index-image").lazyload();
+
+	$('.look').click(function () {
+		var contact = $(this).attr('data-contact');
+		$(this).html(contact);
+	});
+
+
 });
 
 function bookmark() {

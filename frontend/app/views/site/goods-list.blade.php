@@ -40,7 +40,7 @@
                                 {{ Goods::$cooperationTypes[$item['cooperation_type']] }}
                             </div>
                             <div class="uvnum" style="width: 178px;">
-                                <a href="#">查看</a>
+                                <a href="javascript:void(0);" class="look" data-id="{{ $item['id'] }}" data-contact="暂时保密">查看</a>
                             </div>
                             <div class="uvnum">
                                 <a href="{{ URL::to('/detail/' . $item['id'] . '.html') }}" target="_blank">
