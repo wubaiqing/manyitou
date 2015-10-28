@@ -16,20 +16,26 @@
 
     .item-dt {
         text-align: left;
-        width: 110px;
+        width: 80px;
         float: left;
     }
 
     .item-dl a {
-        padding: 0 7px;
-
+        border-radius: 2px;
+        padding: 3px 7px;
+        text-decoration: none;
+    }
+    .item-dl a:hover {
+        background-color: #f87d2d;
+        color: white;
+        padding: 3px 7px;
     }
 
 
 </style>
 <div class="content-bd itemmore-block">
     <div class="itemmore">
-        <div class="item-dt">类型:</div>
+        <div class="item-dt">推广类型:</div>
         <div class="item-dl">
             @foreach( Goods::$types as $key => $item )
                 <a href="#">{{ $item }}</a>
@@ -39,7 +45,7 @@
     </div>
 
     <div class="itemmore">
-        <div class="item-dt">适合推广类目:</div>
+        <div class="item-dt">推广类目:</div>
         <div class="item-dl">
             @foreach( Goods::$generalizeTypes as $key => $item )
                 <a href="#">{{ $item }}</a>
@@ -48,7 +54,7 @@
 
     </div>
     <div class="itemmore">
-        <div class="item-dt">适合推广平台:</div>
+        <div class="item-dt">推广平台:</div>
         <div class="item-dl">
             @foreach( Goods::$generalizePlatforms as $key => $item )
                 <a href="#">{{ $item }}</a>
