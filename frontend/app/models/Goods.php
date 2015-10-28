@@ -2,7 +2,7 @@
 
 class Goods extends \Eloquent
 {
-    public static $typs = [
+    public static $types = [
         '1' => '打折促销类',
         '2' => 'qq群类',
         '3' => '值得买类',

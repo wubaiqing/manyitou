@@ -28,7 +28,7 @@
                                 <a href="{{ $item['playform_url'] }}" target="_blank" class="link">{{ $item['playform_url']}}</a>
                             </div>
                             <div class="uvnum">
-                                {{ Goods::$typs[$item['type']] }}
+                                {{ Goods::$types[$item['type']] }}
                             </div>
                             <div class="uvnum">
                                 {{ Goods::$generalizePlatforms[$item['generalize_platform']] }}
