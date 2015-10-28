@@ -57,21 +57,39 @@ class Goods extends \Eloquent
 
     protected $table = 'goods';
 
-    public function scopeIndex($query)
+    public function scopeIndex($query, $type, $generalizeType, $generalizePlatform, $cooperationType)
     {
-        return $query->where('status', '=' ,'1')->orderBy('order', 'DESC')->orderBy('id', 'DESC');
+        $where = $query->where('status', '=' ,'1');
+
+        if (!empty($type)) {
+            $where->where('type', '=', $type);
+        }
+
+        if (!empty($generalizeType)) {
+            $where->where('generalize_type', '=', $generalizeType);
+        }
+
+        if (!empty($generalizePlatform)) {
+            $where->where('generalize_platform', '=', $generalizePlatform);
+        }
+
+        if (!empty($cooperationType)) {
+            $where->where('cooperation_type', '=', $cooperationType);
+        }
+
+        return $where->orderBy('order', 'DESC')->orderBy('id', 'DESC');
     }
 
     /**
      * 首页商品列表
      * @return mixed
      */
-    public static function getIndex()
+    public static function getIndex($type, $generalizeType, $generalizePlatform, $cooperationType)
     {
-        $cacheKey = 'get-index-'.Input::get('page');
+        $cacheKey = 'get-index-' . $type . $generalizeType . $generalizePlatform . $cooperationType . Input::get('page');
+        return Goods::index($type, $generalizeType, $generalizePlatform, $cooperationType)->paginate(Config::get('workbench.indexPageSize'))->toArray();
 
-        return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () {
-            return Goods::index()->paginate(Config::get('workbench.indexPageSize'))->toArray();
+        return Cache::remember($cacheKey, Config::get('workbench.cacheTime'), function () use($type, $generalizeType, $generalizePlatform, $cooperationType) {
         });
     }
 

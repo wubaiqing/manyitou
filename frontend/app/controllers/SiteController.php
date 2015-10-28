@@ -17,8 +17,13 @@ class SiteController extends BaseController
      */
     public function index()
     {
+        $type = Input::get('type', '');
+        $generalizeType = Input::get('generalize_type', '');
+        $generalizePlatform = Input::get('generalize_platform', '');
+        $cooperationType = Input::get('$cooperation_type', '');
+
         // 商品
-        $items = Goods::getIndex();
+        $items = Goods::getIndex($type, $generalizeType, $generalizePlatform, $cooperationType);
 
         // 商品翻页
         $goods = Paginator::make($items['data'], $items['total'], $items['per_page']);
@@ -30,6 +35,11 @@ class SiteController extends BaseController
         $banner = Banner::getIndex();
 
         $this->layout->content = View::make('site.index', [
+            'type' => $type,
+            'generalizeType' => $generalizeType,
+            'generalizePlatform' => $generalizePlatform,
+            'cooperationType' => $cooperationType,
+
             'goods' => $goods,
             'banner' => $banner,
             'billboard' => $billboard
