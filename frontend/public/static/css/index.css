@@ -4178,7 +4178,7 @@ em {
 			   #index_login .tabs .selected{
 				   color:black;
 			   }
-			   #index_login .tabs_con{border:1px solid #eee;border-top:0;padding:5px 0px 0px 20px;height:122px;overflow:hidden;}
+			   #index_login .tabs_con{border:1px solid #eee;border-top:0;padding:5px 0px 0px 20px;height:122px;overflow:hidden; width: 275px;}
 
 
 			   #index_login .input_text {

@@ -19,7 +19,12 @@
 
 	<style>
 		.head-top-login {
-			height: 104px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			width: 295px;
+			overflow: hidden;
+			height: 84px;
+			border:1px solid #eee;
 		}
 		.head-top-login a{
 			color: white;
@@ -30,7 +35,7 @@
 			-o-border-radius: 2px;
 			border-radius: 2px;
 			width: 130px;
-			margin-right: 20px;
+			margin-left: 10px;
 			height: 32px;
 			line-height: 32px;
 			float: left;
