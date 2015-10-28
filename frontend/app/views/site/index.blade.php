@@ -6,6 +6,7 @@
     <!-- Banner -->
     <div id="content">
         @include('site.process')
+        @include('site.category')
         @include('site.goods-list', ['goods' => $goods])
         @include('site.website-list')
         @include('site.store-list')
