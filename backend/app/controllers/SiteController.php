@@ -24,7 +24,7 @@ class SiteController extends BaseController
         $post = Input::all();
         if (!empty($post)) {
             // 验证账户信息
-            if (Auth::attempt(['username' => $post['name'], 'password' => $post['password']])) {
+            if (Auth::attempt(['username' => $post['name'], 'password' => $post['password'], 'is_admin' => 1])) {
                 return Redirect::intended('goods/admin');
             }
 

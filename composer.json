@@ -1,38 +1,28 @@
 {
-    "repositories": [
-        {
-            "type": "composer", 
-            "url": "http://pkg.phpcomposer.com/repo/packagist/"
-        },
-        {
-            "packagist": false
-        }
-    ],
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
-	"license": "MIT",
-	"require": {
-		"laravel/framework": "4.1.*",
-        "way/generators": "2.*",
-        "rmccue/requests": "dev-master",
-        "shark/simple_html_dom": "dev-master",
-		"symfony/class-loader": "2.6.*@dev",
-		"guzzle/parser": "3.7.*@dev",
-		"guzzle/common": "3.7.*@dev",
-		"guzzle/http": "3.7.*@dev",
-		"guzzle/stream": "3.7.*@dev",
-		"guzzle/plugin": "3.7.*@dev",
-		"symfony/class-loader": "2.6.*@dev",
-		"symfony/event-dispatcher": "2.6.*@dev"
-	},
-	"autoload": {
-		"psr-0" : {
-			"Aliyun" : "vendor/src/"
-		}
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "stable"
+  "name": "laravel/laravel",
+  "description": "The Laravel Framework.",
+   "keywords": ["framework", "laravel"],
+  "license": "MIT",
+  "require": {
+    "laravel/framework": "4.2.*",
+    "way/generators": "2.*",
+    "rmccue/requests": "dev-master",
+    "shark/simple_html_dom": "dev-master",
+    "symfony/class-loader": "2.6.*@dev",
+    "guzzle/parser": "3.7.*@dev",
+    "guzzle/common": "3.7.*@dev",
+    "guzzle/http": "3.7.*@dev",
+    "guzzle/stream": "3.7.*@dev",
+    "guzzle/plugin": "3.7.*@dev",
+    "symfony/event-dispatcher": "2.6.*@dev"
+  },
+  "autoload": {
+    "psr-0": {
+      "Aliyun": "vendor/src/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "stable"
 }

@@ -6,9 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
-    $vendorDir . '/ircmaxell/password-compat/lib/password.php',
     $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
+    $vendorDir . '/ircmaxell/password-compat/lib/password.php',
+    $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
+    $vendorDir . '/illuminate/support/Illuminate/Support/helpers.php',
     $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
     $vendorDir . '/shark/simple_html_dom/simple_html_dom.php',
 );

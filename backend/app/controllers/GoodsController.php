@@ -36,6 +36,8 @@ class GoodsController extends BaseController
      */
     public function admin()
     {
+
+
         // 在售状态，ID倒叙
         $goods = Goods::where('status', '=', '1')->orderBy('id', 'desc')->paginate(10);
         $this->layout->content = View::make('goods.admin', [
