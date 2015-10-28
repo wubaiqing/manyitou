@@ -10,45 +10,40 @@
                     </div>
                     <div class="list">
                         <div class="list-t">
-                            <div class="main">logo</div>
-                            <div class="usenum cur">平台</div>
-                            <div class="dyuz">资源展示</div>
-                            <div class="usenum cur">投放方式</div>
-                            <div class="ljxq">了解详情</div>
+                            <div class="main">资源名称</div>
+                            <div class="usenum cur">网址</div>
+                            <div class="dyuz">类型</div>
+                            <div class="usenum cur" style="width:100px;">适合推广平台</div>
+                            <div class="ljxq">适合推广类目</div>
+                            <div class="usenum cur" style="width:100px;">费用</div>
+                            <div class="ljxq">联系方式</div>
+                            <div class="usenum cur">&nbsp;</div>
                         </div>
                         @foreach ($goods as $item)
                         <div class="list-c clearfix">
-                            <div class="pic-item">
-                                <a href="{{ URL::to('detail/' . $item['id'] . '.html') }}" target="_blank">
-                                    <img src="{{ $item['logo'] }}" class="lazy-index-logo"
-                                         data-original="{{ $item['logo'] }}"">
-                                </a>
+                            <div class="pic-item-140">
+                                {{ $item['platform_name'] }}
                             </div>
-                            <div class="text-item">
-                                <h3>{{ $item['platform_name'] }}</h3>
-
-                                <div class="intro">
-                                    <span>
-                                        {{ $item['playform_sort_desc'] }}
-                                </div>
-                                <a href="{{ $item['playform_url'] }}" target="_blank" class="link">{{ $item['playform_url']
-                                    }}</a>
+                            <div class="pic-item-140">
+                                <a href="{{ $item['playform_url'] }}" target="_blank" class="link">{{ $item['playform_url']}}</a>
                             </div>
                             <div class="uvnum">
-                                <a href="{{ $item['claim_image'] }}" class="imageBox">
-                                    <img data-original="{{ $item['claim_image'] }}"
-                                         src="http://l.com/static/css/images/image_bg.jpg" class="lazy-index-image"
-                                         width="180"/>
-                                </a>
+                                {{ Goods::$typs[$item['type']] }}
                             </div>
-                            <div class="likenum">
-                                <div>
-                                    {{ $item['price_text'] }}
-                                </div>
+                            <div class="uvnum">
+                                {{ Goods::$generalizePlatforms[$item['generalize_platform']] }}
+                            </div>
+                            <div class="uvnum">
+                                {{ Goods::$generalizeTypes[$item['generalize_type']] }}
+                            </div>
+                            <div class="uvnum">
+                                {{ Goods::$cooperationTypes[$item['cooperation_type']] }}
+                            </div>
+                            <div class="uvnum">
                             </div>
                             <div class="uptime">
                                 <a href="{{ URL::to('/detail/' . $item['id'] . '.html') }}" target="_blank">
-                                    <img src="http://myt.oss-cn-hangzhou.aliyuncs.com/static/ckxq.png">
+                                    <img src="/static/css/images/ckxq.png">
                                 </a>
                             </div>
                         </div>

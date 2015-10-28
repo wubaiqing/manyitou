@@ -2,6 +2,47 @@
 
 class Goods extends \Eloquent
 {
+    public static $typs = [
+        '1' => '打折促销类',
+        '2' => 'qq群类',
+        '3' => '值得买类',
+        '4' => '分享推荐类',
+        '5' => '网址站类',
+        '6' => '淘宝达人（有好货等）',
+        '7' => '爱淘宝',
+        '8' => '返利类',
+        '9' => '其他'
+    ];
+
+
+    public static $generalizePlatforms = [
+        '1' => '淘宝天猫店铺',
+        '2' => '京东店铺'
+    ];
+
+    public static $generalizeTypes = [
+        '1' => '全类目',
+        '2' => '女装',
+        '3' => '男装',
+        '4' => '食品酒水',
+        '5' => '母婴用品',
+        '6' => '居家用品',
+        '7' => '户外体育',
+        '8' => '化妆品',
+        '9' => '鞋包配饰'
+    ];
+
+    public static $cooperationTypes = [
+        '1' => '免费',
+        '2' => '付费'
+    ];
+
+    public static $priceTypes = [
+        '1' => '按cps付费',
+        '2' => '免费',
+        '3' => '收坑位费',
+    ];
+
     protected $fillable = [
         'logo',
         'rules',

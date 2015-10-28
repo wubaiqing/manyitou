@@ -91,7 +91,6 @@ class Goods extends \Eloquent
             'contact' => 'required',
             'status' => 'required',
             'order' => 'required',
-            'claim_image' => 'required',
             'recommended_desc' => 'required',
             'playform_desc' => 'required'
         ];
