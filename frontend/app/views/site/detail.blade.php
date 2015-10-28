@@ -64,7 +64,7 @@
 
                                         <span class="wz-info">
                                             <span>联系方式</span>
-                                            <a href="javascript:void(0);" class="look" data-id="{{ $item['id'] }}" data-contact="暂时保密">查看</a>
+                                            <a href="javascript:void(0);" class="look" data-id="{{ $detail['id'] }}" data-contact="暂时保密">查看</a>
                                         </span>
 
                                     </div>
