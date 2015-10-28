@@ -14,7 +14,7 @@
                             <div class="usenum-160 cur" >网址</div>
                             <div class="dyuz">类型</div>
                             <div class="usenum-100 cur">适合推广平台</div>
-                            <div class="ljxq">适合推广类目</div>
+                            <div class="ljxq" style="width:100px;">适合推广类目</div>
                             <div class="usenum-100 cur">费用</div>
                             <div class="ljxq">联系方式</div>
                             <div class="usenum-100 cur">&nbsp;</div>
@@ -33,14 +33,14 @@
                             <div class="uvnum">
                                 {{ Goods::$generalizePlatforms[$item['generalize_platform']] }}
                             </div>
-                            <div class="uvnum"  style="width:139px;">
+                            <div class="uvnum" >
                                 {{ Goods::$generalizeTypes[$item['generalize_type']] }}
                             </div>
                             <div class="uvnum">
                                 {{ Goods::$cooperationTypes[$item['cooperation_type']] }}
                             </div>
-                            <div class="uvnum" style="width: 139px;">
-                                {{ $item['contact'] }}
+                            <div class="uvnum" style="width: 178px;">
+                                <a href="#">查看</a>
                             </div>
                             <div class="uvnum">
                                 <a href="{{ URL::to('/detail/' . $item['id'] . '.html') }}" target="_blank">
