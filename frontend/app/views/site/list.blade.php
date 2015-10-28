@@ -2,8 +2,10 @@
 
 @section('content')
 
+
 <!-- 商品列表 -->
 <div id="content">
+    @include('site.category')
     <div class="main clearfix">
         <div class="appContent clearfix">
             <div class="appList">
