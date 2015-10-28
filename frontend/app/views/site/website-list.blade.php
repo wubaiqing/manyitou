@@ -1,4 +1,4 @@
-<div class="content-bd">
+<div class="content-bd" style="height: auto;">
     <div class="new_line">
         <div class="new_line_left">
             <div class="rollbox_title">
