@@ -9,6 +9,12 @@
 	background-position: 0 -118px;
 }
 
+.wz-info span {
+	display: block;
+	float: left;
+	width: 120px;
+}
+
 .list-t .w160 {
 	width:160px;
 }
@@ -2235,7 +2241,6 @@ div.w100 {
 
 .list-c .list-left .site-info .siteinfo-top, .list-c .list-left .site-info .siteinfo-bottom {
 	margin-top: 20px;
-	border-bottom: 1px dashed #F3F3F3;
 }
 
 .list-c .list-left .site-info .siteinfo-bottom {
