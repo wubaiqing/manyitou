@@ -6,7 +6,7 @@
     <!-- Banner -->
     <div id="content">
         @include('site.process')
-        @include('site.category')
+        @include('site.category', ['type' => $type, 'generalizeType' => $generalizeType, 'generalizePlatform' => $generalizePlatform, 'cooperationType' => $cooperationType])
         @include('site.goods-list', ['goods' => $goods])
         @include('site.website-list')
         @include('site.store-list')

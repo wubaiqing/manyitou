@@ -17,12 +17,11 @@
         padding-top: 18px;
         background-color: white;
         padding-right: 30px;;
-
     }
 </style>
 <div class="content-bd" style="height: 70px;">
     <a class="process-a" href="#" target="_blank">
-        <div>我是淘客，想找高佣金高转化宝贝</div>
+        <div>我需要大量流量，想付费推广</div>
         <div>请点这里>>></div>
     </a>
     <a class="process-a" href="#" target="_blank">

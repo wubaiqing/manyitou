@@ -20,7 +20,7 @@ class SiteController extends BaseController
         $type = Input::get('type', '');
         $generalizeType = Input::get('generalize_type', '');
         $generalizePlatform = Input::get('generalize_platform', '');
-        $cooperationType = Input::get('$cooperation_type', '');
+        $cooperationType = Input::get('cooperation_type', '');
 
         // 商品
         $items = Goods::getIndex($type, $generalizeType, $generalizePlatform, $cooperationType);
@@ -55,7 +55,7 @@ class SiteController extends BaseController
         $type = Input::get('type', '');
         $generalizeType = Input::get('generalize_type', '');
         $generalizePlatform = Input::get('generalize_platform', '');
-        $cooperationType = Input::get('$cooperation_type', '');
+        $cooperationType = Input::get('cooperation_type', '');
 
         // 商品列表
         $items = Goods::getIndex($type, $generalizeType, $generalizePlatform, $cooperationType);
