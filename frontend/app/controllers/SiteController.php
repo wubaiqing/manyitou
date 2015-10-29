@@ -52,13 +52,23 @@ class SiteController extends BaseController
      */
     public function lists()
     {
+        $type = Input::get('type', '');
+        $generalizeType = Input::get('generalize_type', '');
+        $generalizePlatform = Input::get('generalize_platform', '');
+        $cooperationType = Input::get('$cooperation_type', '');
+
         // 商品列表
-        $items = Goods::getIndex();
+        $items = Goods::getIndex($type, $generalizeType, $generalizePlatform, $cooperationType);
 
         // 商品列表翻页
         $goods = Paginator::make($items['data'], $items['total'], $items['per_page']);
 
         $this->layout->content = View::make('site.list', [
+            'type' => $type,
+            'generalizeType' => $generalizeType,
+            'generalizePlatform' => $generalizePlatform,
+            'cooperationType' => $cooperationType,
+
             'goods' => $goods
         ]);
     }
@@ -69,6 +79,7 @@ class SiteController extends BaseController
      */
     public function detail($id)
     {
+
         // 商品详情
         $detail = Goods::getDetail($id);
 

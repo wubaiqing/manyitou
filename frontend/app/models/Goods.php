@@ -98,7 +98,7 @@ class Goods extends \Eloquent
      * @param  int   $id
      * @return mixed
      */
-    public static function getDetail($id)
+    public static function getDetail($id, $type, $generalizeType, $generalizePlatform, $cooperationType)
     {
         $cacheKey = 'get-detail-'.$id;
 
