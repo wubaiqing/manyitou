@@ -12,7 +12,7 @@
                 <div class="con_wrap">
                     <div class="mid-nav"><span><a href="/">满意投</a></span>
                         <span class="sep"> > </span>
-                        <span><a href="{{ URL::to('lists.html')}}">活动中心</a></span>
+                        <span><a href="{{ URL::to('lists.html')}}">商家服务</a></span>
                     </div>
                     <div class="list">
                         <div class="list-t">
