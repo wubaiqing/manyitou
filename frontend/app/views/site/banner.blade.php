@@ -49,11 +49,11 @@
 
 		.head-top-login .login-1 {
 			background-color: #f04848;
-			margin-top: 30px;
+			margin-top: 23px;
 		}
 
 		.head-top-login .login-2 {
-			margin-top: 30px;
+			margin-top: 23px;
 			background-color: #2e76a8;
 
 		}
